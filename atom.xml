@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-09-22T18:34:11.978Z</updated>
+  <updated>2015-09-22T18:58:42.723Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2015/09/23/build-a-node-cli-program/"/>
     <id>http://yoursite.com/2015/09/23/build-a-node-cli-program/</id>
     <published>2015-09-22T17:52:35.000Z</published>
-    <updated>2015-09-22T18:34:11.978Z</updated>
+    <updated>2015-09-22T18:58:42.723Z</updated>
     <content type="html"><![CDATA[<p>作为程序员当然会经常接触到命令行，也就是终端。命令行程序经常会显得很有用，因为可以让你避免一些复杂的图形界面操作，你只需要进行简单的交互式文本命令。当然，非程序员对此必定完全不感冒，也许从来也没打开过电脑上的终端。</p>
 <p>本文是总结我做过的数个命令行程序的经验，以供后人唾弃。</p>
 <h2 id="思路">思路</h2><p>开始一个新东西之前必定是先想它大概的思想思路。而对于这个命令行程序，要做的就是我在终端输入文本，系统接受并处理然后反馈内容给我。</p>
@@ -55,6 +55,7 @@
   &quot;license&quot;: &quot;MIT&quot;
 }
 </code></pre>
+<p>(草稿)</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>作为程序员当然会经常接触到命令行，也就是终端。命令行程序经常会显得很有用，因为可以让你避免一些复杂的图形界面操作，你只需要进行简单的交互式文本命令。当然，非程序员对此必定完全不感冒，也许从来也没打开过电脑上的终端。</p>
