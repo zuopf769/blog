@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[EGOIST]]></title>
+  <subtitle><![CDATA[A artist in his fields]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-09-22T17:18:05.878Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[EGOIST]]></name>
+    <email><![CDATA[kinpika@outlook.com]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://yoursite.com/2015/09/23/Hello-World/"/>
+    <id>http://yoursite.com/2015/09/23/Hello-World/</id>
+    <published>2015-09-22T17:09:15.000Z</published>
+    <updated>2015-09-22T17:18:05.878Z</updated>
+    <content type="html"><![CDATA[<p>As you can see, yet another Hello World post is written by me, I cannot even remember how much time I’ve spent in writing such silly posts.</p>
+<p>Another bad habit I had is I keep doing “Hello World” stuffs, that means I am afriad of those hard challenges. I’m pretending that I was busy by doing easy things, I can never be able to face the real me myself until I can make up my mind to skip those “do-it-happily” stuffs. No pains no gain is so easy to read, and so hard to perform.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>As you can see, yet another Hello World post is written by me, I cannot even remember how much time I’ve spent in writing such silly post]]>
+    </summary>
+    
+      <category term="start" scheme="http://yoursite.com/tags/start/"/>
+    
+      <category term="Diary" scheme="http://yoursite.com/categories/Diary/"/>
+    
+  </entry>
+  
+</feed>
