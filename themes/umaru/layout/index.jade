@@ -23,12 +23,17 @@ block page
 				span.accepting #{accepting}
 				span  #{jobString} #{job} now.
 		hr
-		h3 Writings
-		p
+		h3#posts Writings
+		div(style="color:#778087")
 			ul.posts
 				- page.posts.each(function(post) {
 					+article(post)
 				- })
+			div(style="font-size:14px")
+				img(src="/images/rss.png" width=12)
+				| 
+				a(href="/atom.xml" style="color:#E17842") Subscribe my blog via RSS 
+			
 
 	
 			
