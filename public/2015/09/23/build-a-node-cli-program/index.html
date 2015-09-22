@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="alternate" type="application/rss+xml" title="EGOIST" href="/atom.xml"><link rel="stylesheet" href="/css/main.css"><title>创建一个 Node.js 命令行程序 - EGOIST</title></head><body><header class="header"><h1 class="sitename"><a href="/">EGOIST</a></h1></header><div class="container"><div class="page"><article class="post"><header class="post-header"><h2 class="post-title">创建一个 Node.js 命令行程序</h2><div class="post-meta"><span class="post-date">2015-09-23</span><span class="post-meta-sep">-</span><span class="post-author">@EGOIST</span></div></header><div class="post-content markdown-body"><p>作为程序员当然会经常接触到命令行，也就是终端。命令行程序经常会显得很有用，因为可以让你避免一些复杂的图形界面操作，你只需要进行简单的交互式文本命令。当然，非程序员对此必定完全不感冒，也许从来也没打开过电脑上的终端。</p>
+<p>本文是总结我做过的数个命令行程序的经验，以供后人唾弃。</p>
+<h2 id="思路">思路</h2><p>开始一个新东西之前必定是先想它大概的思想思路。而对于这个命令行程序，要做的就是我在终端输入文本，系统接受并处理然后反馈内容给我。</p>
+<p>比如一个叫 <code>hello</code> 的程序，我在终端输入 <code>hello world</code>，然后系统反馈 <code>hello a hell world</code>，而如果是输入 <code>hello egoist</code> 系统则反馈 <code>egoist saikou!</code>，这里系统根据 hello 后面的内容判断要如何回答。</p>
+<p>命令行程序也会经常进行一些条件判断，或者说是流程控制、偏好设置，这个时候需要传入一些参数作为参考，一般是以单横线 <code>-</code> 加字母或者双横线 <code>--</code> 加单词的形式出现，比如 <code>webpack</code> 这个程序的一条命令 <code>webpack --production</code> 及其缩略命令 <code>webpack -p</code>，它们拥有相同的效果，即以生产环境运行并压缩文件。</p>
+<h2 id="实现">实现</h2><p>Node.js 命令行程序当然也是一个 Node.js 模块，需要用 NPM 来进行封装管理，一个 NPM 包有包目录结构和包描述文件 <code>package.json</code> 组成。</p>
+<p>你可以新建一个目录然后在目录下运行 <code>npm init</code> 初始化得到一个 <code>package.json</code> 文件，它大概长这样，这取决于你刚才输入的内容：</p>
+<pre><code class="json">{
+  &quot;name&quot;: &quot;temp&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
+}
+</code></pre>
+<p>这里你需要注意的是 <code>main</code> 这个属性的值描述的是你的包的入口文件，当你的包需要作为一个可执行命令直接运行在命令行的时候你需要添加一个 <code>bin</code> 属性并将它的值设定为一个 Node.js 可执行文件，类似这样：</p>
+<pre><code class="json">{
+  &quot;name&quot;: &quot;hello&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;bin&quot;: {
+    &quot;hello&quot;: &quot;./bin/hello&quot;
+  },
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;MIT&quot;
+}
+</code></pre>
+</div></article><footer class="footer"><p>- The End -</p></footer></div></div><script src="/js/prism.js" data-manual></script><script src="/js/app.js"></script></body></html>
