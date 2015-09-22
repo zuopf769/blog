@@ -1117,6 +1117,9 @@ ul.posts li+li {
   color: #999;
 }
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
   .container {
     padding: 0 10px;
   }
