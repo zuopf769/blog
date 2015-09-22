@@ -425,7 +425,7 @@ th {
   box-sizing: content-box;
   height: 0;
   height: 0;
-  margin: 15px 0;
+  margin: 20px auto;
   overflow: hidden;
   background: transparent;
   border: 0;
@@ -1084,6 +1084,9 @@ ul.posts {
 ul.posts .post-date {
   color: #999;
   font-size: 13px;
+}
+ul.posts li+li {
+  margin-top: 10px;
 }
 .post .post-header {
   text-align: center;
