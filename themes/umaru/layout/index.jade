@@ -1,0 +1,34 @@
+extends base
+
+block page
+	.intro
+		h3 Hello there
+		p.
+			Welcome to EGOIST's website, I am an artist in my preferred fields like programming, football, anime and writings.
+		p.
+			I make websites and apps.
+		hr
+		h3 Contact me
+		:marked
+			You can follow my twitter [@egoistgogo](https://twitter.com/egoistgogo) and weibo [@四月橘林](http://weibo.com/zengxinty).
+			
+			I'm also on [GitHub](https://github.com/egoist) and [Wechat](http://r.loli.io/bEfqIj.jpg).
+		- var accept = true, jobs = ['freelance', 'full-time']
+		- var jobString = jobs.join(', ')
+		- var className = accept ? 'accept' : 'notAccept'
+		- var accepting = accept ? 'Accepting' : 'Not accepting'
+		- var job = jobs.length > 1 ? 'jobs' : 'job'
+		p(class="#{className}")
+			a(href="mailto:#{config.email}")
+				span.accepting #{accepting}
+				span  #{jobString} #{job} now.
+		hr
+		h3 Writings
+		p
+			ul.posts
+				- page.posts.each(function(post) {
+					+article(post)
+				- })
+
+	
+			

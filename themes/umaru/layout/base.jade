@@ -1,0 +1,30 @@
+mixin article(post)
+  li
+    h4.post-title: a(href=url_for(post.path)) #{post.title}
+    div.post-meta
+      span.post-date= post.date.format(config.date_format)
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    if theme.favicon
+      link(rel='icon', href=theme.favicon)
+    if theme.rss
+      link(rel='alternate', type='application/rss+xml', title=config.title href=theme.rss)
+    link(rel='stylesheet', href='/css/main.css')
+    block head
+      title= config.title
+      
+  body
+    header.header
+      h1.sitename: a(href="/") #{config.title}
+    .container
+      .page
+        block page
+        footer.footer
+          p.
+            - The End -
+    block scripts
+        

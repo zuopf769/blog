@@ -1,0 +1,71 @@
+@import 'normalize'
+@import 'reset'
+@import 'mixins'
+@import 'nib'
+@import 'markdown'
+@import 'highlight'
+
+body
+  margin 0
+  font 15px/1.7 "Helvetica Neue",'Helvetica',Arial, "Microsoft YaHei","STKaiti","Droid Sans Fallback",SimSun,serif
+
+.header
+  text-align center
+  padding 30px 0
+  border-bottom 1px solid #f0f0f0
+  h1.sitename
+    font-size 20px
+    letter-spacing 2px
+
+.container
+  max-width 660px
+  margin 0 auto
+
+.page
+  padding 30px 0
+  position relative
+
+.intro
+  p()
+  p
+    font-size 14px
+  a
+    color #1D75AB
+    &:hover
+      border-bottom 1px solid
+  h3
+    font-weight 400
+    margin-bottom 20px
+
+.accept, .notAccept
+  &:before
+    content ''
+    size .7em .7em
+    background-color #333
+    display inline-block
+    margin-right .4em
+    border-radius 50%
+
+.accept
+  accept-status #5cb85c
+
+.notAccept
+  accept-status #ccc
+
+ul.posts
+  padding-left 0
+  list-style none
+  .post-date
+    color #999
+    font-size 13px
+
+@import 'post'
+
+.footer
+  text-align center
+  padding 30px 0
+  color #999
+
+@media screen and (max-width: 768px)
+  .container
+    padding 0 10px

@@ -1,0 +1,21 @@
+extends base
+
+mixin post(post)
+  article.post
+    header.post-header
+      h2.post-title= post.title
+      .post-meta
+        span.post-date= post.date.format(config.date_format)
+        span.post-meta-sep -
+        span.post-author @#{config.author}
+    .post-content.markdown-body !{post.content}
+
+block head
+  title #{page.title} - #{config.title}
+
+block page
+  +post(page)
+
+block append scripts
+  script(src="/js/prism.js" data-manual)
+  script(src="/js/app.js")
