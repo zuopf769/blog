@@ -42,7 +42,7 @@ I like Open Source, you can view my lovely open-source projects on [GitHub](http
 
 ## Skills
 
-- JavaScript / CooffeeScript / LiveScript / ES6
+- JavaScript / CoffeeScript / LiveScript / ES6
 - jQuery / React / Vue.js
 - CSS / Sass / Stylus
 - Jade / Swig / Nunjucks
