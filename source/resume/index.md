@@ -38,7 +38,7 @@ GitHub Gist like service, you can share you code there and embed it in your site
 
 ## Open Source
 
-I like Open Source, you can view my lovely open-source project on [GitHub](https://github.com/egoist).
+I like Open Source, you can view my lovely open-source projects on [GitHub](https://github.com/egoist).
 
 ## Skills
 
