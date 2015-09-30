@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://egoist.github.io/"/>
-  <updated>2015-09-30T05:56:38.631Z</updated>
+  <updated>2015-09-30T09:24:02.485Z</updated>
   <id>https://egoist.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://egoist.github.io/2015/09/30/a-light-weight-localstorage-orm/"/>
     <id>https://egoist.github.io/2015/09/30/a-light-weight-localstorage-orm/</id>
     <published>2015-09-30T04:56:03.000Z</published>
-    <updated>2015-09-30T05:56:38.631Z</updated>
+    <updated>2015-09-30T09:24:02.485Z</updated>
     <content type="html"><![CDATA[<p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所以建立了这个库。</p>
 <p>你可以简单地预览一下：</p>
 <pre><code class="javascript">// localdb 会自动为新插入的 collcetion 生成 `_id`、`index` 和 `createdAt` 
@@ -94,6 +94,22 @@ console.log(JSON.stringify(zchan, null, 2))
 }
 </code></pre>
 <p><code>.find</code> 和 <code>.findOne</code> 类似不过不限制数量且可以进行排序、分页查询等操作。</p>
+<p>甚至支持了 MongoDB 的 <code>populate</code> 特性，不过暂时只能查询一层嵌套:</p>
+<pre><code class="javascript">// populate another class, eg: your Post have a Author field
+const Post = new localdb(&#39;Post&#39;, &#39;Array&#39;)
+const User = new localdb(&#39;User&#39;, &#39;Array&#39;)
+
+// you should have the Author&#39;s objectId to create an instance of that class
+const author = User.extend(&#39;some_object_id&#39;)
+
+Post.add({
+  title: &#39;mt post title&#39;,
+  author: author
+})
+
+// then you can populate that field before .find or .findOne
+Post.populate(&#39;author&#39;).findOne()
+</code></pre>
 <hr>
 <p>更详细的使用可以参考这个用 Vue 和 LocalDB <a href="http://output.jsbin.com/titeve" target="_blank" rel="external">TodoMVC</a> 演示和 <a href="https://egoist.github.io/localdb/">API</a>。</p>
 ]]></content>

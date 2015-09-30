@@ -72,6 +72,22 @@ console.log(JSON.stringify(zchan, null, 2))
 }
 </code></pre>
 <p><code>.find</code> 和 <code>.findOne</code> 类似不过不限制数量且可以进行排序、分页查询等操作。</p>
+<p>甚至支持了 MongoDB 的 <code>populate</code> 特性，不过暂时只能查询一层嵌套:</p>
+<pre><code class="javascript">// populate another class, eg: your Post have a Author field
+const Post = new localdb(&#39;Post&#39;, &#39;Array&#39;)
+const User = new localdb(&#39;User&#39;, &#39;Array&#39;)
+
+// you should have the Author&#39;s objectId to create an instance of that class
+const author = User.extend(&#39;some_object_id&#39;)
+
+Post.add({
+  title: &#39;mt post title&#39;,
+  author: author
+})
+
+// then you can populate that field before .find or .findOne
+Post.populate(&#39;author&#39;).findOne()
+</code></pre>
 <hr>
 <p>更详细的使用可以参考这个用 Vue 和 LocalDB <a href="http://output.jsbin.com/titeve" target="_blank" rel="external">TodoMVC</a> 演示和 <a href="https://egoist.github.io/localdb/">API</a>。</p>
 </div></article><footer class="footer"><p>- The End -</p></footer></div></div><script src="/js/prism.js" data-manual></script><script src="/js/app.js"></script></body></html>
