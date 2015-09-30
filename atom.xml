@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-09-22T17:18:05.878Z</updated>
+  <updated>2015-09-30T05:56:38.631Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,99 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[一个简单的 localStorage 扩展实现]]></title>
+    <link href="http://yoursite.com/2015/09/30/a-light-weight-localstorage-orm/"/>
+    <id>http://yoursite.com/2015/09/30/a-light-weight-localstorage-orm/</id>
+    <published>2015-09-30T04:56:03.000Z</published>
+    <updated>2015-09-30T05:56:38.631Z</updated>
+    <content type="html"><![CDATA[<p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所以建立了这个库。</p>
+<p>你可以简单地预览一下：</p>
+<pre><code class="javascript">// localdb 会自动为新插入的 collcetion 生成 `_id`、`index` 和 `createdAt` 
+// 以及 `updatedAt`
+// `_id` 是类似 MongoDB 的 objectId
+var User = new localdb(&#39;User&#39;, &#39;Array&#39;, true)
+
+var users = [{
+  username: &#39;kevin&#39;,
+  age: 16
+}, {
+  username: &#39;joe&#39;,
+  age: 19
+}, {
+  username: &#39;zchan&#39;,
+  age: 12
+}]
+
+var opts = {
+  sort: 1,
+  sortBy: &#39;age&#39;
+}
+var users_fetched = User.override(users, true).find(null, opts)
+
+console.log(JSON.stringify(users_fetched, null, 2))
+</code></pre>
+<p>这样就能按照 <code>age</code> 递增输出这样的结果:</p>
+<pre><code class="json">[
+  {
+    &quot;username&quot;: &quot;zchan&quot;,
+    &quot;age&quot;: 12,
+    &quot;index&quot;: 2,
+    &quot;_id&quot;: &quot;560b780cfac748a940e57438&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  },
+  {
+    &quot;username&quot;: &quot;kevin&quot;,
+    &quot;age&quot;: 16,
+    &quot;index&quot;: 0,
+    &quot;_id&quot;: &quot;560b780ca4833a2e978efcb2&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  },
+  {
+    &quot;username&quot;: &quot;joe&quot;,
+    &quot;age&quot;: 19,
+    &quot;index&quot;: 1,
+    &quot;_id&quot;: &quot;560b780c1d6c1f81ca7bf2e9&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  }
+]
+</code></pre>
+<p>如果你想查询 <code>username</code> 为 <code>zchan</code> 的用户:</p>
+<pre><code class="javascript">var query = {
+  username: &#39;zchan&#39;
+}
+
+var zchan = User.findOne(query)
+
+console.log(JSON.stringify(zchan, null, 2))
+</code></pre>
+<p>这样就查询并返回了一个对象:</p>
+<pre><code class="json">{
+  &quot;username&quot;: &quot;zchan&quot;,
+  &quot;age&quot;: 12,
+  &quot;index&quot;: 2,
+  &quot;_id&quot;: &quot;560b780cfac748a940e57438&quot;,
+  &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+  &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+}
+</code></pre>
+<p><code>.find</code> 和 <code>.findOne</code> 类似不过不限制数量且可以进行排序、分页查询等操作。</p>
+<hr>
+<p>更详细的使用可以参考这个用 Vue 和 LocalDB <a href="http://output.jsbin.com/titeve" target="_blank" rel="external">TodoMVC</a> 演示和 <a href="https://egoist.github.io/localdb/" target="_blank" rel="external">API</a>。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所]]>
+    </summary>
+    
+      <category term="localStorage" scheme="http://yoursite.com/tags/localStorage/"/>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
