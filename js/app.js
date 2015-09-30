@@ -1,6 +1,5 @@
 (function () {
 	highlight()
-	PageWalker.watch()
 	
 	function highlight () {
 		var codes = document.querySelectorAll('code')
