@@ -93,6 +93,25 @@ console.log(JSON.stringify(zchan, null, 2))
 
 `.find` 和 `.findOne` 类似不过不限制数量且可以进行排序、分页查询等操作。
 
+甚至支持了 MongoDB 的 `populate` 特性，不过暂时只能查询一层嵌套:
+
+```javascript
+// populate another class, eg: your Post have a Author field
+const Post = new localdb('Post', 'Array')
+const User = new localdb('User', 'Array')
+
+// you should have the Author's objectId to create an instance of that class
+const author = User.extend('some_object_id')
+
+Post.add({
+  title: 'mt post title',
+  author: author
+})
+
+// then you can populate that field before .find or .findOne
+Post.populate('author').findOne()
+```
+
 ---
 
 更详细的使用可以参考这个用 Vue 和 LocalDB [TodoMVC](http://output.jsbin.com/titeve) 演示和 [API](https://egoist.github.io/localdb/)。
