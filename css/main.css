@@ -898,6 +898,7 @@ pre[class*="language-"] {
   word-break: normal;
   word-wrap: normal;
   line-height: 1.5;
+  margin-bottom: 30px !important;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   -moz-tab-size: 4;
