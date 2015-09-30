@@ -3,9 +3,9 @@
   <title><![CDATA[EGOIST]]></title>
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
+  <link href="https://egoist.github.io/"/>
   <updated>2015-09-30T05:56:38.631Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://egoist.github.io/</id>
   
   <author>
     <name><![CDATA[EGOIST]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[一个简单的 localStorage 扩展实现]]></title>
-    <link href="http://yoursite.com/2015/09/30/a-light-weight-localstorage-orm/"/>
-    <id>http://yoursite.com/2015/09/30/a-light-weight-localstorage-orm/</id>
+    <link href="https://egoist.github.io/2015/09/30/a-light-weight-localstorage-orm/"/>
+    <id>https://egoist.github.io/2015/09/30/a-light-weight-localstorage-orm/</id>
     <published>2015-09-30T04:56:03.000Z</published>
     <updated>2015-09-30T05:56:38.631Z</updated>
     <content type="html"><![CDATA[<p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所以建立了这个库。</p>
@@ -95,22 +95,22 @@ console.log(JSON.stringify(zchan, null, 2))
 </code></pre>
 <p><code>.find</code> 和 <code>.findOne</code> 类似不过不限制数量且可以进行排序、分页查询等操作。</p>
 <hr>
-<p>更详细的使用可以参考这个用 Vue 和 LocalDB <a href="http://output.jsbin.com/titeve" target="_blank" rel="external">TodoMVC</a> 演示和 <a href="https://egoist.github.io/localdb/" target="_blank" rel="external">API</a>。</p>
+<p>更详细的使用可以参考这个用 Vue 和 LocalDB <a href="http://output.jsbin.com/titeve" target="_blank" rel="external">TodoMVC</a> 演示和 <a href="https://egoist.github.io/localdb/">API</a>。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所]]>
     </summary>
     
-      <category term="localStorage" scheme="http://yoursite.com/tags/localStorage/"/>
+      <category term="localStorage" scheme="https://egoist.github.io/tags/localStorage/"/>
     
-      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="https://egoist.github.io/categories/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2015/09/23/Hello-World/"/>
-    <id>http://yoursite.com/2015/09/23/Hello-World/</id>
+    <link href="https://egoist.github.io/2015/09/23/Hello-World/"/>
+    <id>https://egoist.github.io/2015/09/23/Hello-World/</id>
     <published>2015-09-22T17:09:15.000Z</published>
     <updated>2015-09-22T17:18:05.878Z</updated>
     <content type="html"><![CDATA[<p>As you can see, yet another Hello World post is written by me, I cannot even remember how much time I’ve spent in writing such silly posts.</p>
@@ -120,16 +120,16 @@ console.log(JSON.stringify(zchan, null, 2))
     <![CDATA[<p>As you can see, yet another Hello World post is written by me, I cannot even remember how much time I’ve spent in writing such silly post]]>
     </summary>
     
-      <category term="start" scheme="http://yoursite.com/tags/start/"/>
+      <category term="start" scheme="https://egoist.github.io/tags/start/"/>
     
-      <category term="Diary" scheme="http://yoursite.com/categories/Diary/"/>
+      <category term="Diary" scheme="https://egoist.github.io/categories/Diary/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[为什么动漫如此吸引我？]]></title>
-    <link href="http://yoursite.com/2015/07/10/why-so-addicted-into-anime/"/>
-    <id>http://yoursite.com/2015/07/10/why-so-addicted-into-anime/</id>
+    <link href="https://egoist.github.io/2015/07/10/why-so-addicted-into-anime/"/>
+    <id>https://egoist.github.io/2015/07/10/why-so-addicted-into-anime/</id>
     <published>2015-07-10T01:08:51.000Z</published>
     <updated>2015-09-22T18:37:13.721Z</updated>
     <content type="html"><![CDATA[<p>我想我第一部认真看的动漫应该是神奇宝贝，此外还有龙珠Z。但在那个时候，我其实不知道动漫到底是什么。我只是觉得这是日本卡通片而已，我并不知道大洋彼岸的岛国对动漫如此推崇，那里的动漫真是数以千计，各种脑残粉打扮得像动漫里的角色，当然那时我也并没体会到 hentai 的真正含义。</p>
@@ -149,16 +149,16 @@ console.log(JSON.stringify(zchan, null, 2))
     <![CDATA[<p>我想我第一部认真看的动漫应该是神奇宝贝，此外还有龙珠Z。但在那个时候，我其实不知道动漫到底是什么。我只是觉得这是日本卡通片而已，我并不知道大洋彼岸的岛国对动漫如此推崇，那里的动漫真是数以千计，各种脑残粉打扮得像动漫里的角色，当然那时我也并没体会到 hentai 的真正含义。]]>
     </summary>
     
-      <category term="anime" scheme="http://yoursite.com/tags/anime/"/>
+      <category term="anime" scheme="https://egoist.github.io/tags/anime/"/>
     
-      <category term="Anime" scheme="http://yoursite.com/categories/Anime/"/>
+      <category term="Anime" scheme="https://egoist.github.io/categories/Anime/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[一切漫长的]]></title>
-    <link href="http://yoursite.com/2015/06/12/all-things-last-long/"/>
-    <id>http://yoursite.com/2015/06/12/all-things-last-long/</id>
+    <link href="https://egoist.github.io/2015/06/12/all-things-last-long/"/>
+    <id>https://egoist.github.io/2015/06/12/all-things-last-long/</id>
     <published>2015-06-12T08:24:51.000Z</published>
     <updated>2015-09-22T18:40:18.172Z</updated>
     <content type="html"><![CDATA[<p>一切漫长的，终将分开来，脱离母体，彼此隔离，而过程，却是缓慢而重复。</p>
@@ -175,14 +175,14 @@ console.log(JSON.stringify(zchan, null, 2))
 <]]>
     </summary>
     
-      <category term="Diary" scheme="http://yoursite.com/categories/Diary/"/>
+      <category term="Diary" scheme="https://egoist.github.io/categories/Diary/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[动漫与成见]]></title>
-    <link href="http://yoursite.com/2015/03/25/good-and-bad-anime/"/>
-    <id>http://yoursite.com/2015/03/25/good-and-bad-anime/</id>
+    <link href="https://egoist.github.io/2015/03/25/good-and-bad-anime/"/>
+    <id>https://egoist.github.io/2015/03/25/good-and-bad-anime/</id>
     <published>2015-03-25T01:04:00.000Z</published>
     <updated>2015-09-22T18:45:19.634Z</updated>
     <content type="html"><![CDATA[<blockquote>
@@ -201,7 +201,7 @@ console.log(JSON.stringify(zchan, null, 2))
 <p>你知道动漫吗？也许你知道的动漫在你眼中代表着“幼稚”、“脱离现实”的东西，很可惜，你在以偏概全，或者你在用老一套的成见来看待自己不了解的世界。<br>觉得动漫是脱离现实的人也许忘了这和画画，和你听音乐，和你吃饭没什么不同，来源于生活进而表达生活，只]]>
     </summary>
     
-      <category term="Anime" scheme="http://yoursite.com/categories/Anime/"/>
+      <category term="Anime" scheme="https://egoist.github.io/categories/Anime/"/>
     
   </entry>
   
