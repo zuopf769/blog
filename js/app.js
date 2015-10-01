@@ -1,14 +1,1 @@
-(function () {
-	highlight()
-	
-	function highlight () {
-		var codes = document.querySelectorAll('code')
-		Array.prototype.forEach.call(codes, function (code) {
-
-			var lang = code.className || 'html'
-			code.className = 'language-' + lang 
-			
-		})
-		Prism.highlightAll()
-	}
-})();
+!function(){function l(){var l=document.querySelectorAll("code");Array.prototype.forEach.call(l,function(l){var a=l.className||"html";l.className="language-"+a}),Prism.highlightAll()}l()}();
