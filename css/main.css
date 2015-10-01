@@ -1035,6 +1035,7 @@ body {
   position: relative;
 }
 .wechat {
+  background-color: #fff;
   position: fixed;
   bottom: 10px;
   right: 10px;
