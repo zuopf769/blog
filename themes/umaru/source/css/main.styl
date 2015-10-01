@@ -29,6 +29,29 @@ body
   padding 30px 0
   position relative
 
+.wechat
+  position fixed
+  bottom 10px
+  right @bottom 
+  text-align center
+  color #999
+  border 1px solid #e2e2e2
+  border-bottom none
+  transition transform .3s ease
+  transform translateY(120%)
+  .wechat-close
+    padding 5px 0
+    border-bottom 1px solid #e2e2e2
+    cursor pointer
+    &:hover
+      background-color #f9f9f9
+  .wechat-qrcode
+    height 200px
+    width @height
+    background-size cover
+  &.wechat-show
+    transform translateY(0)
+
 .intro
   p()
   p

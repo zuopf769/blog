@@ -1,6 +1,19 @@
 extends base
 
 block page
+	script.
+		
+		function toggleWechat () {
+			var el = document.querySelector('.wechat')
+			var show = el.classList.contains('wechat-show')
+			if (show)
+				el.classList.remove('wechat-show')
+			else
+				el.classList.add('wechat-show')
+		}
+	.wechat
+		.wechat-close(onclick="toggleWechat()") close
+		.wechat-qrcode(style="background-image:url(https://ooo.0o0.ooo/2015/10/01/560d368708895.png)")
 	.intro
 		h3 Hello there
 		p.
@@ -12,7 +25,7 @@ block page
 		:marked
 			You can follow my twitter [@egoistgogo](https://twitter.com/egoistgogo) and weibo [@四月橘林](http://weibo.com/zengxinyu).
 			
-			I'm also on [GitHub](https://github.com/egoist) and [Wechat](http://r.loli.io/bEfqIj.jpg).
+			I'm also on [GitHub](https://github.com/egoist) and <a href="javascript:;" onclick="toggleWechat()">Wechat</a>.
 		- var accept = true, jobs = ['freelance']
 		- var jobString = jobs.join(', ')
 		- var className = accept ? 'accept' : 'notAccept'
