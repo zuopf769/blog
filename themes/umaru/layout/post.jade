@@ -9,6 +9,11 @@ mixin post(post)
         span.post-meta-sep -
         span.post-author @#{config.author}
     .post-content.markdown-body !{post.content}
+    if post.layout === 'post'
+      .post-ccby 
+        | 本文版权归 EGOIST 所有，转载请遵循 
+        a.link(href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh") 署名-相同方式共享 3.0 版本
+        |  协议
 
 block head
   title #{page.title} - #{config.title}
