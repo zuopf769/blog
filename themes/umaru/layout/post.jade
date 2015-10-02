@@ -19,7 +19,8 @@ block head
   title #{page.title} - #{config.title}
 
 block meta 
-  meta(name="description" content=page.excerpt)
+  - var summary = page.excerpt || page.content.substring(0, 200)
+  meta(name="description" content=summary)
 
 block page
   +post(page)
