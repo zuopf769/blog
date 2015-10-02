@@ -18,6 +18,9 @@ mixin post(post)
 block head
   title #{page.title} - #{config.title}
 
+block meta 
+  meta(name="description" content=page.excerpt)
+
 block page
   +post(page)
 
