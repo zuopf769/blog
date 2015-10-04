@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://egoist.github.io/"/>
-  <updated>2015-10-04T07:42:38.139Z</updated>
+  <updated>2015-10-04T07:43:17.275Z</updated>
   <id>https://egoist.github.io/</id>
   
   <author>
@@ -19,12 +19,12 @@
     <link href="https://egoist.github.io/2015/10/04/how-to-undo-with-git/"/>
     <id>https://egoist.github.io/2015/10/04/how-to-undo-with-git/</id>
     <published>2015-10-04T06:15:59.000Z</published>
-    <updated>2015-10-04T07:42:38.139Z</updated>
+    <updated>2015-10-04T07:43:17.275Z</updated>
     <content type="html"><![CDATA[<p>版本控制系统的一个好处就是你可以轻易地撤销之前错误的操作。</p>
 <p>当你用 <code>git commit</code> 提交了一个新的更改后 git 会将当时的文件内容暂时保存下来，之后你就可以用 git 随意回滚到任意一个版本。</p>
 <p>这篇文章会介绍一些常见的可能用到撤销 <code>undo</code> 操作的情况。</p>
 <h2 id="撤销一个已发布的更新">撤销一个已发布的更新</h2><p><strong>情景</strong>: 你已经用 <code>git push</code> 将代码提交到了 GitHub，然后你意识到这其中的一个 commit 有错误，于是你想撤销那个 commit。</p>
-<p><strong>操作</strong>: `git revert <sha>``</sha></p>
+<p><strong>操作</strong>: <code>git revert &lt;SHA&gt;</code></p>
 <p><strong>效果</strong>: git 会新建一个新的 commit 来执行提供的 <sha> 对应 commit 的相反的更改，任何在该旧 commit 中删除的内容将会在新 commit 中添加进去，反之亦然。</sha></p>
 <p>这是 git 里最安全的撤消操作的办法，因为这不会影响你的提交历史。于是现在你可以提交新的 commit 去撤销之前错误的操作了。</p>
 <h2 id="修改上次_commit_的提交信息">修改上次 commit 的提交信息</h2><p><strong>情景</strong>: 你在上次 commit 提交信息中打错了一个单词，比如你执行了 <code>git commit -m &quot;fxied bug #42&quot;</code> 然后你意识到应该是 <code>fixed bug #42</code>。</p>
