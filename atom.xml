@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://egoist.github.io/"/>
-  <updated>2015-10-04T07:43:17.275Z</updated>
+  <updated>2015-10-04T07:45:37.883Z</updated>
   <id>https://egoist.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://egoist.github.io/2015/10/04/how-to-undo-with-git/"/>
     <id>https://egoist.github.io/2015/10/04/how-to-undo-with-git/</id>
     <published>2015-10-04T06:15:59.000Z</published>
-    <updated>2015-10-04T07:43:17.275Z</updated>
+    <updated>2015-10-04T07:45:37.883Z</updated>
     <content type="html"><![CDATA[<p>版本控制系统的一个好处就是你可以轻易地撤销之前错误的操作。</p>
 <p>当你用 <code>git commit</code> 提交了一个新的更改后 git 会将当时的文件内容暂时保存下来，之后你就可以用 git 随意回滚到任意一个版本。</p>
 <p>这篇文章会介绍一些常见的可能用到撤销 <code>undo</code> 操作的情况。</p>
@@ -63,7 +63,7 @@
 <p><strong>操作</strong>: <code>git checkout feature</code> 和 <code>git rebase master</code></p>
 <p><strong>效果</strong>: 你可能知道用 <code>git reset</code> 然后重新 commit 来达到类似效果，不过那样会丢失 commit 历史。</p>
 <hr>
-<p>本文乃原文常用部分译文: <a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git" target="_blank" rel="external">How to undo (almost) anything with Git</a></p>
+<p>本文乃原文常用部分译文: <a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git" target="_blank" rel="external">How to undo (almost) anything with Git</a> —— 作者: <a href="https://github.com/jaw6" target="_blank" rel="external">jaw6</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>版本控制系统的一个好处就是你可以轻易地撤销之前错误的操作。</p>
