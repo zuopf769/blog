@@ -17,7 +17,7 @@ categories:
 
 **情景**: 你已经用 `git push` 将代码提交到了 GitHub，然后你意识到这其中的一个 commit 有错误，于是你想撤销那个 commit。
 
-**操作**: git revert <SHA>
+**操作**: `git revert <SHA>``
 
 **效果**: git 会新建一个新的 commit 来执行提供的 <SHA> 对应 commit 的相反的更改，任何在该旧 commit 中删除的内容将会在新 commit 中添加进去，反之亦然。
 
