@@ -13,7 +13,7 @@ html
       link(rel='icon', href=theme.favicon)
     if theme.rss
       link(rel='alternate', type='application/rss+xml', title=config.title href=theme.rss)
-    link(rel='stylesheet', href='/css/main.css?v=1001203')
+    link(rel='stylesheet', href='/css/main.css?v=1001243')
     block head
       title= config.title
     block meta
@@ -23,6 +23,8 @@ html
     header.header
       h1.sitename: a(href="/") EGOIST
       h2.slogan #{config.slogan}
+      .avatar-wrapper
+        .avatar(style="background-image:url(#{config.avatar})")
     .container
       .page
         block page
