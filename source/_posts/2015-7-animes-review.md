@@ -2,7 +2,7 @@ title: 二〇一五年七月新番回顾
 date: 2015-10-01 22:46:01
 tags:
 - anime
-category:
+categories:
 - anime
 ---
 
