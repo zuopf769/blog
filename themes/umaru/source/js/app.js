@@ -1,8 +1,12 @@
 (function () {
+	var $ = document.querySelector.bind(document)
+	var $$ = document.querySelectorAll.bind(document)
+
 	highlight()
+	replaceCount()
 	
 	function highlight () {
-		var codes = document.querySelectorAll('code')
+		var codes = $$('code')
 		Array.prototype.forEach.call(codes, function (code) {
 
 			var lang = code.className || 'html'
@@ -10,5 +14,15 @@
 			
 		})
 		Prism.highlightAll()
+	}
+
+	function replaceCount () {
+		var content = $('.post-content').textContent
+		var count = countWords(content)
+		$('.post-count-words').innerHTML = count
+	}
+
+	function countWords (string) {
+		return string.match(/[\u00ff-\uffff]|\S+/g).length
 	}
 })();

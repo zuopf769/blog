@@ -8,6 +8,9 @@ mixin post(post)
         span.post-date= post.date.format(config.date_format)
         span.post-meta-sep -
         span.post-author @#{config.author}
+        span.post-meta-sep -
+        span.post-count-words 1010
+        |  words
     .post-content.markdown-body !{post.content}
     if post.layout === 'post'
       .post-ccby 
