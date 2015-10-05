@@ -9,7 +9,7 @@ mixin post(post)
         span.post-meta-sep -
         span.post-author @#{config.author}
         span.post-meta-sep -
-        span.post-count-words 1010
+        span.post-count-words null
         |  words
     .post-content.markdown-body !{post.content}
     if post.layout === 'post'
@@ -30,4 +30,4 @@ block page
 
 block append scripts
   script(src="/js/prism.js" data-manual)
-  script(src="/js/app.js")
+  script(src="/js/app.js?v=1231241")
