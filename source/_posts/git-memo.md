@@ -48,4 +48,4 @@ git commit -m "message"
 git push origin master
 ```
 
-*Keep Updateing...*
+*Keep Updating...*
