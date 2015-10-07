@@ -28,6 +28,7 @@ ssh-keygen -C 'your@email.address' -t rsa
 **初始化一个项目**
 
 ```bash
+# 初始化 git 项目
 git init
 # 添加一个叫 origin 的源
 # 使用 ssh 地址
