@@ -37,7 +37,7 @@ git remote add origin git@github.com:username/reponame.git
 git remote add origin https://username@password:github.com/username/reponame.git
 ```
 
-**更新项目**
+**推送到服务器**
 
 ```bash
 # 记录所有新增和删除的文件
@@ -46,6 +46,13 @@ git add -A
 git commit -m "message"
 # 推送到服务器端
 git push origin master
+```
+
+**更新到本地**
+
+```bash
+# 源 + 分支名
+git pull origin master
 ```
 
 **克隆项目**
