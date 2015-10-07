@@ -48,4 +48,15 @@ git commit -m "message"
 git push origin master
 ```
 
+**克隆项目**
+
+下载别人开源的代码时有用:
+
+```bash
+# 克隆到以这个项目名命名的文件夹
+git clone https://github.com/username/reponame.git
+# 克隆到你自定义的文件夹
+git clone https://github.com/username/reponame.git name
+```
+
 *Keep Updating...*
