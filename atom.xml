@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://egoist.github.io/"/>
-  <updated>2015-10-07T14:10:07.857Z</updated>
+  <updated>2015-10-07T14:12:14.137Z</updated>
   <id>https://egoist.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://egoist.github.io/2015/10/07/git-memo/"/>
     <id>https://egoist.github.io/2015/10/07/git-memo/</id>
     <published>2015-10-07T13:18:54.000Z</published>
-    <updated>2015-10-07T14:10:07.857Z</updated>
+    <updated>2015-10-07T14:12:14.137Z</updated>
     <content type="html"><![CDATA[<p>Git 的一些常用操作备忘。</p>
 <h2 id="起步">起步</h2><p>安装好 Git 之后，配置你的资料:</p>
 <pre><code class="bash"># 配置用户名
@@ -46,6 +46,13 @@ git add -A
 git commit -m &quot;message&quot;
 # 推送到服务器端
 git push origin master
+</code></pre>
+<p><strong>克隆项目</strong></p>
+<p>下载别人开源的代码时有用:</p>
+<pre><code class="bash"># 克隆到以这个项目名命名的文件夹
+git clone https://github.com/username/reponame.git
+# 克隆到你自定义的文件夹
+git clone https://github.com/username/reponame.git name
 </code></pre>
 <p><em>Keep Updating…</em></p>
 ]]></content>
