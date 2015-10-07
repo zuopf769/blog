@@ -13,7 +13,9 @@ Git 的一些常用操作备忘。
 安装好 Git 之后，配置你的资料:
 
 ```bash
+# 配置用户名
 git config --global user.name "Your Real Name"
+# 配置邮箱地址
 git config --global user.email you@email.address
 ```
 
@@ -27,17 +29,21 @@ ssh-keygen -C 'your@email.address' -t rsa
 
 ```bash
 git init
-# use ssh
+# 添加一个叫 origin 的源
+# 使用 ssh 地址
 git remote add origin git@github.com:username/reponame.git
-# use username/password
+# 使用 username/password 登录 https 地址
 git remote add origin https://username@password:github.com/username/reponame.git
 ```
 
 **更新项目**
 
 ```bash
+# 记录所有新增和删除的文件
 git add -A
+# 提交内容
 git commit -m "message"
+# 推送到服务器端
 git push origin master
 ```
 
