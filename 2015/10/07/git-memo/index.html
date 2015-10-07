@@ -20,13 +20,17 @@ git remote add origin git@github.com:username/reponame.git
 # 使用 username/password 登录 https 地址
 git remote add origin https://username@password:github.com/username/reponame.git
 </code></pre>
-<p><strong>更新项目</strong></p>
+<p><strong>推送到服务器</strong></p>
 <pre><code class="bash"># 记录所有新增和删除的文件
 git add -A
 # 更新理由
 git commit -m &quot;message&quot;
 # 推送到服务器端
 git push origin master
+</code></pre>
+<p><strong>更新到本地</strong></p>
+<pre><code class="bash"># 源 + 分支名
+git pull origin master
 </code></pre>
 <p><strong>克隆项目</strong></p>
 <p>下载代码时有用:</p>
