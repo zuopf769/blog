@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[寂寞在唱歌]]></title>
+  <subtitle><![CDATA[A artist in his fields]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="https://egoist.github.io/"/>
+  <updated>2015-10-08T02:38:05.000Z</updated>
+  <id>https://egoist.github.io/</id>
+  
+  <author>
+    <name><![CDATA[EGOIST]]></name>
+    <email><![CDATA[kinpika@outlook.com]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Git 备忘录]]></title>
+    <link href="https://egoist.github.io/2015/10/07/git-memo/"/>
+    <id>https://egoist.github.io/2015/10/07/git-memo/</id>
+    <published>2015-10-07T13:18:54.000Z</published>
+    <updated>2015-10-08T02:38:05.000Z</updated>
+    <content type="html"><![CDATA[<p>Git 的一些常用操作备忘。</p>
+<h2 id="起步">起步</h2><p>安装好 Git 之后，配置你的资料:</p>
+<pre><code class="bash"># 配置用户名
+git config --global user.name &quot;Your Real Name&quot;
+# 配置邮箱地址
+git config --global user.email you@email.address
+</code></pre>
+<p>之后生成 SSH 密钥:</p>
+<pre><code class="bash">ssh-keygen -C &#39;your@email.address&#39; -t rsa
+</code></pre>
+<p><strong>初始化一个项目</strong></p>
+<pre><code class="bash"># 初始化 git 项目
+git init
+# 添加一个叫 origin 的源
+# 使用 ssh 地址
+git remote add origin git@github.com:username/reponame.git
+# 使用 username/password 登录 https 地址
+git remote add origin https://username@password:github.com/username/reponame.git
+</code></pre>
+<p><strong>推送到服务器</strong></p>
+<pre><code class="bash"># 记录所有新增和删除的文件
+git add -A
+# 更新理由
+git commit -m &quot;message&quot;
+# 推送到服务器端
+git push origin master
+</code></pre>
+<p><strong>更新到本地</strong></p>
+<pre><code class="bash"># 源 + 分支名
+git pull origin master
+</code></pre>
+<p><strong>克隆项目</strong></p>
+<p>下载代码时有用:</p>
+<pre><code class="bash"># 克隆到以这个项目名命名的文件夹
+git clone https://github.com/username/reponame.git
+# 克隆到你自定义的文件夹
+git clone https://github.com/username/reponame.git name
+</code></pre>
+<p><em>Keep Updating…</em></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Git 的一些常用操作备忘。</p>
+<h2 id="起步">起步</h2><p>安装好 Git 之后，配置你的资料:</p>
+<pre><code class="bash"># 配置用户名
+git config --global user.name &quot;Your ]]>
+    </summary>
+    
+      <category term="git" scheme="https://egoist.github.io/tags/git/"/>
+    
+      <category term="git" scheme="https://egoist.github.io/categories/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[如何在 Git 中使用撤消操作]]></title>
+    <link href="https://egoist.github.io/2015/10/04/how-to-undo-with-git/"/>
+    <id>https://egoist.github.io/2015/10/04/how-to-undo-with-git/</id>
+    <published>2015-10-04T06:15:59.000Z</published>
+    <updated>2015-10-08T02:38:05.000Z</updated>
+    <content type="html"><![CDATA[<p>版本控制系统的一个好处就是你可以轻易地撤销之前错误的操作。</p>
+<p>当你用 <code>git commit</code> 提交了一个新的更改后 git 会将当时的文件内容暂时保存下来，之后你就可以用 git 随意回滚到任意一个版本。</p>
+<p>这篇文章会介绍一些常见的可能用到撤销 <code>undo</code> 操作的情况。</p>
+<h2 id="撤销一个已发布的更新">撤销一个已发布的更新</h2><p><strong>情景</strong>: 你已经用 <code>git push</code> 将代码提交到了 GitHub，然后你意识到这其中的一个 commit 有错误，于是你想撤销那个 commit。</p>
+<p><strong>操作</strong>: <code>git revert &lt;SHA&gt;</code></p>
+<p><strong>效果</strong>: git 会新建一个新的 commit 来执行提供的 <sha> 对应 commit 的相反的更改，任何在该旧 commit 中删除的内容将会在新 commit 中添加进去，反之亦然。</sha></p>
+<p>这是 git 里最安全的撤消操作的办法，因为这不会影响你的提交历史。于是现在你可以提交新的 commit 去撤销之前错误的操作了。</p>
+<h2 id="修改上次_commit_的提交信息">修改上次 commit 的提交信息</h2><p><strong>情景</strong>: 你在上次 commit 提交信息中打错了一个单词，比如你执行了 <code>git commit -m &quot;fxied bug #42&quot;</code> 然后你意识到应该是 <code>fixed bug #42</code>。</p>
+<p><strong>操作</strong>: <code>git commit --amend</code> 或 <code>git commit --amend -m &quot;Fixes bug #42&quot;</code></p>
+<p><strong>效果</strong>: <code>git commit --amend</code> 结合最新的文件修改情况和上一次提交信息更新并替换上一次提交。没有新的文件更改就直接覆盖上次提交。</p>
+<h2 id="撤销本地修改">撤销本地修改</h2><p><strong>情景</strong>: 你家的喵星人跑到你的键盘上装逼用双爪打字然后不知怎么还点了保存，然后编辑器还崩溃了，你还没有 commit 这只猫做的修改，你想撤销那个文件里被猫修改的内容。</p>
+<p><strong>操作</strong>: <code>git checkout -- &lt;bad filename&gt;</code></p>
+<p><strong>效果</strong>: <code>git checkout</code> 会将该文件的内容恢复到上一次 git commit 的状态。你可以提供一个分支名称或者直接提供要回到的 SHA。</p>
+<p>请记住，这种方法作出的撤销是彻底的，这些内容不会被 commit 所以之后你并不能再用 git 恢复这些内容。</p>
+<h2 id="重置本地修改">重置本地修改</h2><p><strong>情景</strong>: 你在本地 commit 了一些内容（并没有 push），但是你搞错了，你想撤销最近这三个 commit，就像让它们从来不存在那样。</p>
+<p><strong>操作</strong>: <code>git reset &lt;last good SHA&gt;</code> 或 <code>git reset --hard &lt;last good SHA&gt;</code></p>
+<p><strong>效果</strong>: <code>git reset</code> 会让你的 git 历史会退到你指定的 SHA 的状态。这些 commit 不存在了但是你硬盘上的这些文件还是维持在被修改了的状态，这是最安全的做法。但是有时你也想同时撤销硬盘上的修改，这时加上 <code>--hard</code> 就会很有用。</p>
+<h2 id="撤销本地修改之后重做">撤销本地修改之后重做</h2><p><strong>情景</strong>: 你提交了一些 commit，然后执行 <code>git reset --hard</code> 来撤消这些 commit 并清除本地硬盘上的修改。但是最后你意识到你想要回这些 commit！</p>
+<p><strong>操作</strong>: <code>git reflog</code> 和 <code>git reset</code> 或 <code>git checkout</code></p>
+<p><strong>效果</strong>: <code>git reflog</code> 是个修复项目提交历史的好方法。你可以找回几乎所有内容 —— 所有你 commit 过的内容 —— 用 reflog 就行。</p>
+<p>你可能对 <code>git log</code> 很熟悉，这个操作会列出你的 git 提交历史。<code>git reflog</code> 很像它，但是列出的是 <code>HEAD</code> 修改的时间。</p>
+<p>一些说明:</p>
+<ul>
+<li><code>HEAD</code> 修改。在切换分支时 <code>HEAD</code> 会被修改，用 commit 保存修改然后用 reset 撤消修改。但是在你 <code>git checkout -- &lt;bad filename&gt;</code> 时并不会被修改，就像上面说过的那样，这些修改不会被 commit，所以 <code>git reflog</code> 也不能帮你找回这些内容。</li>
+<li><code>git reflog</code> 不是永远有用的。git 会定期清理那些无法追溯的内容。不要期望能用 <code>git reflog</code> 找回一个多月以前的内容。</li>
+<li>你的 <code>git reflog</code> 仅对你有用。你不能用 <code>git reflog</code> 来找回其他人 commit 的修改。</li>
+</ul>
+<p><img src="https://cloud.githubusercontent.com/assets/2077/6953866/f6b9f054-d891-11e4-8c53-838eff9f40ae.png" alt="reflog"></p>
+<p>然后…接下来怎么做才能撤销之前的撤销？这取决你到你要干什么:</p>
+<ul>
+<li>如果你想回到一个特定的时间，用 <code>git reset --hard &lt;SHA&gt;</code>。</li>
+<li>如果你想在不修改提交历史的情况下找回那些文件并作为新文件保存，用 <code>git checkout &lt;SHA&gt; -- &lt;filename&gt;</code>。</li>
+<li>如果你想使其中一个 commit 回到你的项目历史中，用 <code>git cherry-pick &lt;SHA&gt;</code>。</li>
+</ul>
+<h2 id="提交到了另一个分支">提交到了另一个分支</h2><p><strong>情景</strong>: 你提交了一些 commits，然后意识到你当前是在 master 分支上，而你其实是想提交到一个 <code>feature</code> 分支上。</p>
+<p><strong>操作</strong>: <code>git branch feature</code>, <code>git reset --hard origin/master</code>, 和 <code>git checkout feature</code></p>
+<p><strong>效果</strong>: 你可能常常使用 <code>git checkout -b &lt;name&gt;</code> 操作来检出一个新分支，这是一个很方便的创建新分支的操作，但是你并不想同时切换到那个分支上。现在使用 <code>git branch feature</code> 既可以创建一个 <code>feature</code> 新分支并且不会切换到那个分支，同时该分支会指向你当前分支最新的一个 commit。</p>
+<p>下一步，用 <code>git reset --hard</code> 去恢复 <code>master</code> 分支到 <code>origin/master</code> 的状态。</p>
+<p>最后，<code>git checkout</code> 到你的 <code>feature</code> 分支，你能看到所有的更改。</p>
+<h2 id="覆盖整个分支">覆盖整个分支</h2><p><strong>情景</strong>: 你基于 <code>master</code> 分支创建了 <code>feature</code> 分支，但是 <code>master</code> 分支远远落后 <code>origin/master</code> 的更改。现在 <code>master</code> 分支和 <code>origin/master</code> 同步了，你想马上同步到 <code>feature</code> 分支，还不是再次远远落后。</p>
+<p><strong>操作</strong>: <code>git checkout feature</code> 和 <code>git rebase master</code></p>
+<p><strong>效果</strong>: 你可能知道用 <code>git reset</code> 然后重新 commit 来达到类似效果，不过那样会丢失 commit 历史。</p>
+<hr>
+<p>本文乃原文常用部分译文: <a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git" target="_blank" rel="external">How to undo (almost) anything with Git</a> —— 作者: <a href="https://github.com/jaw6" target="_blank" rel="external">jaw6</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>版本控制系统的一个好处就是你可以轻易地撤销之前错误的操作。</p>
+<p>当你用 <code>git commit</code> 提交了一个新的更改后 git 会将当时的文件内容暂时保存下来，之后你就可以用 git 随意回滚到任意一个版本。</p>
+<p>这篇文章会介绍一些]]>
+    </summary>
+    
+      <category term="git" scheme="https://egoist.github.io/tags/git/"/>
+    
+      <category term="udo" scheme="https://egoist.github.io/tags/udo/"/>
+    
+      <category term="git" scheme="https://egoist.github.io/categories/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[二〇一五年七月新番回顾]]></title>
+    <link href="https://egoist.github.io/2015/10/01/2015-7-animes-review/"/>
+    <id>https://egoist.github.io/2015/10/01/2015-7-animes-review/</id>
+    <published>2015-10-01T14:46:01.000Z</published>
+    <updated>2015-10-08T02:38:05.000Z</updated>
+    <content type="html"><![CDATA[<p>国庆第一天就要结束了，也就是说今年七月新番也变旧番了。周末没更新的日子挺难熬，写篇回顾打发时间。</p>
+<p>本季刚开始最吸引我的竟然是<strong>「没有黄段子存在的无聊世界」</strong>，在七月之前的新番介绍里我大概直接忽略了这部动漫，我心想是无聊搞笑番就无视了，哪只虽然的确很搞笑，不过非常能够刷新我节操的下限，为我打开了新世界的大门，于是它成为我每周必追。不管是教主的笑声，还是安娜前辈的妹汁都让我对每一集充满期待。</p>
+<p>再来说<strong>「出包女王」</strong>和<strong>「我老婆是学生会长」</strong>，无疑这也是我每周必追，原因显而易见，无修版是上天赐予我的礼物。</p>
+<p>上一季没播完的<strong>「食戟之灵」</strong>我是属于萌女主的类型，这类黑长傲娇属性冷的类型对我的伤害太大，欲罢不能。</p>
+<p>看<strong>「干物妹小埋」</strong>小埋完全是因为看到很多人的好评，本来对这种废萌日常提不起劲的但看过一两集之后我就也买了薯片可乐两三天全部补完了。现在的每周星期四晚上变成了我的小埋夜，从未感到薯片加可乐如此地诱人，确定这部番不是乐事宣传片吗 XD</p>
+<p><strong>「魔法少女伊莉雅」</strong>和<strong>「赤发白雪姬」</strong>前几集挺有意思，后面看着看着追不下去了。</p>
+<p><strong>「监狱学园」</strong>没什么萌点啊，但是花学姐的保健室play 真的让我精尽人亡，这部番没了如此有魅力的花学姐简直不敢想象！为了花学姐的福利漫画动画都追了。</p>
+<p><strong>「龙珠超」</strong>也是我很期待的，毕竟龙珠全系列我都非常喜欢，开头是类似神与神的内容，到后面应该会有更精彩的展开。</p>
+<p>对于大魔王的<strong>「夏洛特」</strong>自然也是吐槽之声遍地，总而言之就是太多的龙套和神跳跃的剧情让我攒了很多想寄刀片的欲望。结局也是无力吐槽，虽然对于男主算是 Happy End 可是也算太勉强的结局了。前期日常后期屌丝逆转拯救世界的片子可以数得出来都是烂片，我并不是在说<strong>「罪恶王冠」</strong>，因为它并没有太多龙套剧情、消失的人物和奇怪的剧情发展，再说配乐上罪恶王冠就够你重播一百遍了。于是夏洛特无疑成为又一部观众愿意看的烂片。</p>
+<p>最后终于到该说本季女神了！教主虽好可我其实喜欢三无类型的女主，于是<strong>「六花的勇者」</strong>里的芙蕾米毫无疑问继上季<strong>「在地下城寻求邂逅是否搞错了什么」</strong>中的剑姬成为我的新任女神。魅力源自抹胸上衣一点没错。</p>
+<hr>
+<p>以上就是七月新番回顾，对于十月新番目前没什么感兴趣的，除了<strong>「一拳超人」</strong>和<strong>「终结的炽天使」</strong>后半部外。遥想去年十月新番<strong>「寄生兽」</strong>和<strong>「东京食尸鬼」</strong>真是把我的十月炸开了锅，今年还会有如此良辰的十月吗？</p>
+<p>不会有吧，大概。</p>
+<hr>
+<p>最后是一个本季我的追番列表：</p>
+<ul>
+<li>学园孤岛 ★★★</li>
+<li>食戟之灵 ★★★★</li>
+<li>监狱学园 ★★★★</li>
+<li>魔法少女伊莉雅 ★★☆</li>
+<li>夏洛特 ★★★★</li>
+<li>黄段子不存在的无聊世界 ★★★★☆</li>
+<li>六花的勇者 ★★★★</li>
+<li>龙珠超 ★★★☆</li>
+<li>出包女王 ★★★★</li>
+<li>赤发白雪姬 ★★★</li>
+<li>我老婆是学生会长 ★★★★</li>
+<li>干物妹小埋 ★★★★</li>
+<li>黑街 ★★★</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>国庆第一天就要结束了，也就是说今年七月新番也变旧番了。周末没更新的日子挺难熬，写篇回顾打发时间。</p>
+<p>本季刚开始最吸引我的竟然是<strong>「没有黄段子存在的无聊世界」</strong>，在七月之前的新番介绍里我大概直接忽略了这部动漫，我心想是无聊搞笑番就无视]]>
+    </summary>
+    
+      <category term="anime" scheme="https://egoist.github.io/tags/anime/"/>
+    
+      <category term="anime" scheme="https://egoist.github.io/categories/anime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[一个简单的 localStorage 扩展实现]]></title>
+    <link href="https://egoist.github.io/2015/09/30/a-light-weight-localstorage-orm/"/>
+    <id>https://egoist.github.io/2015/09/30/a-light-weight-localstorage-orm/</id>
+    <published>2015-09-30T04:56:03.000Z</published>
+    <updated>2015-10-08T02:38:05.000Z</updated>
+    <content type="html"><![CDATA[<p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所以建立了这个库。</p>
+<p>你可以简单地预览一下：</p>
+<pre><code class="javascript">// localdb 会自动为新插入的 collcetion 生成 `_id`、`index` 和 `createdAt` 
+// 以及 `updatedAt`
+// `_id` 是类似 MongoDB 的 objectId
+var User = new localdb(&#39;User&#39;, &#39;Array&#39;, true)
+
+var users = [{
+  username: &#39;kevin&#39;,
+  age: 16
+}, {
+  username: &#39;joe&#39;,
+  age: 19
+}, {
+  username: &#39;zchan&#39;,
+  age: 12
+}]
+
+var opts = {
+  sort: 1,
+  sortBy: &#39;age&#39;
+}
+var users_fetched = User.override(users, true).find(null, opts)
+
+console.log(JSON.stringify(users_fetched, null, 2))
+</code></pre>
+<p>这样就能按照 <code>age</code> 递增输出这样的结果:</p>
+<pre><code class="json">[
+  {
+    &quot;username&quot;: &quot;zchan&quot;,
+    &quot;age&quot;: 12,
+    &quot;index&quot;: 2,
+    &quot;_id&quot;: &quot;560b780cfac748a940e57438&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  },
+  {
+    &quot;username&quot;: &quot;kevin&quot;,
+    &quot;age&quot;: 16,
+    &quot;index&quot;: 0,
+    &quot;_id&quot;: &quot;560b780ca4833a2e978efcb2&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  },
+  {
+    &quot;username&quot;: &quot;joe&quot;,
+    &quot;age&quot;: 19,
+    &quot;index&quot;: 1,
+    &quot;_id&quot;: &quot;560b780c1d6c1f81ca7bf2e9&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  }
+]
+</code></pre>
+<p>如果你想查询 <code>username</code> 为 <code>zchan</code> 的用户:</p>
+<pre><code class="javascript">var query = {
+  username: &#39;zchan&#39;
+}
+
+var zchan = User.findOne(query)
+
+console.log(JSON.stringify(zchan, null, 2))
+</code></pre>
+<p>这样就查询并返回了一个对象:</p>
+<pre><code class="json">{
+  &quot;username&quot;: &quot;zchan&quot;,
+  &quot;age&quot;: 12,
+  &quot;index&quot;: 2,
+  &quot;_id&quot;: &quot;560b780cfac748a940e57438&quot;,
+  &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+  &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+}
+</code></pre>
+<p><code>.find</code> 和 <code>.findOne</code> 类似不过不限制数量且可以进行排序、分页查询等操作。</p>
+<p>甚至支持了 MongoDB 的 <code>populate</code> 特性，不过暂时只能查询一层嵌套:</p>
+<pre><code class="javascript">// populate another class, eg: your Post have a Author field
+const Post = new localdb(&#39;Post&#39;, &#39;Array&#39;)
+const User = new localdb(&#39;User&#39;, &#39;Array&#39;)
+
+// you should have the Author&#39;s objectId to create an instance of that class
+const author = User.extend(&#39;some_object_id&#39;)
+
+Post.add({
+  title: &#39;mt post title&#39;,
+  author: author
+})
+
+// then you can populate that field before .find or .findOne
+Post.populate(&#39;author&#39;).findOne()
+</code></pre>
+<hr>
+<p>更详细的使用可以参考这个用 Vue 和 LocalDB <a href="http://output.jsbin.com/titeve" target="_blank" rel="external">TodoMVC</a> 演示和 <a href="https://egoist.github.io/localdb/">API</a>。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所]]>
+    </summary>
+    
+      <category term="localStorage" scheme="https://egoist.github.io/tags/localStorage/"/>
+    
+      <category term="JavaScript" scheme="https://egoist.github.io/categories/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="https://egoist.github.io/2015/09/23/Hello-World/"/>
+    <id>https://egoist.github.io/2015/09/23/Hello-World/</id>
+    <published>2015-09-22T17:09:15.000Z</published>
+    <updated>2015-10-08T02:38:05.000Z</updated>
+    <content type="html"><![CDATA[<p>As you can see, yet another Hello World post is written by me, I cannot even remember how much time I’ve spent in writing such silly posts.</p>
+<p>Another bad habit I had is I keep doing “Hello World” stuffs, that means I am afriad of those hard challenges. I’m pretending that I was busy by doing easy things, I can never be able to face the real me myself until I can make up my mind to skip those “do-it-happily” stuffs. No pains no gain is so easy to read, and so hard to perform.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>As you can see, yet another Hello World post is written by me, I cannot even remember how much time I’ve spent in writing such silly post]]>
+    </summary>
+    
+      <category term="start" scheme="https://egoist.github.io/tags/start/"/>
+    
+      <category term="Diary" scheme="https://egoist.github.io/categories/Diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[为什么动漫如此吸引我？]]></title>
+    <link href="https://egoist.github.io/2015/07/10/why-so-addicted-into-anime/"/>
+    <id>https://egoist.github.io/2015/07/10/why-so-addicted-into-anime/</id>
+    <published>2015-07-10T01:08:51.000Z</published>
+    <updated>2015-10-08T02:38:05.000Z</updated>
+    <content type="html"><![CDATA[<p>我想我第一部认真看的动漫应该是神奇宝贝，此外还有龙珠Z。但在那个时候，我其实不知道动漫到底是什么。我只是觉得这是日本卡通片而已，我并不知道大洋彼岸的岛国对动漫如此推崇，那里的动漫真是数以千计，各种脑残粉打扮得像动漫里的角色，当然那时我也并没体会到 hentai 的真正含义。</p>
+<p>大概是从看浪客剑心开始我慢慢明白了动漫究竟是什么，我也开始学画漫画，我和我的小伙伴画了一部属于我们的漫画。这件事是真的很有趣，那个时候我大概 14 岁，我记得我是从网上找动漫资料学习画画，然后就被如此之多的动漫惊艳到了。</p>
+<p>现在已经过了好几年了，我已经 24 岁，我那参军的兄弟依然亘古不变地从遥远的军营向我推荐动漫来看。我其实已经好几个月没碰动漫了，但现在我满血复活。不管我多少次停止看动漫这件事，我最终还是又开始看了，<strong>为什么？我他妈到底怎么了？老大不小了看个屁的动漫啊？是不是该打住别去看那些半裸萌娘巨乳萝莉撕高达的东西了？动漫到底哪吸引你了？</strong></p>
+<p>其实吧，我觉得原因也很简单。</p>
+<p><strong>第一，动漫的色彩效果真是很炫酷</strong> 在动漫里有各种色彩搭配，亮色、鲜艳色、吸引眼球的颜色，甚至你可能并不知道鲜艳的颜色对保持健康略有裨益！就是说，丰富的颜色能让你心情变好。所以，看动漫从科学角度来说是对身体有好处的（这真的是我说的吗 233</p>
+<p><strong>另一个原因就是，我觉得，啊，对，萌妹子</strong> 动漫里的女生都超可爱的是吧，娇小的外形、大大的眼睛、黑长直，卡哇伊卡哇伊卡哇伊 &gt;3&lt; 搞怪的妹子、萌系妹子、剑姬、肉魅以及我的我的最爱，“猫娘”。她们不只可爱还超性感，这是每个boy无法抵挡的。</p>
+<p><strong>但是！真正让我放不下动漫的原因是，里面的故事</strong> 我看过的动漫各式各样的题材都有，情节各异。里面有些情节阐述的观念和想法是你闻所未闻、耳目一新的，比如说死亡笔记，一个男孩发现了一本日记然后发现自己能靠在日记上写上一个人的名字来杀死他。再比如CODE GEASS，讲的是几个拥有超自然能力的人进行的机甲战争，这些能力比如说读心术和强制控制他人行为。再比如黑之契约者，讲的是某个角色能靠割手腕然后把流出来的血洒在别人身上来杀人。</p>
+<p>这些想法一个接着一个翻新，你永远想不到的想法就会出现在一部动漫中。我不知道是怎么回事，也许是美国人不善创新？所有故事都大同小异，乏味的故事靠着新的演员来骗钱，但是在日本，我去！你看了一集你就被吸引了，有些东西有人永远不会明白，除非他看了动漫。</p>
+<p>最后作为一个作家，很感谢动漫带给我的灵感 :D</p>
+<hr>
+<p>总感觉我翻译得怪怪的，还是去看原文吧:</p>
+<p>Just a Transilation from <a href="https://medium.com/@dwarsement/why-anime-is-so-addicting-fcf6ef36b7c" target="_blank" rel="external">WHY ANIME IS SO ADDICTING</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>我想我第一部认真看的动漫应该是神奇宝贝，此外还有龙珠Z。但在那个时候，我其实不知道动漫到底是什么。我只是觉得这是日本卡通片而已，我并不知道大洋彼岸的岛国对动漫如此推崇，那里的动漫真是数以千计，各种脑残粉打扮得像动漫里的角色，当然那时我也并没体会到 hentai 的真正含义。]]>
+    </summary>
+    
+      <category term="anime" scheme="https://egoist.github.io/tags/anime/"/>
+    
+      <category term="Anime" scheme="https://egoist.github.io/categories/Anime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[一切漫长的]]></title>
+    <link href="https://egoist.github.io/2015/06/12/all-things-last-long/"/>
+    <id>https://egoist.github.io/2015/06/12/all-things-last-long/</id>
+    <published>2015-06-12T08:24:51.000Z</published>
+    <updated>2015-10-08T02:38:05.000Z</updated>
+    <content type="html"><![CDATA[<p>一切漫长的，终将分开来，脱离母体，彼此隔离，而过程，却是缓慢而重复。</p>
+<p>我第一次感到漫长，是在一个斜坡上，自上而下的滑行让我和时间同步，那是我和童年伙伴们的漫长时光，在一起旱冰的乐趣，似乎就像那些年夏天的骄阳一般，不可磨灭，似乎会一直，一直进行下去。</p>
+<p>第二次的漫长，说来也就不怎么光彩，那是课桌下的漫长。在旱冰之后的一段日子里，我的胆子没得到什么锻炼，躲在课桌下不去参加体检虽然不是件漫长的事情，但是憋尿是每个人都万万不能擅长的事情。最终我没忍住，被老师和在高年级的我姐姐带回了家接受训斥，憋尿门也成了日后我被我姐取笑的笑点之一。</p>
+<p>第三次漫长，是我稍大一些时候的了，小学五年级。几位电视台的姐姐来学校找为她们报道运动会的小记者，于是有一场每个人都可以去参加的面试会。而我也去了。</p>
+<p>也许我小时候是个自以为很有心机的小朋友，我在观察我前面每个同学的面试情况，而我现在知道，我只是单纯地以为只有我会这样做。</p>
+<p>我前面的那个同学，也是我小学最好的朋友，他的面试让我学到了我自以为最受用的一句话，“小朋友，以后说话的时候要看着别人的眼睛哦~”。于是我，似乎在强调自己有一对“大大咧咧”的眼睛一样，轮到我了，我就这样看着电视台的姐姐。姐姐似乎知道些什么，尽管我没通过，还是给了我一次机会，让我写一篇运动会报道给她看看。我第一次感受到真诚给我带来的回报。而至于所谓的漫长，不过是我看见姐姐的眼里有我的时候，时间静止的温柔罢了。</p>
+<p>漫长的还有很多，人生的这三段也许不是最值得回味的，而是首先想起来的。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一切漫长的，终将分开来，脱离母体，彼此隔离，而过程，却是缓慢而重复。</p>
+<p>我第一次感到漫长，是在一个斜坡上，自上而下的滑行让我和时间同步，那是我和童年伙伴们的漫长时光，在一起旱冰的乐趣，似乎就像那些年夏天的骄阳一般，不可磨灭，似乎会一直，一直进行下去。</p>
+<]]>
+    </summary>
+    
+      <category term="Diary" scheme="https://egoist.github.io/categories/Diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[动漫与成见]]></title>
+    <link href="https://egoist.github.io/2015/03/25/good-and-bad-anime/"/>
+    <id>https://egoist.github.io/2015/03/25/good-and-bad-anime/</id>
+    <published>2015-03-25T01:04:00.000Z</published>
+    <updated>2015-10-08T02:38:05.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>你知道动漫吗？也许你知道的动漫在你眼中代表着“幼稚”、“脱离现实”的东西，很可惜，你在以偏概全，或者你在用老一套的成见来看待自己不了解的世界。<br>觉得动漫是脱离现实的人也许忘了这和画画，和你听音乐，和你吃饭没什么不同，来源于生活进而表达生活，只是你的眼光太过狭隘。<br>撇开拉低智商的中国动漫不看，种类繁杂的日本动漫不管你是什么水平什么阶层什么年龄都能满足。<br>而有的人看了一部“喜羊羊与灰太狼”就叫苦不迭，誓死与动漫绝缘了。对此，我什么都不会说，只是摇头。</p>
+</blockquote>
+<p>现在我这个年龄阶段的中国人基本是看动漫长大的，而比我更小的接触动漫还更多。小学四年级在我的学校就掀起了动漫热潮，那时候最火的的是四驱兄弟和火影忍者，我小学有三年都是报了学校航模兴趣班，原因就是老师会教组装四驱车，我从这些课上了解了马达、四驱和电池等等在那个时候对我来说堪称神奇的东西，小学前三年我在书法班度过，后三年在航模班。当然，后三年也是属于火影的，那个时候我们学校大门外就是卖各种火影周边的小商贩，而我们能承受的就是贴纸了，于是每每有休息时间大门那就会围上一群人，从铁栏里传递着各种另我羡慕的东西。而我的各种书的封面也被我贴上了这些琳琅满目的珍品。</p>
+<p>动漫无意是我小时候珍贵的回忆之一。</p>
+<p>而到了我现在这个年龄，中国大学生看动漫这件事似乎是被认为不成熟和“活在虚拟世界”以及“脱离现实”的。的确，中国的动漫不太适合学龄儿童观看，比如喜洋洋和灰太狼就完全可以加上一个降低中国儿童平均智商的罪名，而很多日本动漫的水平完全凌驾于这些批评者的智商之上，所以这再次印证了那句——“井底之蛙的批评者是活在精神世界最底层的人”。</p>
+<p>很多人认为现实就是每天的日常生活。还有很多人认为看电影也算是活在虚拟世界，成天挂在嘴上的就是那句“你以为是电影啊……”，这些人活得太累，把现实看得太现实，我所知道的美国片确实和这些人想得差不多，“活在虚拟世界”，而有些欧洲片片中的女演员的一段床戏脱衣服居然可以脱得那么自然，自上而下脸上泛着红晕这感觉却又如此奔放，完全不会像美国片那样矫揉造作般的演技，这种比生活还生活的东西，你只能在电影中看到。</p>
+<p>大多数人都是想和主流社会的想法趋于一致的，他们其实没有明辨是非的能力。比如对待同性恋，二战时期对待同性恋就是“烧死他们！烧死他们！”，在那个时候这句口号如同真理。而现在似乎社会恍然大悟般，虽然明着维护同性恋的权利，但是街上的路人们大多还是在偷着议论。一个社会的价值观都能发生如此大的转变可想这个社会到底有什么是对的什么是错的。电影「后会无期」里有句至理名言——小孩才看对错，成年人只看利弊。意思大概就是如果你不想装傻就给我认了吧，你只能这样。而有些人选择了装傻，他们就是王小波笔下的“沉默的大多数”中的一部分。他们被认为是弱势群体，因为他们不说话，谁知道他们已是另一个境界的人。</p>
+<p>扯远了，再说说动漫。对于电影人们要求的是剧情和演技，而对于动漫自然也有剧情，不过演技则换成了画风和声优。画风自不必多说，个人见解不同，不过声优们绝对是公认的神一般的存在。在电影中你也看到过声嘶力竭，泪眼朦胧，不过绝对不会比声优们体现得更淋漓尽致。电影也有声优不过配音往往都是要按着演员的情绪状态来调整的，而动漫中的人物表情无疑比电影中看到的更夸张更解放天性，因此这样的配音也更为接近自然。而更大一部分则是日本声优的功劳，我昨天还分别看过一部动漫的国语版和日语版，国语配音显得极其平淡，而日语则抑扬顿挫感情充沛。</p>
+<p>最后还是要告诉那些对动漫有成见的人，你看待一件事物是怎么的取决于你看到的是它的哪个部分，比如有人看 A 片纯粹为了手淫，而有些人则是为了学习经验来改善夫妻性生活质量，这个世界上除了科学没有对或错，有的只是固守的执念和狭隘的心胸。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>你知道动漫吗？也许你知道的动漫在你眼中代表着“幼稚”、“脱离现实”的东西，很可惜，你在以偏概全，或者你在用老一套的成见来看待自己不了解的世界。<br>觉得动漫是脱离现实的人也许忘了这和画画，和你听音乐，和你吃饭没什么不同，来源于生活进而表达生活，只]]>
+    </summary>
+    
+      <category term="Anime" scheme="https://egoist.github.io/categories/Anime/"/>
+    
+  </entry>
+  
+</feed>
