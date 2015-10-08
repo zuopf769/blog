@@ -6,7 +6,7 @@
     "version": "3.1.1"
   },
   "scripts": {
-    "deploy": "hexo g && hexo d"
+    "deploy": "./.deploy"
   },
   "dependencies": {
     "hexo": "^3.1.0",
