@@ -4,14 +4,15 @@
 
 	highlight()
 	replaceCount()
-	
+	osNotify()
+
 	function highlight () {
 		var codes = $$('code')
 		Array.prototype.forEach.call(codes, function (code) {
 
 			var lang = code.className || 'html'
-			code.className = 'language-' + lang 
-			
+			code.className = 'language-' + lang
+
 		})
 		Prism.highlightAll()
 	}
@@ -24,5 +25,11 @@
 
 	function countWords (string) {
 		return string.match(/[\u00ff-\uffff]|\S+/g).length
+	}
+
+	function osNotify () {
+		if (navigator && navigator.platform == 'Win32') {
+			$('.post-os').style.display = 'block'
+		}
 	}
 })();

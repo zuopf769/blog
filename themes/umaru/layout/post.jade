@@ -11,6 +11,8 @@ mixin post(post)
         span.post-meta-sep -
         span.post-count-words null
         |  words
+    .post-os. 
+      不建议使用 Windows 浏览本站，推荐用 OSX 和移动端网页访问。
     .post-content.markdown-body !{post.content}
     if post.layout === 'post'
       .post-ccby 
@@ -30,4 +32,4 @@ block page
 
 block append scripts
   script(src="/js/prism.js" data-manual)
-  script(src="/js/app.js?v=1237241")
+  script(src="/js/app.js?v=12765241")
