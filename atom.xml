@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://egoist.github.io/"/>
-  <updated>2015-10-08T02:38:05.000Z</updated>
+  <updated>2015-10-13T03:51:51.000Z</updated>
   <id>https://egoist.github.io/</id>
   
   <author>
@@ -13,6 +13,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[2015-10-anime-recommendations]]></title>
+    <link href="https://egoist.github.io/2015/10/13/2015-10-anime-recommendations/"/>
+    <id>https://egoist.github.io/2015/10/13/2015-10-anime-recommendations/</id>
+    <published>2015-10-13T03:29:50.000Z</published>
+    <updated>2015-10-13T03:51:51.000Z</updated>
+    <content type="html"><![CDATA[<p>又到了 EGOIST 带你看新番环节了，今年的十月新番还是有几部符合我的口味，我将从周一到周日推荐一些我在追的番。</p>
+<h2 id="周一">周一</h2><p>只推荐一部，「一拳超人」。我没看过漫画，不过一拳男挺逗比的，看够了卖肉卖萌也看看一拳男装逼吧。</p>
+<h2 id="周二">周二</h2><p>无聊的日子，没有推荐。</p>
+<h2 id="周三">周三</h2><p>毫无疑问有「关于我被绑架到贵族女校当庶民样本的事」，别理我，看图。</p>
+<p><img src="https://ooo.0o0.ooo/2015/10/12/561c7d0bceeb6.png" alt="anime"></p>
+<h2 id="周四">周四</h2><p>仍然无聊。</p>
+<h2 id="周五">周五</h2><p>漫画之神手冢治虫的作品「青年黑杰克」，医学番我看得少，这部的配乐和剧情都很有那个时代的感觉。</p>
+<h2 id="周六">周六</h2><p>「新妹魔王的契约者 BURST」我看了第一期，看得我都石更了，所以继续追。</p>
+<p>「重装武器」当然是萌女主，略三无的萝莉。</p>
+<p>「落第骑士英雄谭」我是妹控，喜欢妹纸主动献身。</p>
+<h2 id="周日">周日</h2><p>「传颂之物 虚伪的假面」的前作我并没有看，稍微看了看画风感觉不适合我。不过我喜欢这期的猫耳娘。</p>
+<p>「终结的炽天使 第2期」，人物很有趣，尽管作画和剧情被吐槽得严重，不过人设还是很经典的，好吧其实我只是喜欢克鲁鲁女王 233。</p>
+<p>「进击！巨人中学」真是萌哭我了，而且还有我的初代女神米卡莎。</p>
+<hr>
+<p>特别附送「女武神驱动」，没有圣光的肉番你值得拥有。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>又到了 EGOIST 带你看新番环节了，今年的十月新番还是有几部符合我的口味，我将从周一到周日推荐一些我在追的番。</p>
+<h2 id="周一">周一</h2><p>只推荐一部，「一拳超人」。我没看过漫画，不过一拳男挺逗比的，看够了卖肉卖萌也看看一拳男装逼吧。</p>
+<]]>
+    </summary>
+    
+      <category term="anime" scheme="https://egoist.github.io/tags/anime/"/>
+    
+      <category term="anime" scheme="https://egoist.github.io/categories/anime/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Git 备忘录]]></title>
@@ -78,7 +112,7 @@ git config --global user.name &quot;Your ]]>
     <link href="https://egoist.github.io/2015/10/04/how-to-undo-with-git/"/>
     <id>https://egoist.github.io/2015/10/04/how-to-undo-with-git/</id>
     <published>2015-10-04T06:15:59.000Z</published>
-    <updated>2015-10-08T02:38:05.000Z</updated>
+    <updated>2015-10-12T03:18:35.000Z</updated>
     <content type="html"><![CDATA[<p>版本控制系统的一个好处就是你可以轻易地撤销之前错误的操作。</p>
 <p>当你用 <code>git commit</code> 提交了一个新的更改后 git 会将当时的文件内容暂时保存下来，之后你就可以用 git 随意回滚到任意一个版本。</p>
 <p>这篇文章会介绍一些常见的可能用到撤销 <code>undo</code> 操作的情况。</p>
