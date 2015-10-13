@@ -1,4 +1,4 @@
-title: 2015-10-anime-recommendations
+title: 二〇一五年十月新番推荐
 date: 2015-10-13 11:29:50
 tags:
 - anime
