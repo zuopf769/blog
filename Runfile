@@ -1,0 +1,8 @@
+task.add('deploy', () => {
+  var message = argv._[1] || 'update'
+  exec('git add -A')
+  exec(`git commit -m "${message}"`)
+  exec('git push origin master')
+  exec('hexo gm')
+  exec('hexo d')
+})
