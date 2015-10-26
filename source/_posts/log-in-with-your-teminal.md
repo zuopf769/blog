@@ -11,8 +11,6 @@ categories:
 
 很显然，也只能通过打开授权网页的方式获取需要的 access token 来进行操作。
 
-我这里以 GitHub 为例演示在命令行里使用第三方登录功能。
-
 ## 新建一个应用
 
 常规步骤，稍后会用在这里获得的 `Client ID` 和 `Client Secret` 进行授权验证。
