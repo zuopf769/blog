@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 !function(){function t(){var t=a("code");Array.prototype.forEach.call(t,function(t){var n=t.className||"html";t.className="language-"+n}),Prism.highlightAll()}function n(){var t=c(".post-content").textContent,n=o(t);c(".post-count-words").innerHTML=n}function o(t){return t.match(/[\u00ff-\uffff]|\S+/g).length}function e(){navigator&&"Win32"==navigator.platform&&(c(".post-os").style.display="block")}var c=document.querySelector.bind(document),a=document.querySelectorAll.bind(document);t(),n(),e()}();
+=======
+!function(){function t(){var t=a("code");Array.prototype.forEach.call(t,function(t){var n=t.className||"html";t.className="language-"+n}),Prism.highlightAll()}function n(){if(e(".post-content")){var t=e(".post-content").textContent,n=o(t);e(".post-count-words").innerHTML=n}}function o(t){return t.match(/[\u00ff-\uffff]|\S+/g).length}function c(){navigator&&"Win32"==navigator.platform&&(e(".post-os").style.display="block")}var e=document.querySelector.bind(document),a=document.querySelectorAll.bind(document);t(),n(),c(),pjax.connect({container:"pjax",complete:function(){t(),n(),c()}})}();
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4

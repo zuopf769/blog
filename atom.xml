@@ -4,7 +4,11 @@
   <subtitle><![CDATA[A artist in his fields]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://egoist.github.io/"/>
+<<<<<<< HEAD
   <updated>2015-10-26T12:57:30.428Z</updated>
+=======
+  <updated>2015-10-26T10:16:27.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
   <id>https://egoist.github.io/</id>
   
   <author>
@@ -19,13 +23,21 @@
     <link href="https://egoist.github.io/2015/10/26/log-in-with-your-teminal/"/>
     <id>https://egoist.github.io/2015/10/26/log-in-with-your-teminal/</id>
     <published>2015-10-26T09:44:52.000Z</published>
+<<<<<<< HEAD
     <updated>2015-10-26T12:57:30.428Z</updated>
+=======
+    <updated>2015-10-26T10:16:27.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>显然你经常在网页和 APP 里使用第三方登录功能，比如用微博登录、用 QQ 登录、用 GitHub 登录，具体的方式是打开相关网页进行授权或者移动端可以利用应用内授权机制授权，那么在终端里如何操作第三方账号登录呢？</p>
 <p>很显然，也只能通过打开授权网页的方式获取需要的 access token 来进行操作。</p>
 <h2 id="新建一个应用">新建一个应用</h2><p>常规步骤，稍后会用在这里获得的 <code>Client ID</code> 和 <code>Client Secret</code> 进行授权验证。</p>
 <h2 id="思路">思路</h2><p>这些操作需要你将 API 搭建在自己的服务器上并且拥有数据库读写功能。</p>
+<<<<<<< HEAD
 <p>你需要用户触发登录操作之后以 GET 的方式打开一个授权网页，比如 <code>/api/login</code>，在 URL Query string 中传输一个随机生成的用户 Unique ID，形如 <code>/api/login?id=$ID</code>，你可以使用 <a href="https://www.npmjs.org/package/open" target="_blank" rel="external">open</a> 这个库打开网址。</p>
 <p>授权成功之后获得的 access token 和 UID 保存到数据库，在之前打开授权页面的同时 POST 请求 <code>/api/token</code>，在 body 中传递 UID 参数，设置一个较高的 timeout 让网页不会返回超时。</p>
+=======
+<p>你需要用户触发登录操作之后以 POST 的方式打开一个授权网页，比如 <code>/api/login</code>，请求时在 body 中传输一个随机生成的用户 Unique ID，授权成功之后获得的 access token 和 UID 保存到数据库，在之前打开授权页面的同时 POST 请求 <code>/api/token?uid=$UID</code>，设置一个较高的 timeout 让网页不会返回超时。</p>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
 <p>在授权过程中由于并未获取到 token 所以让 <code>/api/token</code> 返回一个 50X 错误，判断获取到 50X 错误后用 setInterval 持续请求这个地址直到返回 200 代码，这个时候 access token 已经被你写入数据库并在这个页面上以 json 的格式输出了，于是这样你得到了需要的 access token，命令行现在可以打印出登录成功的提示信息了。</p>
 ]]></content>
     <summary type="html">
@@ -44,7 +56,11 @@
     <link href="https://egoist.github.io/2015/10/13/2015-10-anime-recommendations/"/>
     <id>https://egoist.github.io/2015/10/13/2015-10-anime-recommendations/</id>
     <published>2015-10-13T03:29:50.000Z</published>
+<<<<<<< HEAD
     <updated>2015-10-25T13:42:51.251Z</updated>
+=======
+    <updated>2015-10-13T03:53:06.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>又到了 EGOIST 带你看新番环节了，今年的十月新番还是有几部符合我的口味，我将从周一到周日推荐一些我在追的番。</p>
 <h2 id="周一">周一</h2><p>只推荐一部，「一拳超人」。我没看过漫画，不过一拳男挺逗比的，看够了卖肉卖萌也看看一拳男装逼吧。</p>
 <h2 id="周二">周二</h2><p>无聊的日子，没有推荐。</p>
@@ -78,7 +94,11 @@
     <link href="https://egoist.github.io/2015/10/07/git-memo/"/>
     <id>https://egoist.github.io/2015/10/07/git-memo/</id>
     <published>2015-10-07T13:18:54.000Z</published>
+<<<<<<< HEAD
     <updated>2015-10-07T14:19:50.485Z</updated>
+=======
+    <updated>2015-10-08T02:38:05.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>Git 的一些常用操作备忘。</p>
 <h2 id="起步">起步</h2><p>安装好 Git 之后，配置你的资料:</p>
 <pre><code class="bash"># 配置用户名
@@ -137,7 +157,11 @@ git config --global user.name &quot;Your ]]>
     <link href="https://egoist.github.io/2015/10/04/how-to-undo-with-git/"/>
     <id>https://egoist.github.io/2015/10/04/how-to-undo-with-git/</id>
     <published>2015-10-04T06:15:59.000Z</published>
+<<<<<<< HEAD
     <updated>2015-10-04T07:45:37.883Z</updated>
+=======
+    <updated>2015-10-12T03:18:35.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>版本控制系统的一个好处就是你可以轻易地撤销之前错误的操作。</p>
 <p>当你用 <code>git commit</code> 提交了一个新的更改后 git 会将当时的文件内容暂时保存下来，之后你就可以用 git 随意回滚到任意一个版本。</p>
 <p>这篇文章会介绍一些常见的可能用到撤销 <code>undo</code> 操作的情况。</p>
@@ -202,7 +226,11 @@ git config --global user.name &quot;Your ]]>
     <link href="https://egoist.github.io/2015/10/01/2015-7-animes-review/"/>
     <id>https://egoist.github.io/2015/10/01/2015-7-animes-review/</id>
     <published>2015-10-01T14:46:01.000Z</published>
+<<<<<<< HEAD
     <updated>2015-10-04T06:16:53.735Z</updated>
+=======
+    <updated>2015-10-08T02:38:05.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>国庆第一天就要结束了，也就是说今年七月新番也变旧番了。周末没更新的日子挺难熬，写篇回顾打发时间。</p>
 <p>本季刚开始最吸引我的竟然是<strong>「没有黄段子存在的无聊世界」</strong>，在七月之前的新番介绍里我大概直接忽略了这部动漫，我心想是无聊搞笑番就无视了，哪只虽然的确很搞笑，不过非常能够刷新我节操的下限，为我打开了新世界的大门，于是它成为我每周必追。不管是教主的笑声，还是安娜前辈的妹汁都让我对每一集充满期待。</p>
 <p>再来说<strong>「出包女王」</strong>和<strong>「我老婆是学生会长」</strong>，无疑这也是我每周必追，原因显而易见，无修版是上天赐予我的礼物。</p>
@@ -250,7 +278,11 @@ git config --global user.name &quot;Your ]]>
     <link href="https://egoist.github.io/2015/09/30/a-light-weight-localstorage-orm/"/>
     <id>https://egoist.github.io/2015/09/30/a-light-weight-localstorage-orm/</id>
     <published>2015-09-30T04:56:03.000Z</published>
+<<<<<<< HEAD
     <updated>2015-09-30T09:24:02.485Z</updated>
+=======
+    <updated>2015-10-08T02:38:05.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所以建立了这个库。</p>
 <p>你可以简单地预览一下：</p>
 <pre><code class="javascript">// localdb 会自动为新插入的 collcetion 生成 `_id`、`index` 和 `createdAt` 
@@ -359,7 +391,11 @@ Post.populate(&#39;author&#39;).findOne()
     <link href="https://egoist.github.io/2015/09/23/Hello-World/"/>
     <id>https://egoist.github.io/2015/09/23/Hello-World/</id>
     <published>2015-09-22T17:09:15.000Z</published>
+<<<<<<< HEAD
     <updated>2015-09-22T17:18:05.878Z</updated>
+=======
+    <updated>2015-10-08T02:38:05.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>As you can see, yet another Hello World post is written by me, I cannot even remember how much time I’ve spent in writing such silly posts.</p>
 <p>Another bad habit I had is I keep doing “Hello World” stuffs, that means I am afriad of those hard challenges. I’m pretending that I was busy by doing easy things, I can never be able to face the real me myself until I can make up my mind to skip those “do-it-happily” stuffs. No pains no gain is so easy to read, and so hard to perform.</p>
 ]]></content>
@@ -378,7 +414,11 @@ Post.populate(&#39;author&#39;).findOne()
     <link href="https://egoist.github.io/2015/07/10/why-so-addicted-into-anime/"/>
     <id>https://egoist.github.io/2015/07/10/why-so-addicted-into-anime/</id>
     <published>2015-07-10T01:08:51.000Z</published>
+<<<<<<< HEAD
     <updated>2015-09-22T18:37:13.721Z</updated>
+=======
+    <updated>2015-10-08T02:38:05.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>我想我第一部认真看的动漫应该是神奇宝贝，此外还有龙珠Z。但在那个时候，我其实不知道动漫到底是什么。我只是觉得这是日本卡通片而已，我并不知道大洋彼岸的岛国对动漫如此推崇，那里的动漫真是数以千计，各种脑残粉打扮得像动漫里的角色，当然那时我也并没体会到 hentai 的真正含义。</p>
 <p>大概是从看浪客剑心开始我慢慢明白了动漫究竟是什么，我也开始学画漫画，我和我的小伙伴画了一部属于我们的漫画。这件事是真的很有趣，那个时候我大概 14 岁，我记得我是从网上找动漫资料学习画画，然后就被如此之多的动漫惊艳到了。</p>
 <p>现在已经过了好几年了，我已经 24 岁，我那参军的兄弟依然亘古不变地从遥远的军营向我推荐动漫来看。我其实已经好几个月没碰动漫了，但现在我满血复活。不管我多少次停止看动漫这件事，我最终还是又开始看了，<strong>为什么？我他妈到底怎么了？老大不小了看个屁的动漫啊？是不是该打住别去看那些半裸萌娘巨乳萝莉撕高达的东西了？动漫到底哪吸引你了？</strong></p>
@@ -407,7 +447,11 @@ Post.populate(&#39;author&#39;).findOne()
     <link href="https://egoist.github.io/2015/06/12/all-things-last-long/"/>
     <id>https://egoist.github.io/2015/06/12/all-things-last-long/</id>
     <published>2015-06-12T08:24:51.000Z</published>
+<<<<<<< HEAD
     <updated>2015-09-22T18:40:18.172Z</updated>
+=======
+    <updated>2015-10-08T02:38:05.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<p>一切漫长的，终将分开来，脱离母体，彼此隔离，而过程，却是缓慢而重复。</p>
 <p>我第一次感到漫长，是在一个斜坡上，自上而下的滑行让我和时间同步，那是我和童年伙伴们的漫长时光，在一起旱冰的乐趣，似乎就像那些年夏天的骄阳一般，不可磨灭，似乎会一直，一直进行下去。</p>
 <p>第二次的漫长，说来也就不怎么光彩，那是课桌下的漫长。在旱冰之后的一段日子里，我的胆子没得到什么锻炼，躲在课桌下不去参加体检虽然不是件漫长的事情，但是憋尿是每个人都万万不能擅长的事情。最终我没忍住，被老师和在高年级的我姐姐带回了家接受训斥，憋尿门也成了日后我被我姐取笑的笑点之一。</p>
@@ -431,7 +475,11 @@ Post.populate(&#39;author&#39;).findOne()
     <link href="https://egoist.github.io/2015/03/25/good-and-bad-anime/"/>
     <id>https://egoist.github.io/2015/03/25/good-and-bad-anime/</id>
     <published>2015-03-25T01:04:00.000Z</published>
+<<<<<<< HEAD
     <updated>2015-09-22T18:45:19.634Z</updated>
+=======
+    <updated>2015-10-08T02:38:05.000Z</updated>
+>>>>>>> 24054f0b87d77d1cae15104a5da44845eb3efdb4
     <content type="html"><![CDATA[<blockquote>
 <p>你知道动漫吗？也许你知道的动漫在你眼中代表着“幼稚”、“脱离现实”的东西，很可惜，你在以偏概全，或者你在用老一套的成见来看待自己不了解的世界。<br>觉得动漫是脱离现实的人也许忘了这和画画，和你听音乐，和你吃饭没什么不同，来源于生活进而表达生活，只是你的眼光太过狭隘。<br>撇开拉低智商的中国动漫不看，种类繁杂的日本动漫不管你是什么水平什么阶层什么年龄都能满足。<br>而有的人看了一部“喜羊羊与灰太狼”就叫苦不迭，誓死与动漫绝缘了。对此，我什么都不会说，只是摇头。</p>
 </blockquote>
