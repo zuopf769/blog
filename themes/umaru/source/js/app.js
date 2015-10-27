@@ -5,6 +5,7 @@
 	highlight()
 	replaceCount()
 	osNotify()
+	fuckUCBrowser()
 
 	pjax.connect({
 		container: 'pjax',
@@ -15,6 +16,7 @@
 			highlight()
 			replaceCount()
 			osNotify()
+			fuckUCBrowser()
 			appLoading.stop()
 		},
 		ignoreFileTypes: ['xml'],
@@ -48,6 +50,16 @@
 	function osNotify () {
 		if (navigator && navigator.platform == 'Win32') {
 			$('.post-os').style.display = 'block'
+		}
+	}
+
+	function fuckUCBrowser () {
+		if (navigator && navigator.userAgent.indexOf('UCBrowser') > 0) {
+			var pres = $$('pre')
+			Array.prototype.forEach.call(pres, function (pre) {
+				pre.style.width = '100%'
+				pre.style.marginLeft = '0'
+			})
 		}
 	}
 })();
