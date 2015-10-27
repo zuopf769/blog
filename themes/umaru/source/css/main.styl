@@ -7,7 +7,8 @@
 
 body
   margin 0
-  font 18px/1.7 "Helvetica Neue",'Helvetica',Arial, "Microsoft YaHei","STKaiti","Droid Sans Fallback",SimSun,serif
+  font 16px/1.7 "Helvetica Neue",'Helvetica',Arial, "Microsoft YaHei","STKaiti","Droid Sans Fallback",SimSun,serif
+  background-color #f0f0f0
 
 a
   color #333
@@ -18,7 +19,7 @@ a
 
 .header
   text-align center
-  padding 30px 0
+  padding 50px 0
   border-bottom 1px solid #f0f0f0
   position relative
   h1.sitename
@@ -38,8 +39,11 @@ a
   margin 0 auto
 
 .page
-  padding 30px 0
+  padding 80px 30px 20px 30px
   position relative
+  background-color white
+  border-radius 3px
+  border 1px solid #e2e2e2
 
 .wechat
   background-color white
@@ -119,13 +123,14 @@ pre[class*="language-"]
   position absolute
   text-height 100px
   bottom -50px
-  left 10px
+  left 50%
+  transform translateX(-50%)
   border-radius 50%
-  border 1px solid #f0f0f0
+  border 1px solid #e2e2e2
   background-color white
   text-align center
   z-index 9999
-  display none
+  box-shadow 2px 3px 3px #eee
   .avatar
     display inline-block
     background-size cover
@@ -140,10 +145,6 @@ pre[class*="language-"]
     padding 15px 0
   .container
     padding 0 10px
-  .avatar-wrapper
-    left 50%
-    display block
-    transform translateX(-50%)
   .hide-on-mobile
     display none
   .header
