@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="alternate" type="application/rss+xml" title="寂寞在唱歌" href="/atom.xml"><link rel="stylesheet" href="/css/main.css?v=108763243"><title>一个简单的 localStorage 扩展实现 - 寂寞在唱歌</title><meta name="description" content="&lt;p&gt;之前做了一个类似 &lt;code&gt;localStorage&lt;/code&gt; 的 &lt;code&gt;orm&lt;/code&gt; 之类的东西，可以让你简单地像操作数据库一样地操作 &lt;code&gt;localStorage"></head><body><header class="header"><h1 class="sitename hide-on-mobile"><a href="/">EGOIST</a></h1><h2 class="slogan hide-on-mobile">Lonelyness is Singing</h2><div class="avatar-wrapper"><a href="/" style="background-image:url(https://ooo.0o0.ooo/2015/10/04/56110d3a77e41.jpg)" class="avatar">Home</a></div></header><div class="container"><div class="page"><article class="post"><header class="post-header"><h2 class="post-title">一个简单的 localStorage 扩展实现</h2><div class="post-meta"><span class="post-date">2015-09-30</span><span class="post-meta-sep">-</span><span class="post-author">@EGOIST</span><span class="post-meta-sep">-</span><span class="post-count-words">null</span> words</div></header><div class="post-os">不建议使用 Windows 浏览本站，推荐用 OSX 和移动端网页访问。</div><div class="post-content markdown-body"><p>之前做了一个类似 <code>localStorage</code> 的 <code>orm</code> 之类的东西，可以让你简单地像操作数据库一样地操作 <code>localStorage</code>。因为打算做个记事本之类的应用需要在本地储存笔记并方便的进行查询所以建立了这个库。</p>
+<p>你可以简单地预览一下：</p>
+<pre><code class="javascript">// localdb 会自动为新插入的 collcetion 生成 `_id`、`index` 和 `createdAt` 
+// 以及 `updatedAt`
+// `_id` 是类似 MongoDB 的 objectId
+var User = new localdb(&#39;User&#39;, &#39;Array&#39;, true)
+
+var users = [{
+  username: &#39;kevin&#39;,
+  age: 16
+}, {
+  username: &#39;joe&#39;,
+  age: 19
+}, {
+  username: &#39;zchan&#39;,
+  age: 12
+}]
+
+var opts = {
+  sort: 1,
+  sortBy: &#39;age&#39;
+}
+var users_fetched = User.override(users, true).find(null, opts)
+
+console.log(JSON.stringify(users_fetched, null, 2))
+</code></pre>
+<p>这样就能按照 <code>age</code> 递增输出这样的结果:</p>
+<pre><code class="json">[
+  {
+    &quot;username&quot;: &quot;zchan&quot;,
+    &quot;age&quot;: 12,
+    &quot;index&quot;: 2,
+    &quot;_id&quot;: &quot;560b780cfac748a940e57438&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  },
+  {
+    &quot;username&quot;: &quot;kevin&quot;,
+    &quot;age&quot;: 16,
+    &quot;index&quot;: 0,
+    &quot;_id&quot;: &quot;560b780ca4833a2e978efcb2&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  },
+  {
+    &quot;username&quot;: &quot;joe&quot;,
+    &quot;age&quot;: 19,
+    &quot;index&quot;: 1,
+    &quot;_id&quot;: &quot;560b780c1d6c1f81ca7bf2e9&quot;,
+    &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+    &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+  }
+]
+</code></pre>
+<p>如果你想查询 <code>username</code> 为 <code>zchan</code> 的用户:</p>
+<pre><code class="javascript">var query = {
+  username: &#39;zchan&#39;
+}
+
+var zchan = User.findOne(query)
+
+console.log(JSON.stringify(zchan, null, 2))
+</code></pre>
+<p>这样就查询并返回了一个对象:</p>
+<pre><code class="json">{
+  &quot;username&quot;: &quot;zchan&quot;,
+  &quot;age&quot;: 12,
+  &quot;index&quot;: 2,
+  &quot;_id&quot;: &quot;560b780cfac748a940e57438&quot;,
+  &quot;createdAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;,
+  &quot;updatedAt&quot;: &quot;2015-09-30T05:50:04.156Z&quot;
+}
+</code></pre>
+<p><code>.find</code> 和 <code>.findOne</code> 类似不过不限制数量且可以进行排序、分页查询等操作。</p>
+<p>甚至支持了 MongoDB 的 <code>populate</code> 特性，不过暂时只能查询一层嵌套:</p>
+<pre><code class="javascript">// populate another class, eg: your Post have a Author field
+const Post = new localdb(&#39;Post&#39;, &#39;Array&#39;)
+const User = new localdb(&#39;User&#39;, &#39;Array&#39;)
+
+// you should have the Author&#39;s objectId to create an instance of that class
+const author = User.extend(&#39;some_object_id&#39;)
+
+Post.add({
+  title: &#39;mt post title&#39;,
+  author: author
+})
+
+// then you can populate that field before .find or .findOne
+Post.populate(&#39;author&#39;).findOne()
+</code></pre>
+<hr>
+<p>更详细的使用可以参考这个用 Vue 和 LocalDB <a href="http://output.jsbin.com/titeve" target="_blank" rel="external">TodoMVC</a> 演示和 <a href="https://egoist.github.io/localdb/">API</a>。</p>
+</div><div class="post-ccby"> 
+本文版权归 EGOIST 所有，转载请遵循 <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" class="link">署名-相同方式共享 3.0 版本</a> 协议</div></article></div></div><footer class="footer">あい。</footer><div style="display:none;"><script>var host = "egoist.github.io"
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https"
+var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256487856'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1256487856' type='text/javascript'%3E%3C/script%3E"));</script></div><script src="/js/prism.js" data-manual></script><script src="/js/app.js?v=12765241"></script></body></html>
