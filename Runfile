@@ -2,7 +2,7 @@ task.add('deploy', () => {
   var message = argv._[1] || `updated at ${new Date()}`
   exec('git add -A')
   exec(`git commit -m "${message}"`)
-  exec('git push origin master')
+  exec('git push origin master -f')
   exec('hexo gm')
   exec('hexo d')
 })
