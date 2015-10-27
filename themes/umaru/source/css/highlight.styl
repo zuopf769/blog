@@ -57,9 +57,17 @@ pre[class*="language-"], pre {
 }
 
 @media screen and (max-width: 768px) {
-	width: calc(100% + 40px);
-	margin-left: -20px;
-	padding: 1em 20px;
+	pre[class*="language-"], pre {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		padding: 1em 20px;
+	}
+}
+
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
 }
 
 /* Inline code */
