@@ -8,11 +8,16 @@
 
 	pjax.connect({
 		container: 'pjax',
+		'beforeSend': function (e) {
+			appLoading.start()
+		},
 		'complete': function (e) {
 			highlight()
 			replaceCount()
 			osNotify()
-		}
+			appLoading.stop()
+		},
+		parseJS: true
 	})
 
 	function highlight () {
