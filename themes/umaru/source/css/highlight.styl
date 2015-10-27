@@ -48,11 +48,20 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
+pre[class*="language-"], pre {
+	padding: 1em 30px;
 	margin: .5em 0;
 	overflow: auto;
+	width: calc(100% + 60px);
+	margin-left: -30px;
 }
+
+@media screen and (max-width: 768px) {
+	width: calc(100% + 40px);
+	margin-left: -20px;
+	padding: 1em 20px;
+}
+
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
