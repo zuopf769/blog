@@ -17,6 +17,7 @@
 			osNotify()
 			appLoading.stop()
 		},
+		ignoreFileTypes: ['xml'],
 		parseJS: true
 	})
 
