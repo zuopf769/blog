@@ -48,7 +48,7 @@
 	}
 
 	function osNotify () {
-		if (navigator && navigator.platform == 'Win32') {
+		if (navigator && navigator.platform == 'Win32' && $('.post-os')) {
 			$('.post-os').style.display = 'block'
 		}
 	}
