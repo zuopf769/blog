@@ -13,7 +13,7 @@ html
       link(rel='icon', href=theme.favicon)
     if theme.rss
       link(rel='alternate', type='application/rss+xml', title=config.title href=theme.rss)
-    link(rel='stylesheet', href='/css/main.css?v=1064563243')
+    link(rel='stylesheet', href='/css/main.css?v=10645243')
     block head
       title= config.title
     block meta
@@ -24,7 +24,7 @@ html
       .avatar-wrapper
         a.avatar(href="/" style="background-image:url(#{config.avatar})") EGOIST
     .container
-      .page
+      .page#pjax
         block page
 
     footer.footer.
@@ -36,4 +36,7 @@ html
           if ((host == window.location.host) && (window.location.protocol != "https:"))
               window.location.protocol = "https"
           var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256487856'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1256487856' type='text/javascript'%3E%3C/script%3E"));
+      script(src="/js/pjax.js")
+      script(src="/js/prism.js" data-manual)
+      script(src="/js/app.js?v=12435441")
         

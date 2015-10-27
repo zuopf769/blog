@@ -6,6 +6,15 @@
 	replaceCount()
 	osNotify()
 
+	pjax.connect({
+		container: 'pjax',
+		'complete': function (e) {
+			highlight()
+			replaceCount()
+			osNotify()
+		}
+	})
+
 	function highlight () {
 		var codes = $$('code')
 		Array.prototype.forEach.call(codes, function (code) {
@@ -18,6 +27,9 @@
 	}
 
 	function replaceCount () {
+		if (!$('.post-content')) {
+			return
+		}
 		var content = $('.post-content').textContent
 		var count = countWords(content)
 		$('.post-count-words').innerHTML = count
