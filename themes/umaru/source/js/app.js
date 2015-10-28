@@ -1,4 +1,10 @@
-(function () {
+$(document).ready(function () {
+
+	$('body')
+		.on('click', '.post-os', function () {
+			$(this).slideUp()
+		})
+
 	highlight()
 	replaceCount()
 	osNotify()
@@ -45,4 +51,5 @@
 	function makeZoom () {
 		$('.post-content').find('img').attr('data-action', 'zoom')
 	}
-})();
+
+})
