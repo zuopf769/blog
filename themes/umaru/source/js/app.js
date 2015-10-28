@@ -7,22 +7,6 @@
 	osNotify()
 	fuckUCBrowser()
 
-	pjax.connect({
-		container: 'pjax',
-		'beforeSend': function (e) {
-			appLoading.start()
-		},
-		'complete': function (e) {
-			highlight()
-			replaceCount()
-			osNotify()
-			fuckUCBrowser()
-			appLoading.stop()
-		},
-		ignoreFileTypes: ['xml'],
-		parseJS: true
-	})
-
 	function highlight () {
 		var codes = $$('code')
 		Array.prototype.forEach.call(codes, function (code) {
@@ -57,8 +41,7 @@
 		if (navigator && navigator.userAgent.indexOf('UCBrowser') > 0) {
 			var pres = $$('pre')
 			Array.prototype.forEach.call(pres, function (pre) {
-				pre.style.width = '100%'
-				pre.style.marginLeft = '0'
+				pre.style.width = $('.page').clentWidth
 			})
 		}
 	}
