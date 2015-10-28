@@ -14,8 +14,8 @@ $(document).ready(function () {
 	function highlight () {
 		$('code').each(function () {
 			var code = $(this)
-			var lang = code.className || 'html'
-			code.className = 'language-' + lang
+			var lang = code.attr('class') || 'html'
+			code.attr('class', 'language-' + lang)
 
 		})
 		Prism.highlightAll()
