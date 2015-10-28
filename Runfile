@@ -1,3 +1,10 @@
+task.add('clean', () => {
+  // if you reclone the source from git
+  // remember to clean .deploy_git
+  // and then update blog
+  exec('rm -rf .deploy_git')
+})
+
 task.add('deploy', () => {
   var message = argv._[1] || `updated at ${new Date()}`
   exec('git add -A')
