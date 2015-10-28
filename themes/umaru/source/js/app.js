@@ -41,10 +41,8 @@ $(document).ready(function () {
 	}
 
 	function fuckUCBrowser () {
-		if (navigator && navigator.userAgent.indexOf('UCBrowser') > 0) {
-			$('pre').each(function () {
-				$(this).css('width', $('.page').width() + 'px')
-			})
+		if (navigator && navigator.userAgent.indexOf('UCBrowser') > -1) {
+			$('pre').css('width', $('.page').innerWidth() + 'px')
 		}
 	}
 
