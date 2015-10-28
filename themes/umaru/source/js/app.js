@@ -1,16 +1,13 @@
 (function () {
-	var $ = document.querySelector.bind(document)
-	var $$ = document.querySelectorAll.bind(document)
-
 	highlight()
 	replaceCount()
 	osNotify()
 	fuckUCBrowser()
+	makeZoom()
 
 	function highlight () {
-		var codes = $$('code')
-		Array.prototype.forEach.call(codes, function (code) {
-
+		$('code').each(function () {
+			var code = $(this)
 			var lang = code.className || 'html'
 			code.className = 'language-' + lang
 
@@ -19,12 +16,12 @@
 	}
 
 	function replaceCount () {
-		if (!$('.post-content')) {
+		if (!$('.post-content') || $('.post-content').length === 0) {
 			return
 		}
-		var content = $('.post-content').textContent
+		var content = $('.post-content').text()
 		var count = countWords(content)
-		$('.post-count-words').innerHTML = count
+		$('.post-count-words').text(count)
 	}
 
 	function countWords (string) {
@@ -33,16 +30,19 @@
 
 	function osNotify () {
 		if (navigator && navigator.platform == 'Win32' && $('.post-os')) {
-			$('.post-os').style.display = 'block'
+			$('.post-os').slideDown()
 		}
 	}
 
 	function fuckUCBrowser () {
 		if (navigator && navigator.userAgent.indexOf('UCBrowser') > 0) {
-			var pres = $$('pre')
-			Array.prototype.forEach.call(pres, function (pre) {
-				pre.style.width = $('.page').clientWidth + 'px'
+			$('pre').each(function () {
+				$(this).css('width', $('.page').width() + 'px')
 			})
 		}
+	}
+
+	function makeZoom () {
+		$('.post-content').find('img').attr('data-action', 'zoom')
 	}
 })();
