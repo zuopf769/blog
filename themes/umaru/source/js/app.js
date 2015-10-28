@@ -41,7 +41,7 @@
 		if (navigator && navigator.userAgent.indexOf('UCBrowser') > 0) {
 			var pres = $$('pre')
 			Array.prototype.forEach.call(pres, function (pre) {
-				pre.style.width = $('.page').clientWidth
+				pre.style.width = $('.page').clientWidth + 'px'
 			})
 		}
 	}
