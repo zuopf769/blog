@@ -17,7 +17,11 @@ html
     block head
       title= config.title
     block meta
-      meta(name="description" content=config.description)
+      block meta.description
+        if page.description
+          meta(name="description" content=page.description)
+        else
+          meta(name="description" content=config.description)
 
   body
     header.header

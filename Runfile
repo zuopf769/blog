@@ -1,13 +1,11 @@
-task.add('clean', () => {
-  // if you reclone the source from git
-  // remember to clean .deploy_git
-  // and then update blog
-  // how stupid the above is!
-  // just ignore .deploy_git in .gitignore would fix this
-  exec('rm -rf .deploy_git')
-})
+// if you reclone the source from git
+// remember to clean .deploy_git
+// and then update blog
+// how stupid the above is!
+// just ignore .deploy_git in .gitignore would fix this
+alias('clean', 'rm -rf .deploy_git')
 
-task.add('deploy', () => {
+register('deploy', () => {
   var message = argv._[1] || `updated at ${new Date()}`
   exec('git add -A')
   exec(`git commit -m "${message}"`)
