@@ -11,6 +11,18 @@ body
   font 16px/1.7 "Helvetica Neue",'Helvetica',Arial, "Microsoft YaHei","STKaiti","Droid Sans Fallback",SimSun,serif
   background-color #f2eee8
 
+@media screen and (min-width: 768px)
+  .node-city
+    background-image url('/images/node-city.jpg')
+    background-repeat no-repeat
+    background-size cover
+    height 300px
+    width 100%
+    position absolute
+    z-index 1
+  .header
+    padding-top 100px
+
 a
   color #333
   &.link
@@ -21,7 +33,6 @@ a
 .header
   text-align center
   padding 50px 0
-  border-bottom 1px solid #f0f0f0
   position relative
   h1.sitename
     font-size 20px
@@ -45,6 +56,8 @@ a
   background-color white
   border-radius 3px
   border 1px solid #e2e2e2
+  position relative
+  z-index 2
 
 .wechat
   background-color white
