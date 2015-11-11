@@ -11,6 +11,14 @@ $(document).ready(function () {
 	fuckUCBrowser()
 	makeZoom()
 
+	InstantClick.on('change', function () {
+		highlight()
+		replaceCount()
+		osNotify()
+		fuckUCBrowser()
+		makeZoom()
+	})
+
 	function highlight () {
 		$('code').each(function () {
 			var code = $(this)
