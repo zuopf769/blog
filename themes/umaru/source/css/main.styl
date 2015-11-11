@@ -144,7 +144,11 @@ pre[class*="language-"]
   background-color white
   text-align center
   z-index 9999
-  // box-shadow 2px 3px 3px #eee
+  box-shadow 1px 1px 3px #eee
+  transition transform .3s, box-shadow .3s
+  &:hover
+    transform translateY(-4px) translateX(-50%)
+    box-shadow 2px 3px 10px #e2e2e2
   .paper-folder
     color #ccc
     height 100px
