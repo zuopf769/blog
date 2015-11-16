@@ -20,8 +20,24 @@
     padding-top 20px
     margin-top 50px
     color #999
-    border-top 1px solid #f0f0f0
+    border-top 1px solid #ddd
     font-size 13px
+    position relative
+    &:before, &:after
+      position absolute
+      content ''
+      display block
+      width 12px
+      height @width
+      background-color #ddd
+      border-radius 50%
+      top 0
+      left 50%
+      transform translateY(-50%) translateX(-50%)
+    &:after
+      width 10px
+      height @width
+      background-color white
   .post-os
     cursor pointer
     background-color #f9f9f9
@@ -31,3 +47,19 @@
     color #999
     margin-top 30px
     display none
+  .duoshuo
+    margin-top 20px
+    .ds-comments
+      border-bottom-color #ddd !important
+    .ds-powered-by, .ds-post-placeholder, .ds-comments-info
+      display none !important
+    #ds-reset
+      .ds-gradient-bg, .ds-post-button, .ds-textarea-wrapper
+        background-image none !important
+      .ds-post-button
+        background-color #f9f9f9 !important
+        outline none !important
+        &:hover
+          background-color #f0f0f0 !important
+      .ds-post-options, .ds-post-button, .ds-textarea-wrapper
+        border-color #ddd !important
