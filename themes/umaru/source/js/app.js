@@ -16,7 +16,9 @@ function highlight() {
 		var code = $(this)
 		var lang = code.attr('class') || 'html'
 		code.attr('class', 'language-' + lang)
-
+		if (code.parent()[0].tagName === 'PRE') {
+			code.parent().perfectScrollbar()
+		}
 	})
 	Prism.highlightAll()
 }
