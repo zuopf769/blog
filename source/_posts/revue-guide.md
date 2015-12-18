@@ -89,6 +89,3 @@ new Vue({
 - [Redux](https://github.com/rackt/redux)
 - [Revue](https://github.com/egoist/revue)
 - [Vuex](https://github.com/vuejs/vuex)
-
-(完)
-
