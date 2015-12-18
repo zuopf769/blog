@@ -24,7 +24,7 @@ tags:
 
 于是出现了 Redux !
 
-当然，Redux 不是为 Vue 出现的。不过确成为了解决所有 JavaScript 应用中状态管理的一种方案。
+当然，Redux 不是为 Vue 出现的。不过却成为了解决所有 JavaScript 应用中状态管理的一种方案。
 
 我能做的关于 Redux 的介绍就是这样，了解更多请阅读官方[自述](https://github.com/rackt/redux)。
 
