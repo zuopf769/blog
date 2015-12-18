@@ -5,7 +5,7 @@
 // just ignore .deploy_git in .gitignore would fix this
 alias('clean', 'rm -rf .deploy_git')
 
-register('deploy', () => {
+task('deploy', () => {
   var message = argv._[1] || `updated at ${new Date()}`
   exec('git add -A')
   exec(`git commit -m "${message}"`)

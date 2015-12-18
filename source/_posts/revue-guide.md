@@ -84,8 +84,9 @@ new Vue({
 
 > 郑重提醒，本文开头提到的小明不是明哥，如有雷同，明哥不要打我。
 
-相关链接:
+---
 
+相关链接:
 - [Redux](https://github.com/rackt/redux)
 - [Revue](https://github.com/egoist/revue)
 - [Vuex](https://github.com/vuejs/vuex)
