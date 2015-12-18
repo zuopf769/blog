@@ -14,9 +14,9 @@ mixin post(post)
     .post-os. 
       不建议使用 Windows 浏览本站，推荐用 OSX 和移动端网页访问。
     .post-content.markdown-body !{post.content}
-    .post-twitter
-      | 想对本文发表一些看法? 去 <a href="https://twitter.com/shomin_sample" class="link">Twitter</a> 或者 <a class="link" href="http://weibo.com/zengxinty">微博</a> @我！全天 24 小时在线。
     if post.layout === 'post'
+      .post-twitter
+        | 想对本文发表一些看法? 去 <a href="https://twitter.com/shomin_sample" class="link">Twitter</a> 或者 <a class="link" href="http://weibo.com/zengxinty">微博</a> @我！全天 24 小时在线。
       .post-ccby 
         | 本文版权归 EGOIST 所有，转载请遵循 
         a.link(href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh") 署名-相同方式共享 3.0 版本
