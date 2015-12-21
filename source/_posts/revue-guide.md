@@ -1,6 +1,6 @@
 title: Revue 指南
 date: 2015-12-18 17:10:54
-tags: 
+tags:
 	- javascript
 	- revue
 	- redux
@@ -59,8 +59,8 @@ new Vue({
 		// 所以 store 有的方法都可以通过 this.$revue 调用
 		// 每一个 state 都需要一个初始状态
 		// 然后像下面这样调用初始状态
-		return { 
-			counter: $this.revue.getState().counter // 假设默认你设置的是 0
+		return {
+			counter: this.$revue.getState().counter // 假设默认你设置的是 0
 		}
 	},
 	methods: {
