@@ -149,13 +149,20 @@ pre[class*="language-"]
   z-index 9999
   box-shadow 1px 1px 3px #eee
   transition transform .3s, box-shadow .3s
+  overflow hidden
   &:hover
     transform translateY(-4px) translateX(-50%)
     box-shadow 2px 3px 10px #e2e2e2
+    .avatar
+      -webkit-filter blur(3px)
+      filter blur(3px)
+    .holder
+      display inline-block
+      top 0
   .paper-folder
     color #ccc
     height 100px
-  .avatar
+  .avatar, .holder
     display inline-block
     background-size cover
     size 90px 90px
@@ -163,7 +170,20 @@ pre[class*="language-"]
     margin 5px
     text-indent -9999em
     background-color #eee
-
+    overflow hidden
+  .avatar
+    transition -webkit-filter .3s, filter .3s
+  .holder
+    text-indent 0
+    position absolute
+    background transparent
+    top 100px
+    left 0
+    color #333
+    text-shadow 6px 6px 0px rgba(0,0,0,0.2)
+    font-size 28px
+    text-indent -2px
+    transition top .3s
 
 @media screen and (max-width: 768px)
   .header
