@@ -1,10 +1,11 @@
 title: Revue 指南
-date: 2015-12-18 17:10:54
 tags:
-	- javascript
-	- revue
-	- redux
-	- vue
+  - javascript
+  - redux
+  - revue
+  - vue
+categories: []
+date: 2015-12-18 17:10:00
 ---
 
 ## 缘起小明
