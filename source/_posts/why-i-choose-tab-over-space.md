@@ -38,4 +38,4 @@ tags:
 - Tab 现在在网页上不再难看，过去网页上一个 tab 显得非常宽，而现在 CSS3 的 `tab-size` 属性解决了这一痛点。 
 
 > Use tab to indent, use space to align. 
-> If you are using space, you are making align, not making indent.
+> If you are using space, you are making alignment, not making indention.
