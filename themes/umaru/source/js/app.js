@@ -10,6 +10,7 @@ replaceCount()
 osNotify()
 fuckUCBrowser()
 makeZoom()
+positionToc()
 
 function highlight() {
 	$('code').each(function () {
@@ -58,4 +59,17 @@ InstantClick.on('change', function() {
 	osNotify()
 	fuckUCBrowser()
 	makeZoom()
+	positionToc()
 })
+
+function positionToc() {
+	if ($('.post-toc')) {
+		var leftPad = ($('body').outerWidth() - $('.page').outerWidth()) / 2
+		var left = leftPad + $('.page').outerWidth() + 20
+		left = left + 'px'
+		$('.post-toc').css('left', left)
+		setTimeout(function () {
+			$('.post-toc').addClass('active')
+		}, 200)
+	}
+}

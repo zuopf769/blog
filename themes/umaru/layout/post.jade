@@ -13,6 +13,9 @@ mixin post(post)
         |  words
     .post-os. 
       不建议使用 Windows 浏览本站，推荐用 OSX 和移动端网页访问。
+    - var tocContent = toc(post.content)
+    if tocContent
+      .post-toc !{tocContent}
     .post-content.markdown-body !{post.content}
     if post.layout === 'post'
       .post-twitter

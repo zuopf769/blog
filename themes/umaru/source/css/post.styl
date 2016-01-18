@@ -68,6 +68,25 @@
     color #999
     margin-top 30px
     display none
+  .post-toc
+    position fixed
+    width 200px
+    background-color white
+    border 1px solid #e2e2e2
+    padding 10px
+    bottom -100%
+    border-radius 3px 3px 0 0
+    transition bottom .3s
+    &.active
+      bottom 0
+    .toc
+      list-style-type none
+      padding-left 0
+      margin 0
+      a
+        &:hover
+          color #4078c0
+          text-decoration underline
   .duoshuo
     margin-top 20px
     .ds-comments
@@ -84,3 +103,7 @@
           background-color #f0f0f0 !important
       .ds-post-options, .ds-post-button, .ds-textarea-wrapper
         border-color #ddd !important
+
+@media screen and (max-width: 768px)
+  .post-toc
+    display none
