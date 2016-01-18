@@ -1,16 +1,10 @@
-$(document).ready(function() {
-	$('body')
-		.on('click', '.post-os', function() {
-			$(this).slideUp()
-		})
-})
-
 highlight()
 replaceCount()
 osNotify()
 fuckUCBrowser()
 makeZoom()
 positionToc()
+handleClick()
 
 function highlight() {
 	$('code').each(function () {
@@ -60,6 +54,7 @@ InstantClick.on('change', function() {
 	fuckUCBrowser()
 	makeZoom()
 	positionToc()
+	handleClick()
 })
 
 function positionToc() {
@@ -72,4 +67,16 @@ function positionToc() {
 			$('.post-toc').addClass('active')
 		}, 200)
 	}
+}
+
+function handleClick() {
+	$('body')
+		.on('click', '.post-os', function () {
+			$(this).slideUp()
+		})
+		.on('click', '.toc-link', function () {
+			var id = $(this).attr('href')
+			$('.highlight-title').removeClass('highlight-title')
+			$(id).addClass('highlight-title')
+		})
 }
