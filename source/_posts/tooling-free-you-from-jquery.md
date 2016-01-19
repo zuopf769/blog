@@ -13,7 +13,7 @@ tags:
 
 比如刚才，我想给自己做一个用于收取捐赠的网页（也许会有开源世界的同好喜欢我的项目也说不定呢），我在 “简单粗暴一个 html 搞定” 和 “Webpack + Vue 配合各种构建工具” 之间摇摆不定。
 
-用过 Webpack 的都知道，也许配置和解决 bug 的时间会比写代码的时间更长，而且大部分情况配置文件都大同小异。那为什么不用**一个配置适用多个项目**？于是有了 `tooling`，它其实就是用一个内置的 Webpack 配置来运行和编译指定的项目。
+用过 Webpack 的都知道，也许配置和解决 bug 的时间会比写代码的时间更长，而且大部分情况配置文件都大同小异。那为什么不用**一个配置适用多个项目**？于是有了 [`tooling`](https://github.com/egoist/tooling)，它其实就是用一个内置的 Webpack 配置来运行和编译指定的项目。
 
 ## tooling 带来了什么？
 
@@ -64,3 +64,7 @@ new Vue({
 - many more...
 
 看，[donate](https://github.com/egoist/donate) 就是一个例子，如果没用 tooling 的话这个 repo 里会多一堆配置文件，而现在我只需要 focus 这个项目本身。
+
+---
+
+`tooling` 的 GitHub 主页: https://github.com/egoist/tooling
