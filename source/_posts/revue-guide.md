@@ -61,13 +61,13 @@ new Vue({
 		// 每一个 state 都需要一个初始状态
 		// 然后像下面这样调用初始状态
 		return {
-			counter: this.$revue.getState().counter // 假设默认你设置的是 0
+			counter: this.$store.state.counter // 假设默认你设置的是 0
 		}
 	},
 	methods: {
 		handleClick () {
 			// 点击之后执行 increment 让 counter 自增
-			this.$revue.dispatch({type: 'INCERMENT'})
+			this.$store.dispatch({type: 'INCERMENT'})
 			// 现在 store 里的 state 改变了!
 			// this.$revue.getState().counter 的值现在为 1
 		}
