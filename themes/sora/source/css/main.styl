@@ -1,0 +1,100 @@
+@import 'nib';
+@import 'normalize';
+@import 'markdown';
+@import 'post';
+
+body
+  font 16px/1.7 "lucida grande" ,"lucida sans unicode",lucida,"Helvetica Neue",helvetica,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif
+  background-color #fdf6e3
+  margin 0
+
+ul
+  margin 0
+
+h1, h2, h3, h4, h5
+  margin 0
+  font-weight 400
+
+a
+  text-decoration none
+  &:hover
+    cursor crosshair
+
+*
+  box-sizing border-box
+
+.header
+  height 30px
+  line-height @height
+  background-color #93a1a1
+  h1.site-name
+    font-weight 400
+    a
+      font-size 14px
+      width 70px
+      padding-left 10px
+      background-color #586e75
+      float left
+      display block
+      color #eee8d5
+      &:hover
+        font-weight bold
+
+.centered
+  max-width 52em
+  margin 40px 70px
+
+[v-cloak]
+  display none
+
+.egoist-name
+  color #586e75
+  font-size 8rem
+  text-transform uppercase
+  line-height 100%
+  margin-top 30px
+  span
+    color #b58900
+
+.home-writings
+  margin-top 30px
+
+.post-list
+  margin-top 50px
+  padding-left 0
+  .post-item
+    list-style-type none
+    margin-bottom 30px
+    .post-title
+      a
+        color #b58900
+        font-size 2rem
+        font-weight bold
+        line-height 120%
+        &:hover
+          color #ff69b4
+
+.footer
+  background-color #eee8d5
+  color #93a1a1
+  height 30px
+  line-height @height
+  font-size 14px
+  .centered
+    margin-bottom 0
+  a
+    color #93a1a1
+
+.nav
+  padding-left 0
+  overflow hidden
+  li
+    list-style-type none
+    float left
+    a
+      color #586e75
+      font-size 14px
+      padding 0 10px
+      display block
+      &:hover, &.active
+        color #eee8d5

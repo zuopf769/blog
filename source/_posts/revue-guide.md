@@ -4,6 +4,7 @@ tags:
   - redux
   - revue
   - vue
+subtitle: 如何在 Vue 中使用 Redux 管理 State
 categories: []
 date: 2015-12-18 17:10:00
 ---

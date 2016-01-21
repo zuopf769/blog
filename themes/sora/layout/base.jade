@@ -1,7 +1,30 @@
+mixin article(post)
+  li.post-item
+    h4.post-title: a(href=url_for(post.path)) #{post.title}
+
 doctype html
 html
   head
     block title
       title= config.title
+    block styles
+      link(href="/css/main.css?v=#{config.version}" rel="stylesheet")
   body
-    | hi
+    header.header
+      h1.site-name
+        a(href="/") e.z.
+      ul.nav
+        li 
+          a(href="/about.html" class=page.title === 'About' ? 'active' : '') about
+    block page
+    footer.footer
+      .centered
+        | CC-BY-NC 4.0 &copy; 
+        a(href="https://github.com/egoist") E.Z.
+    block scripts
+      div(style="display:none")
+        script.
+          var host = "egoist.github.io"
+          if ((host == window.location.host) && (window.location.protocol != "https:"))
+              window.location.protocol = "https"
+          var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256487856'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1256487856' type='text/javascript'%3E%3C/script%3E"));
