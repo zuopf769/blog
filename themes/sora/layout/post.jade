@@ -20,5 +20,5 @@ block append scripts
   script(src="/js/app.js?v=#{config.version}")
 
 block meta 
-  - var summary = page.excerpt || page.content.substring(0, 100)
+  - var summary = page.excerpt || page.content.replace(/<(?:.|\n)*?>/gm, '').substring(0, 100)
   meta(name="description" content=summary)
