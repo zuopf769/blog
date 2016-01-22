@@ -11,6 +11,12 @@ html
       title= config.title
     block styles
       link(href="/css/main.css?v=#{config.version}" rel="stylesheet")
+    block meta
+      block meta.description
+        if page.description
+          meta(name="description" content=page.description)
+        else
+          meta(name="description" content=config.description)
   body
     header.header
       h1.site-name
