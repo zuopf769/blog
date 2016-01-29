@@ -132,7 +132,7 @@ git commit -m "refactor to use es2015"
 git commit -m "🔥"
 ```
 
-更好的做法是使用 commitizen 来规范你的 commit message 格式。
+更好的做法是使用 [commitizen](https://github.com/commitizen/cz-cli) 来规范你的 commit message 格式。
 
 ![commitizen](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)
 
