@@ -75,6 +75,7 @@ module.exports = function () {
 	})
 }
 
+// fetchData.js
 // 无阻塞同步代码风格
 const fetch = require('node-fetch')
 
