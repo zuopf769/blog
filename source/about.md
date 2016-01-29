@@ -5,7 +5,7 @@ subtitle: write code that works
 
 ## 关于我
 
-94 年生人，生无可恋脸，患有二次元禁断综合征。我会在这里写一些关于 Node.js、JavaScript、开源、足球、动漫之类的文章，如果你感兴趣可以订阅这个 [RSS](/atom.xml) 地址。
+94 年生人，生无可恋脸，患有二次元禁断综合征。我会在这里写一些关于 Node.js、JavaScript、开源、足球、动漫、三次元之类的文章，如果你感兴趣可以订阅这个 [RSS](/atom.xml) 地址。
 
 ## 抓得到我吗
 
