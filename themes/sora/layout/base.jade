@@ -9,6 +9,8 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
     block title
       title= config.title
+    if theme.rss
+      link(rel='alternate', type='application/rss+xml', title=config.title href=theme.rss)
     block styles
       link(href="/css/main.css?v=#{config.version}" rel="stylesheet")
     block meta
@@ -19,12 +21,12 @@ html
       h1.site-name
         a(href="/") e.z.
       ul.nav
-        li 
+        li
           a(href="/about.html" class=page.title === 'About' ? 'active' : '') about
     block page
     footer.footer
       .centered
-        | CC-BY-NC 4.0 &copy; 
+        | CC-BY-NC 4.0 &copy;
         a(href="https://github.com/egoist") E.Z.
     block scripts
       div(style="display:none")
