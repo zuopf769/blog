@@ -23,12 +23,13 @@ JavaScript 代码一向的特点就是难以维护，保持一个良好的代码
 
 每一个具有单独意义的代码片段前都推荐写注释，就算再简单的代码你隔几天看也不可能一秒看出它在干什么，而有了注释就可以。对于复杂且意义重大的代码尽量写完整的 jsdoc 来说明。
 
+另一个原因就是这样可以让你的代码显得更格式化，代码挤在一堆很傻且不美观。而且你也可以自动从你代码的 jsdoc 生成 api doc！
+
 ```js
 /**	
  * Module dependencies
  */
 const path = require('path')
-
 
 /**
  * Reverse array but not change itself
