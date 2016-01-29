@@ -3,7 +3,7 @@ layout: page
 subtitle: write code that works
 ---
 
-## 如果你相见我
+## 抓得到我吗
 
 - [GitHub](https://github.com/egoist)
 - [Twitter](https://twitter.com/shomin_sample)
