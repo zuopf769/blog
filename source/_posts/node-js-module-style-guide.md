@@ -82,12 +82,10 @@ module.exports = co.wrap(function* () {
 // app.js
 // 调用它
 const fetchData = require('./fetchData')
-module.exports = function () {
-	co(function* () {
+module.exports = co.wrap(function* () {
 		const data = yield fetchData()
 		console.log(data)
 	})
-}
 ```
 
 **还使用 co? 不是有 async/await 吗?**
