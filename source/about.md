@@ -3,6 +3,14 @@ layout: page
 subtitle: write code that works
 ---
 
+## 如果你相见我
+
+- [GitHub](https://github.com/egoist)
+- [Twitter](https://twitter.com/shomin_sample)
+- [微博](http://weibo.com/zengxinyu)
+- [知乎](https://www.zhihu.com/people/egoistian)
+- 中国成都
+
 ## 赋湿一首
 
 四百大妈，掺金坷垃。问斯大林，瞬间爆炸。
