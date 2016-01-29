@@ -57,6 +57,7 @@ function rev(array) {
 // fetchData.js
 // 老式回调风格
 const request = require('superagent')
+
 module.exports = function (callback) {
 	request
 		.get('xxx.json')
@@ -67,6 +68,7 @@ module.exports = function (callback) {
 // app.js
 // 调用它
 const fetchData = require('./fetchData')
+
 module.exports = function () {
 	fetchData(data => {
 		console.log(data)
@@ -75,6 +77,7 @@ module.exports = function () {
 
 // 无阻塞同步代码风格
 const fetch = require('node-fetch')
+
 module.exports = co.wrap(function* () {
 	const data = yield fetch('xxx.json')
 		.then(data => data.json())
@@ -83,10 +86,11 @@ module.exports = co.wrap(function* () {
 // app.js
 // 调用它
 const fetchData = require('./fetchData')
+
 module.exports = co.wrap(function* () {
-		const data = yield fetchData()
-		console.log(data)
-	})
+	const data = yield fetchData()
+	console.log(data)
+})
 ```
 
 **还使用 co? 不是有 async/await 吗?**
