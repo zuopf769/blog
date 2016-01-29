@@ -141,3 +141,7 @@ git commit -m "🔥"
 发布 NPM 模块是很让人困扰的一步，你需要手动 bump version，需要执行 `npm test` 来看是否有错，然后再手动执行 `npm publish`，这些步骤可以被规范且自动化。
 
 使用 [semantic-release](https://github.com/semantic-release/semantic-release) 可以自动分析你的 commit message 然后根据这些推荐你的代码改动来进行相应的版本号升级并自动更新 changelog，[这些](https://github.com/egoist/tooling/releases) 就是自动生成的。
+
+## 2016
+
+200 more modules? Exciting!
