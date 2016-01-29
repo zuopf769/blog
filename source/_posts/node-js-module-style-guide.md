@@ -51,7 +51,7 @@ function rev(names) {
 
 对于分号的问题不作讨论，加不加都行。
 
-对于异步代码，尽量不要使用 callkback 而是改成 Promise，并且把 HTTP 请求封装进单独的模块，这样更方便配合 [co](https://github.com/tj/co) 来使用。
+对于异步代码，尽量不要使用 callback 而是改成 Promise，并且把 HTTP 请求封装进单独的模块，这样更方便配合 [co](https://github.com/tj/co) 来使用。
 
 ```js
 // fetchData.js
