@@ -37,8 +37,8 @@ const path = require('path')
  * @param {Array} names
  * @return {Array}
  */
-function rev(array) {
-	return array.concat().reverse()
+function rev(names) {
+	return names.concat().reverse()
 }
 ```
 
