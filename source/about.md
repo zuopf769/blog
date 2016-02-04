@@ -12,6 +12,7 @@ subtitle: write code that works
 - [GitHub](https://github.com/egoist)
 - [Twitter](https://twitter.com/shomin_sample)
 - [微博](http://weibo.com/zengxinyu)
+- [微信](http://ww4.sinaimg.cn/large/a15b4afegw1f0nf2nlbzuj20n00ydtck)
 - [知乎](https://www.zhihu.com/people/egoistian)
 - 中国成都
 
