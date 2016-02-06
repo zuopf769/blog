@@ -22,7 +22,9 @@ html
         a(href="/") e.z.
       ul.nav
         li
-          a(href="/about.html" class=page.title === 'About' ? 'active' : '') about
+          a(href="/about.html" class=page.path === 'about.html' ? 'active' : '') about
+        li
+          a(href="/gf.html" class=page.path === 'gf.html' ? 'active' : '') girlfriend wanted
     block page
     footer.footer
       .centered
