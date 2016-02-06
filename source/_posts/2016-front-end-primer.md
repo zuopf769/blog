@@ -28,7 +28,7 @@ HTML 和 CSS 都是语法非常**松散**的语言，这样的导致了它们入
 
 假设你有两个网页，它们共用一个导航栏（header），然后只有主体（content）部分显示不同的内容，在已有知识背景下你只能做两个网页，把导航栏的代码复制两次。
 
-于是有了模板引擎，比如 [jade](https://github.com/pugjs/jade/blob/master/Readme_zh-cn.md)，他可以让你复用重复的模板，减少代码量，提高可维护性。你当前不必去了解 `jade` 是如何实现和如何使用的。
+于是有了模板引擎，比如 [jade](https://github.com/pugjs/jade/blob/master/Readme_zh-cn.md)，他可以让你复用重复的模板，减少代码量，提高可维护性。
 
 ### CSS 处理器
 
