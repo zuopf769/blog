@@ -42,7 +42,7 @@ HTML 和 CSS 都是语法非常**松散**的语言，这样的导致了它们入
 	box-shadow: 0 0 1px #ccc;
 }
 
-.post .post-contet {
+.post .post-content {
 	font-size: 16px;
 }
 
