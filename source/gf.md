@@ -12,4 +12,8 @@ I want to meet a girl who is:
 
 Also, she should be as pretty as or even prettier than my [ex-GFs](/about.html#u540E_u5BAB). ✨
 
-EOF.
+<div style="height:500px;"></div>
+
+## I'm kidding! haha
+
+I do love anime girls only, sorry.
