@@ -7,6 +7,10 @@ subtitle: write code that works
 
 94 年生人，生无可恋脸，患有二次元禁断综合征。我会在这里写一些关于 Node.js、JavaScript、开源、足球、动漫、三次元相关的文章，如果你感兴趣可以订阅这个 [RSS](/atom.xml) 地址。
 
+## 箴言
+
+编程和编程语言对我来说毫无乐趣，真正的乐趣是用它来创造玩具并享受玩具。—— EGOISTIAN
+
 ## 抓得到我吗
 
 - [GitHub](https://github.com/egoist)
