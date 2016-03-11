@@ -83,3 +83,8 @@ deploy:
 - type: git
   repo: git@git.coding.net:egoist/egoist.git
   branch: coding-pages
+
+# markdown
+markdown:
+  render:
+    html: true
