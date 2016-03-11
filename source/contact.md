@@ -30,5 +30,5 @@ layout: contact
   </button>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.js"></script>
-<script src="https://cdn.css.net/libs/axios/0.9.1/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js"></script>
 <script src="/js/contact.js"></script>
