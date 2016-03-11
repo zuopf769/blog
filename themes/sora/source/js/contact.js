@@ -18,7 +18,7 @@
       submit: function () {
         this.sending = true
         this.validData()
-        axios.post('http://localhost:3000/api/send', this.message)
+        axios.post('https://mail-to-egoist.leanapp.cn/api/send', this.message)
         .then(function (response) {
           this.sending = false
           if (response.data.error) {
