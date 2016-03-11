@@ -21,6 +21,7 @@ layout: contact
     <textarea class="form-control" rows="5" placeholder="Hi EGOIST..." v-model="message.text"></textarea>
   </div>
   <div class="error" v-cloak v-if="error">${error}</div>
+  <div class="success" v-cloak v-if="success">${success}</div>
   <button @click="submit" class="btn" v-if="sending" disabled v-cloak>
     Sending...
   </button>
