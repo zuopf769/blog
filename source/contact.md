@@ -1,7 +1,6 @@
-title: contact
+title: Contact
 date: 2016-03-11 17:04:49
 subtitle: feel free to say anything to me ;)
-layout: contact
 ---
 <div id="contact-form" class="form">
   <div class="form-group">
