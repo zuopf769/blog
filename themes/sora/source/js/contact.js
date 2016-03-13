@@ -21,7 +21,7 @@
         this.error = ''
         this.success = ''
         if (!this.validData()) return
-        axios.post('https://mail-to-egoist.leanapp.cn/api/send', this.message)
+        axios.post('https://mailto.leanapp.cn/api/send', this.message)
           .then(function (response) {
             this.sending = false
             if (response.data.error) {
