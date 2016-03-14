@@ -92,3 +92,4 @@ subtitle: write code that works
 - Saber
 - 安潔丽莎
 - 楪祈
+- 朝田诗乃
