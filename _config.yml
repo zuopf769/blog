@@ -88,3 +88,4 @@ deploy:
 markdown:
   render:
     html: true
+    breaks: true
