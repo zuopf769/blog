@@ -93,3 +93,4 @@ subtitle: write code that works
 - 安潔丽莎
 - 楪祈
 - 朝田诗乃
+- 亚丝娜

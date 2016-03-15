@@ -1,4 +1,4 @@
-export function deploy() {
+export default function () {
 	const message = cli.input[1] || `updated at ${new Date()}`
 	exec(`
 	git add -A
