@@ -101,4 +101,4 @@ markdown:
     collisionSuffix: 'v'
     permalink: true
     permalinkClass: header-anchor
-    permalinkSymbol: ♂
+    permalinkSymbol: ⚛
