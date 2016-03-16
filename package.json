@@ -22,7 +22,8 @@
     "hexo-renderer-jade": "^0.1.0",
     "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-stylus": "^0.3.0",
-    "hexo-server": "^0.1.2"
+    "hexo-server": "^0.1.2",
+    "hexo-uglify": "0.0.3"
   },
   "devDependencies": {
     "hexo-deployer-git": "0.0.4",
