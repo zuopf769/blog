@@ -4,7 +4,7 @@ export default function () {
 	git add -A
 	git commit -m "${message}"
 	git push origin master -f
-	hexo gm
+	hexo g
 	hexo d
 	`.trim().split('\n').join('&&'))
 }
