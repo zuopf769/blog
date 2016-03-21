@@ -56,8 +56,11 @@
       color #657b83
       padding-left 20px
       transform translateY(200%)
+      transition transform .3s ease, opacity .3s ease
+      opacity 0
       &.toc-visible
         transform translateY(0)
+        opacity 1
     a
       color #657b83
       &:hover
