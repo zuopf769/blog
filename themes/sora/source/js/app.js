@@ -6,11 +6,12 @@ hljs.initHighlightingOnLoad()
 document.addEventListener('DOMContentLoaded', ready)
 
 function ready() {
-  var tocOpen = true
   var toc = $('.post-toc')
   var postPage = $('.post-page')
 
-  ;(function stickyToc() {
+  if (toc) {
+    var tocOpen = true
+    ;(function stickyToc() {
     var tocLeft = postPage.offsetLeft + postPage.clientWidth + 20 + 'px'
     var tocHeight = toc.querySelector('.toc').clientHeight + 'px'
 
@@ -35,5 +36,6 @@ function ready() {
       target.innerHTML = '隐藏 TOC'
     }
     tocOpen = !tocOpen
+  }
   }
 }
