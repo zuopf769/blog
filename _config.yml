@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-version: 0.1.3
+version: 0.1.4
 title: 庶民样本
 slogan: Lonelyness is Singing
 subtitle: An artist who lives in his fields
@@ -103,3 +103,6 @@ markdown:
     permalink: false
     permalinkClass: header-anchor
     permalinkSymbol: ⚛
+
+html_minifier:
+  enable: false
