@@ -16,8 +16,10 @@ function ready() {
 
     toc.style.left = tocLeft
     toc.style.height = tocHeight
-    toc.querySelector('.toc').classList.add('toc-visible')
     toc.style.visibility = 'visible'
+    setTimeout(function () {
+      toc.querySelector('.toc').classList.add('toc-visible')
+    }, 200)
   })();
 
   $('.toggle-toc').addEventListener('click', toggleToc)
