@@ -1,6 +1,7 @@
 export default function () {
 	const message = cli.input[1] || `updated at ${new Date()}`
 	exec(`
+	hexo clean
 	git add -A
 	git commit -m "${message}"
 	git push origin master -f
