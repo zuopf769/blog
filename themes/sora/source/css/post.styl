@@ -1,3 +1,6 @@
+.post-page
+  position relative
+
 .post
   .post-title
     color #b58900
@@ -40,3 +43,22 @@
         padding 3px 10px
       li:nth-child(2n)
         background-color rgba(37, 26, 26, 0.11)
+
+.sidebar
+  .post-toc
+    position fixed
+    bottom 80px
+    width 300px
+    visibility hidden
+    .toc
+      margin 0
+      margin-bottom 10px
+      color #657b83
+      padding-left 20px
+      transform translateY(200%)
+      &.toc-visible
+        transform translateY(0)
+    a
+      color #657b83
+      &:hover
+        background-color rgba(101, 123, 131, 0.11)
