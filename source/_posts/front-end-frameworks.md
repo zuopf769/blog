@@ -66,7 +66,7 @@ Vue 社区则看起来更加专制，现状是各路菊苣为 [小右](http://ev
 
 ### 基础
 
-首先熟悉这个框架是最基本的，通过阅读官方的一些 guide 并且自己动手操作比较好的做法，比如在 [JSbin](http://jsbin.com/) 上试试 Vue。这方面 Vue 的 [官方教程](http://cn.vuejs.org/guide/) 由浅入深、面面俱到堪称业界典范，
+首先熟悉这个框架是最基本的，通过阅读官方的一些 guide 并且自己动手操作比较好的做法，比如在 [JSbin](http://jsbin.com/) 上试试 Vue。这方面 Vue 的 [官方教程](http://cn.vuejs.org/guide/) 由浅入深、面面俱到堪称业界典范。
 
 ### 生态
 
