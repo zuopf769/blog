@@ -2,6 +2,8 @@ title: 如何部署 Node.js 应用
 subtitle: 二〇一六年的解决方案
 date: 2016-03-23 15:37:20
 tags:
+ - deploy
+
 ---
 
 当你熟悉 Node.js 之后很可能会自己写些小东西放在 VPS 上跑，比如说一个个人的 API 服务，或者是你的网站。这篇文章分享的内容不管你的 app 大小，都相对适用，因为我们的原则是「run it forever and deploy it smartly」。
@@ -81,6 +83,8 @@ $ git push server master
 
 你大可参考 [Ghost 部署指南](http://support.ghost.org/deploying-ghost/#making-ghost-run-forever) 来达到这个目的。
 
+你也可以考虑使用 [docker](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) 这个更现代?的解决方案。
+
 ## 延伸阅读
 
 - [How to deploy your node app on Linux, 2016 edition](https://certsimple.com/blog/deploy-node-on-linux)
@@ -89,4 +93,3 @@ $ git push server master
 - [Operating Node.js in Production](https://blog.risingstack.com/operating-node-in-production/)
 - [How To Use HAProxy to Set Up HTTP Load Balancing on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-use-haproxy-to-set-up-http-load-balancing-on-an-ubuntu-vps)
 - [Node.js Security Tips](https://blog.risingstack.com/node-js-security-tips/)
-- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
