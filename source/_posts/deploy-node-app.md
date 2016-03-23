@@ -82,7 +82,7 @@ $ git push server master
 
 你需要持久化运行你的 app，因为它很可能在高峰时段 crash 掉，同时你也希望在系统重启了你的 app 也能自动重启。
 
-你大可参考 [Ghost 部署指南](http://support.ghost.org/deploying-ghost/#making-ghost-run-forever) 来达到这个目的。非常完整，我就不再赘述。
+你大可参考 [Ghost 部署指南](http://support.ghost.org/deploying-ghost/#making-ghost-run-forever) 来达到这个目的。非常完整，我就不再赘述，不过我推荐使用 Supervisor。
 
 你也可以考虑使用 [docker](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) 这个更现代?的解决方案。
 
