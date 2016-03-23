@@ -47,7 +47,7 @@ $ cat > post-receive
 git --work-tree=/var/www/domain.com --git-dir=/var/repo/app.git checkout -f
 cd /var/www/domain.com
 npm install
-# 这里还可以一些构建脚本，比如 npm run build
+# 这里还可以加一些构建脚本，比如 npm run build
 ```
 
 最后，按下 Ctrl+D 来确认保存。
