@@ -1,5 +1,5 @@
 title: 如何部署 Node.js 应用
-subtitle: 二〇一六年的解决方案
+subtitle: 你告诉我还能怎么办
 date: 2016-03-23 15:37:20
 tags:
   - deploy
@@ -16,7 +16,7 @@ tags:
 
 首先我们确认一下：
 
-- `/var/repo` - 你讲把本地代码同步到 VPS 上的这个目录
+- `/var/repo` - 这是 VPS 上存储 git repo 的目录
 - `/var/www` - 这是 VPS 的网站目录
 
 ### 在 VPS 上创建一个空 repo
