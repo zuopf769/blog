@@ -88,7 +88,7 @@ $ git push server master
 
 你大可参考 [Ghost 部署指南](http://support.ghost.org/deploying-ghost/#making-ghost-run-forever) 来达到这个目的。非常完整，我就不再赘述，不过我推荐使用 Supervisor。
 
-你也可以考虑使用 [docker](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) 这个更现代?的解决方案。
+你也可以考虑使用 [docker](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) 这个更现代(?)的解决方案。
 
 ## 延伸阅读
 
