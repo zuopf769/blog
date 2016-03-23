@@ -2,8 +2,9 @@ title: 如何部署 Node.js 应用
 subtitle: 二〇一六年的解决方案
 date: 2016-03-23 15:37:20
 tags:
- - deploy
-
+  - deploy
+  - node.js
+  - docker
 ---
 
 当你熟悉 Node.js 之后很可能会自己写些小东西放在 VPS 上跑，比如说一个个人的 API 服务，或者是你的网站。这篇文章分享的内容不管你的 app 大小，都相对适用，因为我们的原则是「run it forever and deploy it smartly」。
