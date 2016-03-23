@@ -14,7 +14,7 @@ tags:
 
 首先你需要的是把你的 app 代码从本地上传到 VPS，我们不可能从上个世纪的 ftp 方式上传。我们开发的时候用 git 同步本地仓库和远程仓库的代码，你一定有屡试不爽的感觉，同理，这里我们也将使用 git 来操作。
 
-以下内容都可以用 [pod](https://github.com/yyx990803/pod) 这个工具来代替，不过相应的你需要用 [PM2](https://github.com/Unitech/pm2) 来管理进程。
+以下内容都可以用 [pod](https://github.com/yyx990803/pod) 这个工具来代替，不过相应的你需要用 [PM2](https://github.com/Unitech/pm2) 来管理进程。而这里是个相对 general case。
 
 首先我们确认一下：
 
@@ -47,6 +47,7 @@ $ cat > post-receive
 git --work-tree=/var/www/domain.com --git-dir=/var/repo/app.git checkout -f
 cd /var/www/domain.com
 npm install
+# 这里还可以一些构建脚本，比如 npm run build
 ```
 
 最后，按下 Ctrl+D 来确认保存。
