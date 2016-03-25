@@ -26,8 +26,7 @@
     "hexo-server": "^0.1.2"
   },
   "devDependencies": {
-    "hexo-deployer-git": "0.0.4",
-    "jstransformer-marked": "^1.0.1",
-    "marked": "^0.3.5"
+    "hexo-cli": "^1.0.1",
+    "hexo-deployer-git": "0.0.4"
   }
 }
