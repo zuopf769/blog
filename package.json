@@ -6,7 +6,7 @@
     "version": "3.2.0"
   },
   "scripts": {
-    "test": "hexo deploy",
+    "test": "echo lol",
     "deploy": "mk",
     "start": "hexo clean && hexo s --watch"
   },

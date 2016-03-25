@@ -1,3 +1,15 @@
 machine:
   node:
     version: 5
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - git config --global user.name "CircleCI"
+      - git config --global user.email "bot@circleci.com"
+      - sed -i'' "s~https://github.com/egoist/egoist.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/egoist/egoist.github.io.git~" _config.yml
+      - rm -rf .deploy_git/
+      - hexo clean
+      - hexo generate
+      - hexo deploy
