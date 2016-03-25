@@ -23,7 +23,7 @@ categories:
 
 ![anime](https://ooo.0o0.ooo/2015/10/12/561c7d0bceeb6.png)
 
-## 周四 
+## 周四
 
 仍然无聊。
 
