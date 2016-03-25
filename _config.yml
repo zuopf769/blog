@@ -79,7 +79,7 @@ feed:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: git@github.com:egoist/egoist.github.io.git
+  repo: https://github.com/egoist/egoist.github.io.git
 
 # markdown
 markdown:
