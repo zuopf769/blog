@@ -79,7 +79,10 @@ feed:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://github.com/egoist/egoist.github.io.git
+  repo: https://GH_TOKEN:x-oauth-basic@github.com/egoist/egoist.github.io.git
+- type: git
+  repo: CODING_URL
+  branch: coding-pages
 
 # markdown
 markdown:
