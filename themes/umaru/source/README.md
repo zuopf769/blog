@@ -1,0 +1,9 @@
+# EGOIST's blog
+
+[![Circle CI](https://circleci.com/gh/egoist/egoist.github.io.source/tree/master.svg)](https://circleci.com/gh/egoist/egoist.github.io.source/tree/master)
+
+Here is the static html repo: https://github.com/egoist/egoist.github.io.source
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
