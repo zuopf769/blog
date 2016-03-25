@@ -2,6 +2,8 @@
 
 [![Circle CI](https://circleci.com/gh/egoist/egoist.github.io.source/tree/master.svg)](https://circleci.com/gh/egoist/egoist.github.io.source/tree/master)
 
+Here is the static html repo: https://github.com/egoist/egoist.github.io
+
 ## License
 
 
