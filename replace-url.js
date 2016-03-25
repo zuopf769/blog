@@ -3,7 +3,7 @@
 const fs = require('fs')
 
 const GH_TOKEN = process.env.GH_TOKEN
-CONST CODING_URL = process.env.CODING_URL
+const CODING_URL = process.env.CODING_URL
 
 let content = fs.readFileSync('./_config.yml', 'utf8')
 content = content
