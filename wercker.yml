@@ -27,6 +27,6 @@ build:
     # A step that executes `npm test` command
     - npm-test
     - script:
-        name: echo nodejs information
+        name: echo deploy
         code: |
           bash ./deploy.sh
