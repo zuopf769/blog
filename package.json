@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "echo lol",
-    "deploy": "mk",
+    "deploy": "./deploy.sh",
     "start": "hexo clean && hexo s --watch"
   },
   "dependencies": {

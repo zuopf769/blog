@@ -26,16 +26,4 @@ build:
     - npm-install
     # A step that executes `npm test` command
     - npm-test
-
-    # A custom script step, name value is used in the UI
-    # and the code value contains the command that get executed
-    - script:
-        name: echo nodejs information
-        code: |
-          git config --global user.name "CI"
-          git config --global user.email "ci@egoistian.com"
-          node ./replace-url.js
-          rm -rf .deploy_git/
-          ./node_modules/.bin/hexo clean
-          ./node_modules/.bin/hexo generate
-          ./node_modules/.bin/hexo deploy
+    - npm-run-deploy
