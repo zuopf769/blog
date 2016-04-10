@@ -10,7 +10,7 @@ function ready() {
   var postPage = $('.post-page')
 
   if (toc) {
-    var tocOpen = true
+    var tocOpen = false
     ;(function stickyToc() {
     var tocLeft = postPage.offsetLeft + postPage.clientWidth + 20 + 'px'
     var tocHeight = toc.querySelector('.toc').clientHeight + 'px'
@@ -18,9 +18,7 @@ function ready() {
     toc.style.left = tocLeft
     toc.style.height = tocHeight
     toc.style.visibility = 'visible'
-    setTimeout(function () {
-      toc.querySelector('.toc').classList.add('toc-visible')
-    }, 200)
+
   })();
 
   $('.toggle-toc').addEventListener('click', toggleToc)
