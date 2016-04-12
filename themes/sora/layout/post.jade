@@ -22,8 +22,23 @@ block page
       script.
       .post-content.markdown-body !{page.content}
       if is_post()
-        .post-report-bug
-          | 文章勘误及评论可以直接到 <a href="https://github.com/egoist/egoist.github.io.source/blob/master/source/_posts/#{page.slug}.md">源代码地址</a> 修改或者 <a href="https://github.com/egoist/egoist.github.io.source/issues/new">提交 ISSUE</a>，感谢阅读！
+        #disqus_thread
+        script.
+          var disqus_config = function () {
+            this.page.url = '#{page.permalink}'; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = '#{page.path}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '/js/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        noscript
+          | Please enable JavaScript to view the
+          a(href='https://disqus.com/?ref_noscript', rel='nofollow') comments powered by Disqus.
+          .post-report-bug
+        | 文章勘误可以直接到 <a href="https://github.com/egoist/egoist.github.io.source/blob/master/source/_posts/#{page.slug}.md">源代码地址</a> 修改或者 <a href="https://github.com/egoist/egoist.github.io.source/issues/new">提交 ISSUE</a>，感谢阅读！
 
 block append scripts
   script(src="//cdn.css.net/libs/highlight.js/9.0.0/highlight.min.js")
