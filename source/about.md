@@ -40,6 +40,16 @@ subtitle: write code that works
 我的灵魂球员: C罗  
 我的灵魂语言: JavaScript  
 
+## 装备
+
+- 电脑: MacBook Pro 840 (2015 early)
+- 手机: 一加(One Plus) 2
+- 鼠标: Razer 地狱狂蛇(ABYSSUS) 2014
+- 机械键盘: KBTalking RACE II
+- 单肩包: 匡威春橘色 14224C800
+- 手环: Mi band 数个
+- 耳机: B&O Form 2 / AKG K420
+
 ## 前端开发
 
 ### Q: 为什么从事前端?
