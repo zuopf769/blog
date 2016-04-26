@@ -58,4 +58,4 @@ tags:
 
 四月另一个笑点十足的番，它的诡异之处就是它的画风，这种独特的 「PPT画风」看似节省经费却带来了意想不到的笑点。而剧情也显而易见，将死之人被曾经的忍者附身而复活。被忍者杀死的男主则被某神祕的忍者灵魂附身了，开始了消灭「忍者」之路。此番唯一正常的就是女性角色的作画，不管是造型还是乳量都是非常正常且好看的。
 
-![ninja se](https://firesize.pixelcat.co/?url=http://ww4.sinaimg.cn/large/a15b4afegw1f397cnma1xj21gy13mgvd&origin=1)
+![ninja se](https://firesize.pixelcat.co/?url=http://ww4.sinaimg.cn/large/a15b4afegw1f397cnma1xj21gy13mgvd&width=600)
