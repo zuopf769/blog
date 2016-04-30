@@ -78,6 +78,12 @@ Your work is going to fill a large part of your life, and the only way to be tru
 - 看到二次元女孩子第一反应是 prpr
 - 天灭 ISIS 保平安
 
+## 正宫
+
+正宫经常更换，请随时关注!
+
+![wife](https://firesize.pixelcat.co?url=http://ww4.sinaimg.cn/large/a15b4afegw1f3f22cd8t8j20ns0zktmo)
+
 ## 后宫
 
 后宫人数众多，排名不分先后:
@@ -103,3 +109,4 @@ Your work is going to fill a large part of your life, and the only way to be tru
 - 楪祈
 - 朝田诗乃
 - 亚丝娜
+- 无名
