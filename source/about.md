@@ -3,7 +3,7 @@ layout: page
 subtitle: write code that works
 ---
 
-## 关于我 <img align="right" height="100" src="https://cdn.rawgit.com/egoist/resource/master/avatar/lunzi.png"/>
+## 关于我 <img align="right" height="100" src="https://o68eee1f9.qnssl.com/iTerm2.pqvfQE.png"/>
 
 94 年生人，生无可恋脸，患有二次元禁断综合征。我会在这里写一些关于 Node.js、JavaScript、开源、足球、动漫、三次元相关的文章，如果你感兴趣可以订阅这个 [RSS](/atom.xml) 地址。
 
