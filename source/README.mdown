@@ -4,4 +4,4 @@ Here is the source repo: https://github.com/egoist/egoist.github.io.source
 
 ## License
 
-[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh) &copy; [EGOIST](https://github.com/egoist)
