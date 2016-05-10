@@ -18,16 +18,15 @@ html
         meta(name="description" content=config.description)
   body
     header.header
-      .container
-        h1.site-name
-          a(href="/") e.z.
-        ul.nav
-          li
-            a(href="/about.html" class=page.path === 'about.html' ? 'active' : '') about
-          li
-            a(href="/contact.html" class=page.path === 'contact.html' ? 'active' : '') contact
-          li
-            a(href="/gf.html" class=page.path === 'gf.html' ? 'active' : '') girlfriend wanted
+      h1.site-name
+        a(href="/") e.z.
+      ul.nav
+        li
+          a(href="/about.html" class=page.path === 'about.html' ? 'active' : '') about
+        li
+          a(href="/contact.html" class=page.path === 'contact.html' ? 'active' : '') contact
+        li
+          a(href="/gf.html" class=page.path === 'gf.html' ? 'active' : '') girlfriend wanted
     block page
     footer.footer
       .centered
