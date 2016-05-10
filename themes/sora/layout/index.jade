@@ -2,10 +2,6 @@ extends base
 
 block page
   section.centered
-    h2.egoist-name 
-      | egoist<span>ian</span>
-      br
-      | zen<span>g</span>
     ul.post-list
       - page.posts.each(function(post) {
         +article(post)
