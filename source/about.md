@@ -82,7 +82,7 @@ Your work is going to fill a large part of your life, and the only way to be tru
 
 正宫经常更换，请随时关注!
 
-![wife](https://firesize.pixelcat.co?url=http://ww4.sinaimg.cn/large/a15b4afegw1f3f22cd8t8j20ns0zktmo)
+![wife](https://o68eee1f9.qnssl.com/a15b4afegw1f3f22cd8t8j20ns0zktmo.jpeg)
 
 ## 后宫
 
