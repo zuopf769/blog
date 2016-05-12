@@ -41,7 +41,7 @@ filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
-future: true
+future: false
 highlight:
   enable: false
   line_number: false
@@ -62,7 +62,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 0
+per_page: 5
 pagination_dir: page
 
 # Extensions

@@ -10,3 +10,8 @@ block page
       - page.posts.each(function(post) {
         +article(post)
       - })
+    .home-pagenavi
+      if page.next
+        a.old(href="/page/#{page.next}") 旧的文章
+      if page.prev
+        a.new(href=page.prev === 1 ? '/' : "/page/#{page.prev}") 新的文章

@@ -109,6 +109,43 @@ a
   content ''
   display table
 
+.home-pagenavi
+  magin-bottom 30px
+  a
+    margin-right 20px
+    background-color transparent
+    border-bottom 3px solid #b58900
+    background-color #eee8d5
+    color #b58900
+    padding 0 10px
+    height 38px
+    font-size 14px
+    line-height @height
+    transition all .3s ease
+    position relative
+    overflow hidden
+    display inline-block
+    &.old
+      &:before
+        content '旧的文章'
+    &:before
+      content '新的文章'
+      width 100%
+      left 0
+      transform translateX(-100%)
+      text-align center
+      top 0
+      bottom 0
+      background-color #b58900
+      position absolute
+      transition transform .3s ease
+      z-index 1
+      color #eee8d5
+    &:hover
+      color #eee8d5
+      &:before
+        transform translateX(0)
+
 @import 'markdown';
 @import 'post';
 @import 'mobile';
