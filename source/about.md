@@ -10,7 +10,7 @@ subtitle: write code that works
 ## 抓得到我吗
 
 - [GitHub](https://github.com/egoist)
-- [Twitter](https://twitter.com/shomin_sample)
+- [Twitter](https://twitter.com/rem_rin_rin)
 - [Telegram](https://telegram.me/egoistian)
 - [Instagram](https://instagram.com/egoistian)
 - [微博](http://weibo.com/zengxinyu)
