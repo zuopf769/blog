@@ -78,11 +78,13 @@ Your work is going to fill a large part of your life, and the only way to be tru
 - 看到二次元女孩子第一反应是 prpr
 - 天灭 ISIS 保平安
 
+其次，我相信人最不能缺少的东西就是钱和梦想。不能缺少钱不是指为了钱夜以继日工作那样，唯利是图，而是指能够拥有足够维持自己梦想的钱，对的，真正重要的是梦想啊。没有梦想是件很可怕的事，它让你虚度光阴甚至让你对自己的存在产生疑问。
+
 ## 正宫
 
 正宫经常更换，请随时关注!
 
-![wife](https://o68eee1f9.qnssl.com/emilia.jpg)
+![wife](https://o68eee1f9.qnssl.com/rem.jpg)
 
 ## 后宫
 
