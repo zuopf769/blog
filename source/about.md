@@ -16,6 +16,8 @@ subtitle: write code that works
 - [微博](http://weibo.com/zengxinyu)
 - [微信](http://ww4.sinaimg.cn/large/a15b4afegw1f0nf2nlbzuj20n00ydtck)
 - [知乎](https://www.zhihu.com/people/egoistian)
+- [网易云音乐](http://music.163.com/#/user/home?id=12579252)
+- [MyAnimeList](http://myanimelist.net/profile/egoistian)
 - 中国成都
 
 ## 赋湿一首
