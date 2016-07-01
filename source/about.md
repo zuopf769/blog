@@ -20,6 +20,8 @@ subtitle: write code that works
 - [MyAnimeList](http://myanimelist.net/profile/egoistian)
 - 中国成都
 
+如果你要加微信最好注明你的意图，比如: `你怎么辣么可爱，可以做我男朋友吗嘤嘤嘤！`
+
 ## 赋湿一首
 
 四百大妈，掺金坷垃。问斯大林，瞬间爆炸。
@@ -45,7 +47,7 @@ subtitle: write code that works
 ## 装备
 
 - 电脑: MacBook Pro 840 (2015 early)
-- 手机: 一加(One Plus) 2
+- 手机: 小米 5
 - 鼠标: Razer 地狱狂蛇(ABYSSUS) 2014
 - 机械键盘: KBTalking RACE II
 - 单肩包: 匡威春橘色 14224C800
@@ -119,3 +121,4 @@ Your work is going to fill a large part of your life, and the only way to be tru
 - 更识楯无（更识刀奈）
 - 艾蕾欧诺拉·维尔塔利亚（艾莲）
 - 生野艾米露
+- 友利奈绪
