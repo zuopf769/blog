@@ -40,7 +40,7 @@ subtitle: write code that works
 
 能一直写代码，一直踢足球，一直看动漫，一直单曲循环，就够了。
 
-我的灵魂歌手: EGOIST/chelly  
+我的灵魂歌手: EGOIST/chelly、Aimer
 我的灵魂球员: C罗  
 我的灵魂语言: JavaScript  
 
