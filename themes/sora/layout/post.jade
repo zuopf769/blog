@@ -11,7 +11,7 @@ block page
   section.centered.post-page
     .sidebar
       if page.path !== 'gf.html'
-        - var tocContent = toc(page.content, {list_number: false})
+        - var tocContent = toc(page.content, {list_number: false, max_depth: 2})
         if tocContent
           .post-toc
             | !{tocContent}
