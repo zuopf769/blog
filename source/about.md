@@ -122,3 +122,4 @@ Your work is going to fill a large part of your life, and the only way to be tru
 - 艾蕾欧诺拉·维尔塔利亚（艾莲）
 - 生野艾米露
 - 友利奈绪
+- 布鲁郗·芙尔基
