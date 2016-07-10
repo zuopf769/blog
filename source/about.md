@@ -88,7 +88,7 @@ Your work is going to fill a large part of your life, and the only way to be tru
 
 正宫经常更换，请随时关注!
 
-![wife](https://o68eee1f9.qnssl.com/rem.jpg)
+![wife](https://o68eee1f9.qnssl.com/16-7-10/74721927.jpg)
 
 ## 后宫
 
