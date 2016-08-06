@@ -1,7 +1,7 @@
 ---
 title: 菜月昂前传
 subtitle: 是人渣、废柴抑或是英雄、天使之路?
-date: 2016-08-06 22:46:52
+date: 2016-08-03 22:46:52
 tags:
   - anime
   - rezero
