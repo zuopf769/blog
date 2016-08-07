@@ -22,6 +22,23 @@
     color #657b83
     margin-top 30px
     border 1px dashed rgba(37,26,26,.11)
+  .highlight
+    position relative
+    pre
+      padding-top 44px
+    &:before
+      position absolute
+      top 0
+      right 0
+      left 0
+      display block
+      padding 0 16px
+      background-color rgba(0,0,0,0.04)
+      color #7d7d7d
+      height 28px
+      line-height @height
+      font-size 12px
+      content attr(data-lang)
   .disqus
       margin-top 20px
   .post-content

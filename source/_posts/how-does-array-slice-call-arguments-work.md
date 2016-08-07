@@ -1,6 +1,6 @@
 title: '[].slice.call(arguments) 是如何工作的'
 date: 2015-12-13 22:39:30
-tags: 
+tags:
   - javascript
 categories:
   - javascript
@@ -9,7 +9,7 @@ categories:
 
 `arguments` 是什么? `arguments` 是属于函数内部的变量，其值是函数参数列表，一个类数组对象:
 
-```javascript
+```JavaScript
 function foo () {
   console.log(arguments)
 }
@@ -25,7 +25,7 @@ foo ('hello', 'world')
 
 你不可能用 `arguments.slice()` 这样的形式调用，因为 `arguments` 本身还是一个非数组对象，只是像数组。这个时候你想到了 `.call` 方法，这个方法让你可以自定义调用函数的内部 this 指向哪里，之前说过，默认是指向调用这个函数的对象。
 
-```javascript
+```JavaScript
 Array.prototype.slice.call(arguments)
 // output:
 ['hello', 'world']
@@ -33,6 +33,6 @@ Array.prototype.slice.call(arguments)
 
 这样你就得到了一个真正的参数数组了，而 `.slice` 除了通过 `Array.prototype` 访问当然还可以通过对象直接量访问:
 
-```javascript
+```JavaScript
 [].slice.call(arguments)
 ```
