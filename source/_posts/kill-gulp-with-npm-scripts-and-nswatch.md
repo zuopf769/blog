@@ -1,5 +1,5 @@
 ---
-title: 用 npm script <br>和 nswatch 替代 gulp
+title: 用 npm scripts <br>和 nswatch 替代 gulp
 subtitle: Long live gulp, I use npm script
 date: 2016-08-29 16:54:30
 tags:
