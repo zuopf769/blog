@@ -1,6 +1,6 @@
 mixin article(post)
   li.post-item
-    h4.post-title: a(href=url_for(post.path)) #{post.title}
+    h4.post-title: a(href=url_for(post.path)) #{post.title.replace(/<(?:.|\n)*?>/gm, '')}
 
 doctype html
 html
