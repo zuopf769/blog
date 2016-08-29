@@ -65,7 +65,7 @@ npm scripts 甚至支持 `pre` `post` 这些 hook 让你在相应的一个 task 
 
 4. 可维护性
 
-gulp tasks 也多了以后会变得很难维护，npm scripts 也是。解决方案是推荐也精良精简的 script，比如一个 script 只干一件事。或者是在很长很复杂你就需要专门放到一个 JS 文件里然后再在 npm scripts 里调用了。
+gulp tasks 也多了以后会变得很难维护，npm scripts 也是。解决方案是推荐写精简的 script，比如一个 script 只干一件事。或者很长很复杂的话你就需要专门放到一个 JS 文件里然后再在 npm scripts 里调用了。
 
 ## nswatch
 
