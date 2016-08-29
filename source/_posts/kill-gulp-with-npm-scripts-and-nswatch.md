@@ -7,7 +7,7 @@ tags:
   - npm
 ---
 
-## 为什么用 npm script ?
+## 为什么用 npm scripts ?
 
 首先我觉得  [Why I Left Gulp and Grunt for npm Scripts](https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.8wsejnq0u) 里说的不用 gulp 的理由基本没有道理:
 
