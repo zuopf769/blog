@@ -10,7 +10,7 @@ tags:
 当你熟悉 Node.js 之后很可能会自己写些小东西放在 VPS 上跑，比如说一个个人的 API 服务，或者是你的网站。这篇文章分享的内容不管你的 app 大小，都相对适用，因为我们的原则是「run it forever and deploy it smartly」。
 
 
-## 上传代码
+## <span>上传代码</span>
 
 首先你需要的是把你的 app 代码从本地上传到 VPS，我们不可能用上个世纪的 ftp 方式上传。我们开发的时候用 git 同步本地仓库和远程仓库的代码，你一定有屡试不爽的感觉，同理，这里我们也将使用 git 来操作。
 
@@ -82,7 +82,7 @@ $ git push server master
 
 然后检查一下 `/var/www/domain.com` 吧，你的代码都被同步过去了。
 
-## 持久运行你的 app
+## <span>持久运行你的 app</span>
 
 你需要持久化运行你的 app，因为它很可能在高峰时段 crash 掉，同时你也希望在系统重启之后你的 app 也能自动重启。
 
@@ -90,7 +90,7 @@ $ git push server master
 
 你也可以考虑使用 [docker](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) 这个更现代(?)的解决方案。
 
-## 延伸阅读
+## <span>延伸阅读</span>
 
 - [How to deploy your node app on Linux, 2016 edition](https://certsimple.com/blog/deploy-node-on-linux)
 - [Running your Node & Express apps forever, no matter what, with Systemd and PM2](https://www.terlici.com/2015/06/20/running-node-forever.html)

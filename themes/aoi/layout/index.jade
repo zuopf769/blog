@@ -1,0 +1,19 @@
+extends base
+
+block page
+  section.page-home
+    header.home-header
+      .container
+        h1.site-name EGOIST
+    .container.content
+      h2.hr
+        span posts
+      ul.post-list
+        - page.posts.each(function(post) {
+          +article(post)
+        - })
+    .home-pagenavi
+      if page.next
+        a.old(href="/page/#{page.next}") 旧的文章
+      if page.prev
+        a.new(href=page.prev === 1 ? '/' : "/page/#{page.prev}") 新的文章

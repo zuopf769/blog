@@ -8,7 +8,7 @@ tags:
  - jquery
 ---
 
-## 起因
+## <span>起因</span>
 
 为什么我还需要用 jQuery？有时候我会有这样的疑惑。我觉得 jQuery 还存在于我某些小项目中的原因就是可以 “即插即用”。新建一个 `index.html`、复制一些代码、新建一个 `style` `script` 标签你就可以开始工作了，这种便利在某些时候非常好。
 
@@ -16,7 +16,7 @@ tags:
 
 用过 Webpack 的都知道，也许配置和解决 bug 的时间会比写代码的时间更长，而且大部分情况配置文件都大同小异。那为什么不用**一个配置适用多个项目**？于是有了 [`tooling`](https://github.com/egoist/tooling)，它其实就是用一个内置的 Webpack 配置来运行和编译指定的项目。
 
-## tooling 带来了什么？
+## <span>tooling</span> 带来了什么？
 
 也许我的表达并不直观，简而言之，tooling 让你开发的便利程度趋近直接用一个 html 搞定。
 
@@ -55,7 +55,7 @@ new Vue({
 
 并不需要配置、对开发友好、ES6、PostCSS + PreCSS、享受 Vue 单文件组件的优势、React 的 JS everywhere 的畅快，这些带给你的远不止便利。
 
-## Use Case
+## <span>Use Case</span>
 
 如果你实在不知道这玩意能在哪些地方用，那么我告诉你吧。
 

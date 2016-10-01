@@ -1,0 +1,23 @@
+hr_h2() {
+  position: relative;
+  text-align: center;
+  border-bottom: none;
+  color: #999;
+  font-weight: normal;
+  span {
+    background-color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    background-color: @color;
+    z-index: -1;
+  }
+}

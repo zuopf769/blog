@@ -1,5 +1,5 @@
 ---
-title: 用 npm scripts <br>和 nswatch 替代 gulp
+title: 用 npm scripts 和 nswatch 替代 gulp
 subtitle: Long live gulp, I use npm script
 date: 2016-08-29 16:54:30
 tags:
@@ -7,7 +7,7 @@ tags:
   - npm
 ---
 
-## 为什么用 npm scripts ?
+## <span>为什么用 npm scripts ?</span>
 
 首先我觉得  [Why I Left Gulp and Grunt for npm Scripts](https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.8wsejnq0u) 里说的不用 gulp 的理由基本没有道理:
 
@@ -67,7 +67,7 @@ npm scripts 甚至支持 `pre` `post` 这些 hook 让你在相应的一个 task 
 
 gulp tasks 也多了以后会变得很难维护，npm scripts 也是。解决方案是推荐写精简的 script，比如一个 script 只干一件事。或者很长很复杂的话你就需要专门放到一个 JS 文件里然后再在 npm scripts 里调用了。
 
-## nswatch
+## <span>nswatch</span>
 
 > https://github.com/egoist/nswatch
 

@@ -7,9 +7,10 @@ tags:
 subtitle: 如何在 Vue 中使用 Redux 管理 State
 categories: []
 date: 2015-12-18 17:10:00
+outdated: 由于多次更新以及不稳定性，本文中关于 Revue 的介绍已不再有效。
 ---
 
-## 缘起小明
+## <span>缘起小明</span>
 
 前几天小明找到我，说他想用 Vue 做一个小博客，自己写点东西，可是一来就遇到问题了，他发现组件之间的状态传递十分麻烦。父子组件还好点，在 Vue 里面可以用 `props` 执行函数或者 `this.$broadcast` `this.$dispatch` 来传递状态，可是两个完全没有联系的组件要共享状态十分困难啊。
 
@@ -22,7 +23,7 @@ date: 2015-12-18 17:10:00
 
 以上方法都是可行的，但是一旦组件逻辑复杂起来这样的回调啊、绑定啊、同步啊都会乱套。
 
-## 历史必然
+## <span>历史必然</span>
 
 于是出现了 Redux !
 
@@ -30,7 +31,7 @@ date: 2015-12-18 17:10:00
 
 我能做的关于 Redux 的介绍就是这样，了解更多请阅读官方[自述](https://github.com/rackt/redux)。
 
-## Vue?
+## <span>Vue?</span>
 
 也许你现在知道了 Redux 最初是因为 React 这个 View Layer Framework 而生的，React 和 Vue 一样具有组件系统，需要状态管理。
 
@@ -38,7 +39,7 @@ date: 2015-12-18 17:10:00
 
 你可以这么做，也可以使用 Vue 官方的 Flux 实现 [Vuex](https://github.com/vuejs/vuex)，它和 Redux 非常类似。几乎唯一的区别就是你需要在 action 里直接修改状态。这很好，因为 Vue 本身赞成的是 mutable state。而 Redux 中则是推荐不要修改状态而是返回一个新的状态，选择哪种看你习惯哪种。
 
-## Revue
+## <span>Revue</span>
 
 Redux 在 React 中的应用是通过 [React-Redux](https://github.com/rackt/react-redux) 来绑定的，显得十分复杂。在 Vue 中绑定 Redux 却是十分的简单：
 

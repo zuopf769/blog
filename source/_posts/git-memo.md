@@ -8,7 +8,7 @@ categories:
 
 Git 的一些常用操作备忘。
 
-## 起步
+## <span>起步</span>
 
 安装好 Git 之后，配置你的资料:
 

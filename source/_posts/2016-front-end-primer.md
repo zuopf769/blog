@@ -12,15 +12,15 @@ tags:
 
 我假设阅读者只了解过简单的 HTML/CSS。
 
-## HTML
+## <span>HTML</span>
 
 HTML 没有了 CSS 就什么都不是，它相当于给网页各个区域命名，然后让你可以进行更多的操作。比如头部导航栏，你经常会给它起个名字叫 `header`。
 
-## CSS
+## <span>CSS</span>
 
 CSS 是层叠样式表（Cascading Style Sheets）的缩写，它是用来定义你的 HTML 的展现形式的一种语言。比如让你的 HTML 里的文字显示不同字体，一个元素显示不同的高度。
 
-## HTML+CSS
+## <span>HTML+CSS</span>
 
 HTML 和 CSS 都是语法非常**松散**的语言，这样的导致了它们入门非常简单，然而一旦代码量变大维护就会很困难。
 
@@ -74,7 +74,7 @@ HTML 和 CSS 都是语法非常**松散**的语言，这样的导致了它们入
 
 要记住的是，它只是将你**自定义的 CSS 风格**转换成符合浏览器标准的 CSS，至于为什么？标准的 CSS 不够好用呗，比如刚才遇到的问题。
 
-## HTML+CSS 小结
+## <span>HTML+CSS</span> 小结
 
 现在你知道了 HTML/CSS 在一起使用的时候能干什么，也知道了用模板引擎、CSS 处理器可以让你更好地写 HTML/CSS。要记住，「更好」也许只是在代码量增大的情况下更明显。
 
@@ -82,7 +82,7 @@ HTML 和 CSS 都是语法非常**松散**的语言，这样的导致了它们入
 
 推荐阅读: [Learn to Code HTML & CSS](http://learn.shayhowe.com/html-css/) 正如其松散的特性一样，你需要多使用才能更好地掌握用法。
 
-## JavaScript
+## <span>JavaScript</span>
 
 JavaScript 是一门真正的语言，它简单且强大。（以下简称 JS）
 
@@ -101,7 +101,7 @@ JS 本身并不具有「监听用户点击」这一功能，在浏览器上，�
 - [JavaScript 语言精粹](http://book.douban.com/subject/3590768/)
 
 
-## Node.js
+## <span>Node.js</span>
 
 刚才说过，过去的 JS 就是 JS 本身加上浏览器的 DOM API，于是就有人想到了：能不能把浏览器 DOM API 换成用户操作系统的 API？这样 JS 看起来就更像一门「真正的语言」，即可以在用户本地环境而不只是在浏览器中运行。
 
@@ -117,7 +117,7 @@ JS 本身并不具有「监听用户点击」这一功能，在浏览器上，�
 
 Node.js 只是一个运行环境，类似于 Java 的 JVM，最重要的还是 JavaScript 本身。
 
-## ES6
+## <span>ES6</span>
 
 很大的可能你现在都是在用 ES5 标准的 JavaScript 语法，而 ES6 则是 TC39(负责制定 JavaScript 语言标准的机构) 在 2015 年新推出的语言标准。
 

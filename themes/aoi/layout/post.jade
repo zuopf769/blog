@@ -1,0 +1,43 @@
+extends base
+
+block title
+  - var title = page.title.replace(/<(?:.|\n)*?>/gm, '')
+  title=title
+
+block page
+  section.post-page
+    header.post-header
+      a.home-icon(href="/")
+        include home-icon.html
+      .container
+        h2.post-title !{page.title}
+        if page.subtitle
+          h2.post-subtitle= page.subtitle
+    article.post
+      .container.content
+        if page.outdated
+          - var text = typeof page.outdated === 'string' ? page.outdated : '由于时效性等诸多原因，本文已无太多参考价值。'
+          .alert-warning !{text}
+        .post-content.markdown-body
+          | !{page.content}
+          p 如果你喜欢这篇文章，欢迎分享给你认识的人阅读 :)
+
+block footer
+  p
+    a(href="/") 返回首页
+  p
+    a(href="https://github.com/egoist/egoist.github.io.source" target="_blank") 源代码
+
+
+block meta
+  if page.subtitle
+    meta(name="description" content=page.subtitle)
+  else
+    - var summary = page.excerpt || page.content.replace(/<(?:.|\n)*?>/gm, '').substring(0, 100)
+    meta(name="description" content=summary)
+
+block append scripts
+  script(src="https://unpkg.com/in-view@0.4.3/dist/in-view.min.js")
+  script(src="/js/highlight.js")
+  script(src="/js/post.js")
+

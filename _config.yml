@@ -68,7 +68,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: sora
+theme: aoi
 
 feed:
   type: atom
@@ -103,3 +103,7 @@ markdown:
 
 html_minifier:
   enable: false
+
+clean_css:
+  exclude:
+    - "*.min.css"

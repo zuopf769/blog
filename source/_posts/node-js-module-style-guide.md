@@ -11,7 +11,7 @@ JavaScript 代码一向的特点就是难以维护，保持一个良好的代码
 
 我总结了一下写了 200 个 NPM package 之后的一些个人经验和习惯。
 
-## 初始化一个项目
+## <span>初始化一个项目</span>
 
 不再使用 `npm init`。因为除了 `package.json` 还有一些额外的配置文件，比如 `circle.yml`、`.editorconfig`、`LICENSE` 、`README.md` 等等。
 
@@ -19,7 +19,7 @@ JavaScript 代码一向的特点就是难以维护，保持一个良好的代码
 
 想要定制你的 README.md ? [blah](https://github.com/IonicaBizau/blah) 可以为你定制生成 README.md 以及更多提升效率的功能。
 
-## 注释
+## <span>注释</span>
 
 每一个具有单独意义的代码片段前都推荐写注释，就算再简单的代码你隔几天看也不可能一秒看出它在干什么，而有了注释就可以。对于复杂且意义重大的代码尽量写完整的 jsdoc 来说明。
 
@@ -42,12 +42,12 @@ function rev(names) {
 }
 ```
 
-## 编写可复用模块
+## <span>编写可复用模块</span>
 
 对于一个项目中多次使用（>1）的代码，推荐放入单独的文件作为模块使用。  
 对于更为通用的代码尽量打包进一个单独的 npm module 来使用。
 
-## 代码风格指南
+## <span>代码风格指南</span>
 
 对于分号的问题不作讨论，加不加都行。
 
@@ -101,13 +101,13 @@ module.exports = co.wrap(function* () {
 > co is a stepping stone towards ES7 async/await -- TJ Holowaychuk
 
 
-## ESLint
+## <span>ESLint</span>
 
 保持良好代码风格的方法之一就是 lint 你的代码，选择你习惯的代码风格，用编辑器实时 lint 或者添加一些 git hook 在 commit 的时候 lint 也可以。
 
 我目前使用 [xo](https://github.com/sindresorhus/xo) 来检测代码，它默认无需配置但你可以根据你的喜好调整，基于 ESLint 。如果你喜欢这个风格也可以直接在 ESlint 中使用它的[配置文件](https://github.com/sindresorhus/eslint-config-xo)。
 
-## 测试
+## <span>测试</span>
 
 写测试是很有趣的，当且仅当你用 [AVA](https://github.com/sindresorhus/ava) 的时候。
 
@@ -120,7 +120,7 @@ module.exports = co.wrap(function* () {
 - 内置 ES2015/2016
 - many more...
 
-## Commit 风格
+## <span>Commit</span> 风格
 
 不使用没有意义的 Commit 信息，比如单纯只写个 `fix`、`update`、`change`。
 
@@ -137,12 +137,12 @@ git commit -m "🔥"
 
 ![commitizen](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)
 
-## Semantic-Release
+## <span>Semantic-Release</span>
 
 发布 NPM 模块是很让人困扰的一步，你需要手动 bump version，需要执行 `npm test` 来看是否有错，然后再手动执行 `npm publish`，这些步骤可以被规范且自动化。
 
 使用 [semantic-release](https://github.com/semantic-release/semantic-release) 可以自动分析你的 commit message 然后根据这些推测你的代码改动来进行语义化的版本号升级并自动更新 changelog，[这些](https://github.com/egoist/tooling/releases) 就是自动生成的。
 
-## 2016
+## <span>2016</span>
 
 200 more modules? Exciting! ✨

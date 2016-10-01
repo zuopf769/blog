@@ -13,7 +13,7 @@ tags:
 ---
 前端框架在近来是非常流行的词(Buzz word)，我现在就来介绍一下其中主流的框架，并且帮你区分什么是真正的「前端框架」。
 
-## 流行词汇
+## <span>流行词汇</span>
 
 一说起前端框架你就会听到一些看似很高深的词汇，比如 `mvvm` `vdom` `view layer` `unidirection` 等等，以及这些人们所谓的「框架」：
 
@@ -24,7 +24,7 @@ tags:
 - React
 - Vue
 
-## 框架大乱战
+## <span>框架大乱战</span>
 
 ### Bootstrap
 
@@ -52,7 +52,7 @@ BackBone 经常和 jQuery 一起用， MVC 模式 + 一个高度抽象的 DOM AP
 
 详见 http://cn.vuejs.org/guide/comparison.html
 
-## 我的选择
+## <span>我的选择</span>
 
 在我看来 Vue 和 React 是更现代的选择，Angular 2 的学习曲线看起来十分陡峭，让我望而生畏，有爱好者也可以尝试一下。
 
@@ -62,7 +62,7 @@ React 社区看似活跃和成熟但是所谓的 best practice 层出不穷，�
 
 Vue 社区则看起来更加专制，现状是各路菊苣为 [小右](http://evanyou.me/)  马首是瞻。这不是不好，非常好，正确的东西有很多人追随这没有不对的。而且现在社区也在蓬勃发展，小右本人也开始全职开发 Vue 和相关生态组件。
 
-## 如何学习一个框架
+## <span>如何学习一个框架</span>
 
 ### 基础
 

@@ -6,7 +6,7 @@ tags:
 ---
 边学边记录，有错请指出。（Keep Updating...）
 
-## 基础
+## <span>基础</span>
 
 ### 安装
 
@@ -92,6 +92,6 @@ $ user=# \list
 $ psql -U username -l
 ```
 
-## 推荐阅读
+## <span>推荐阅读</span>
 
 - [PostgreSQL Guide](http://postgresguide.com)
