@@ -16,7 +16,7 @@ tags:
 
 用过 Webpack 的都知道，也许配置和解决 bug 的时间会比写代码的时间更长，而且大部分情况配置文件都大同小异。那为什么不用**一个配置适用多个项目**？于是有了 [`tooling`](https://github.com/egoist/tooling)，它其实就是用一个内置的 Webpack 配置来运行和编译指定的项目。
 
-## <span>tooling</span> 带来了什么？
+## <span>tooling 带来了什么？</span>
 
 也许我的表达并不直观，简而言之，tooling 让你开发的便利程度趋近直接用一个 html 搞定。
 

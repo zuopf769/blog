@@ -1,11 +1,19 @@
 extends base
 
+block header
+  header.home-header
+    .container
+      h1.site-name EGOIST
+      ul.header-description
+        li
+          a(href="/about.html") 关于我
+        li
+          a(href="/girls.html") 后宫大乱战
+        li
+          a(href="/gf.html") 诚招女友
 block page
   section.page-home
-    header.home-header
-      .container
-        h1.site-name EGOIST
-    .container.content
+    .container.content.markdown-body
       h2.hr
         span posts
       ul.post-list

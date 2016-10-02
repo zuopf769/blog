@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
@@ -7,13 +7,14 @@ body {
   margin: 0;
   font-size: 1rem;
   line-height: 1.7;
+  text-rendering: geometricPrecision;
 }
 
 * {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, ul, table, figure {
+h1, h2, h3, h4, h5, ul, table, figure, p {
   font-weight: normal;
   margin: 0;
 }
@@ -48,31 +49,31 @@ h2.hr {
   hr_h2()
 }
 
-.post-list {
-  padding-left: 0;
-  list-style: none;
-  margin-top: 20px;
-  .post-item {
-    overflow: hidden;
-    &:hover {
+.content {
+  padding-top: 50px;
+  padding-bottom: @padding-top;
+
+  .post-list {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 20px;
+    .post-item {
+      overflow: hidden;
+      &:hover {
+        .post-time {
+          color: #999;
+        }
+      }
+      .post-title {
+        margin: 0 0 10px;
+      }
       .post-time {
-        color: #999;
+        float: right;
+        color: #ccc;
+        padding-left: 8px;
       }
     }
-    .post-title {
-      margin: 0 0 10px;
-    }
-    .post-time {
-      float: right;
-      color: #ccc;
-      padding-left: 8px;
-    }
   }
-}
-
-.content {
-  padding-top: 30px;
-  padding-bottom: @padding-top;
 }
 
 
@@ -99,12 +100,33 @@ h2.hr {
 
 .home-header, .post-header {
   border-bottom: 1px solid #e2e2e2;
+  .header-description {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+  }
 }
 
 .home-header, .post-header, .footer {
   background-color: #eee;
-  padding: 20px 50px;
+  padding: 30px 50px;
   position: relative;
+  p {
+    position: relative;
+  }
+}
+
+.home-header {
+  ul {
+    padding-left: 0;
+    list-style: none;
+    overflow: hidden;
+    li {
+      float: left;
+      margin-right: 10px;
+    }
+  }
 }
 
 .footer {
@@ -151,12 +173,7 @@ h2.hr {
   .post-title {
     margin: 0;
     font-size: 2rem;
-  }
-  .post-subtitle {
-    margin: 0;
-    font-size: 1rem;
-    color: #666;
-    margin-top: 1rem;
+    line-height: 1.25;
   }
 }
 
