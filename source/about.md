@@ -74,6 +74,12 @@ Your work is going to fill a large part of your life, and the only way to be tru
 
 -- Steve Jobs
 
+### Q: 你为什么叫 EGOIST? EGOISTIAN 又是什么鬼?
+
+啊，很开心你这么问了，因为这样我可以给你安利 [EGOIST/chelly](http://music.163.com/#/artist?id=19353) 这个歌手，不多说了，去听听就知道了。
+
+关于 EGOISTIAN 很简单，因为很多地方的用户名 EGOIST 都被注册了，所以我加了这个后缀，学过英语的你应该知道 `-ian` 后缀是什么意思。
+
 ## <span>三观</span>
 
 老师给我三观评价是「正正正」，你看看如何:
