@@ -17,11 +17,13 @@ block page
   section.post-page
     article.post
       .container.content
+        if page.tip
+          .alert.alert-success !{page.tip}
         if page.outdated
           - var text = typeof page.outdated === 'string' ? page.outdated : '由于时效性等诸多原因，本文已无太多参考价值。'
-          .alert-warning !{text}
+          .alert.alert-warning !{text}
         if page.warning
-          .alert-warning !{page.warning}
+          .alert.alert-warning !{page.warning}
         .post-content.markdown-body
           | !{page.content}
           if page.layout !== 'page'
