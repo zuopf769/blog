@@ -8,6 +8,7 @@
   "scripts": {
     "test": "echo lol",
     "deploy": "./deploy.sh",
+    "dev": "hexo s --watch",
     "start": "hexo clean && hexo s --watch"
   },
   "dependencies": {

@@ -58,12 +58,6 @@ h2.hr {
   hr_h2()
 }
 
-.site-name {
-  a {
-    old_fashion()
-  }
-}
-
 .content {
   padding-top: 40px;
   padding-bottom: @padding-top;
@@ -113,14 +107,50 @@ h2.hr {
   }
 }
 
+.site-name {
+  line-height: 1;
+  a {
+    color: #333;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    height: 40px;
+    line-height: @height;
+    box-shadow: 0 5px 0 #ccc;
+    transition: transform .3s ease, box-shadow .3s ease;
+    &:hover {
+      transform: translateY(10px);
+      box-shadow: 0 2px 0 #ccc;
+    }
+  }
+}
+
+.header-description {
+  margin: 0;
+  font-size: .85rem;
+  margin-top: 1rem;
+  li {
+    a {
+      display: block;
+      height: 40px;
+      line-height: @height;
+      color: #999;
+      border-bottom: 3px solid #ccc;
+      &:hover {
+        color: #666;
+        border-bottom-color: @color;
+      }
+    }
+  }
+}
+
 .home-header, .post-header {
   border-bottom: 1px solid #e2e2e2;
-  .header-description {
-    margin: 0;
-    font-size: 1rem;
-    color: #666;
-    margin-top: 1rem;
-    old_fashion()
+  a {
+    text-decoration: none;
   }
 }
 
@@ -140,11 +170,7 @@ h2.hr {
     overflow: hidden;
     li {
       float: left;
-      margin-right: 10px;
-      a {
-        old_fashion()
-      }
-    }
+      margin-right: 10px;    }
   }
 }
 
@@ -193,7 +219,6 @@ h2.hr {
     margin: 0;
     font-size: 2rem;
     line-height: 1.25;
-    old_fashion()
   }
 }
 
