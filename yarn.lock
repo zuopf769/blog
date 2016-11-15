@@ -21,6 +21,18 @@ acorn-globals@^1.0.3, acorn-globals@^1.0.4:
   dependencies:
     acorn "^2.1.0"
 
+acorn-jsx@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/acorn-jsx/download/acorn-jsx-3.0.1.tgz#afdf9488fb1ecefc8348f6fb22f464e32a58b36b"
+  dependencies:
+    acorn "^3.0.4"
+
+acorn-object-spread@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/acorn-object-spread/download/acorn-object-spread-1.0.0.tgz#48ead0f4a8eb16995a17a0db9ffc6acaada4ba68"
+  dependencies:
+    acorn "^3.1.0"
+
 acorn@^1.0.1:
   version "1.2.2"
   resolved "http://registry.npm.taobao.org/acorn/download/acorn-1.2.2.tgz#c8ce27de0acc76d896d2b1fad3df588d9e82f014"
@@ -28,6 +40,10 @@ acorn@^1.0.1:
 acorn@^2.1.0, acorn@^2.4.0:
   version "2.7.0"
   resolved "http://registry.npm.taobao.org/acorn/download/acorn-2.7.0.tgz#ab6e7d9d886aaca8b085bc3312b79a198433f0e7"
+
+acorn@^3.0.4, acorn@^3.1.0, acorn@^3.3.0:
+  version "3.3.0"
+  resolved "http://registry.npm.taobao.org/acorn/download/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
 
 amdefine@>=0.0.4:
   version "1.0.1"
@@ -187,6 +203,18 @@ braces@^1.8.2:
 browser-fingerprint@0.0.1:
   version "0.0.1"
   resolved "http://registry.npm.taobao.org/browser-fingerprint/download/browser-fingerprint-0.0.1.tgz#8df3cdca25bf7d5b3542d61545d730053fce604a"
+
+buble@^0.14.2:
+  version "0.14.2"
+  resolved "http://registry.npm.taobao.org/buble/download/buble-0.14.2.tgz#5e2ffd5469693068731d77c9c98909aee61e5e6f"
+  dependencies:
+    acorn "^3.3.0"
+    acorn-jsx "^3.0.1"
+    acorn-object-spread "^1.0.0"
+    chalk "^1.1.3"
+    magic-string "^0.14.0"
+    minimist "^1.2.0"
+    os-homedir "^1.0.1"
 
 buffer-shims@^1.0.0:
   version "1.0.0"
@@ -901,6 +929,12 @@ hexo-pagination@0.0.2:
   dependencies:
     utils-merge "^1.0.0"
 
+hexo-renderer-buble@^0.1.1:
+  version "0.1.1"
+  resolved "http://registry.npm.taobao.org/hexo-renderer-buble/download/hexo-renderer-buble-0.1.1.tgz#deefe7f42018125061bca42427589f1e408facab"
+  dependencies:
+    buble "^0.14.2"
+
 hexo-renderer-jade@^0.3.0:
   version "0.3.0"
   resolved "http://registry.npm.taobao.org/hexo-renderer-jade/download/hexo-renderer-jade-0.3.0.tgz#961d72f2289a87328a4e7efdd3d6389e19e8e996"
@@ -1350,6 +1384,12 @@ lru-cache@2:
   version "2.7.3"
   resolved "http://registry.npm.taobao.org/lru-cache/download/lru-cache-2.7.3.tgz#6d4524e8b955f95d4f5b58851ce21dd72fb4e952"
 
+magic-string@^0.14.0:
+  version "0.14.0"
+  resolved "http://registry.npm.taobao.org/magic-string/download/magic-string-0.14.0.tgz#57224aef1701caeed273b17a39a956e72b172462"
+  dependencies:
+    vlq "^0.2.1"
+
 markdown-it-abbr@^1.0.0:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/markdown-it-abbr/download/markdown-it-abbr-1.0.4.tgz#d66b5364521cbb3dd8aa59dadfba2fb6865c8fd8"
@@ -1668,7 +1708,7 @@ optionator@^0.8.1:
     type-check "~0.3.2"
     wordwrap "~1.0.0"
 
-os-homedir@^1.0.0:
+os-homedir@^1.0.0, os-homedir@^1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/os-homedir/download/os-homedir-1.0.2.tgz#ffbc4988336e0e833de0c168c7ef152121aa7fb3"
 
@@ -2186,6 +2226,10 @@ verror@1.3.6:
   resolved "http://registry.npm.taobao.org/verror/download/verror-1.3.6.tgz#cff5df12946d297d2baaefaa2689e25be01c005c"
   dependencies:
     extsprintf "1.0.2"
+
+vlq@^0.2.1:
+  version "0.2.1"
+  resolved "http://registry.npm.taobao.org/vlq/download/vlq-0.2.1.tgz#14439d711891e682535467f8587c5630e4222a6c"
 
 void-elements@~2.0.1:
   version "2.0.1"
