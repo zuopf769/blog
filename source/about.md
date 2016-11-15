@@ -47,12 +47,13 @@ subtitle: 先定一个小目标，写出能用的代码就行了。
 ## <span>装备</span>
 
 - 电脑: MacBook Pro 840 (2015 early)
-- 手机: 小米 5
+- 手机: iPhone SE / 小米 5
 - 鼠标: Razer 地狱狂蛇(ABYSSUS) 2014
 - 机械键盘: KBTalking RACE II
 - 单肩包: 匡威春橘色 14224C800
-- 手环: Mi band 数个
+- 手环: Mi band 数个吃灰
 - 耳机: B&O Form 2 / AKG K420
+- 其它: Kindle
 
 ## <span>前端开发</span>
 
