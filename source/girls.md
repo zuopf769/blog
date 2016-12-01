@@ -6,9 +6,9 @@ layout: page
 
 ## <span>正宫</span>
 
-正宫经常更换，请随时关注，<a target="_blank" href="https://whatanime.ga/?url=https://o68eee1f9.qnssl.com/16-7-10/74721927.jpg">你不会不知道这是谁吧!</a>
+正宫经常更换，请随时关注。
 
-![wife](https://o68eee1f9.qnssl.com/16-7-10/74721927.jpg)
+![wife](https://ooo.0o0.ooo/2016/12/01/5840229c4cba1.jpg)
 
 ## <span>后宫</span>
 
@@ -44,3 +44,4 @@ layout: page
 - 友利奈绪
 - 布鲁郗·芙尔基
 - 椎名真白
+- 乌丸千岁
