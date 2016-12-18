@@ -31,4 +31,4 @@ Re:Zero 有一点很矛盾，就是「死亡回归」这个设定，这是菜月
 
 对的，你是否也已经发现了:
 
-![img](https://ooo.0o0.ooo/2016/08/03/57a1a6c6a86f0.jpg)
+![img](https://oidzj4vwh.qnssl.com/blog/57a1a6c6a86f0.jpg)
