@@ -9,7 +9,7 @@ tags:
 - 没有模块系统支持，调用第三方库只能通过 script 标签引用 UMD 格式的文件
 - 局限于 HTML/CSS/JS 
 
-所以我用我经常使用的 webpack 做了一个基于它的代码调试工具叫做 **miku**，它主要就是解决了上述工具存在的不足。
+所以我用我经常使用的 webpack 做了一个基于它的代码调试工具叫做 [**miku**](https://github.com/egoist/miku)，它主要就是解决了上述工具存在的不足。
 
 ```bash
 miku example.js example.css
