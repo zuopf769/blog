@@ -36,7 +36,7 @@ miku 默认添加了很多常用的 loader 配置:
 
 ## <span>由来</span>
 
-任何事情都不是空穴来风，我的轮子尤其如此。我昨晚在搞一个叫做 `real-dom` 的项目，时候我才发现很类似 [redom](https://github.com/pakastin/redom)，不过当时我有个「做个 example」的需求，手动预览这些用了 babel 的项目真的挺麻烦，所以想做这样一个东西。
+任何事情都不是空穴来风，我的轮子尤其如此。我昨晚在搞一个叫做 `real-dom` 的项目，之后我才发现很类似 [redom](https://github.com/pakastin/redom)，不过当时我有个「做个 example」的需求，手动预览这些用了 babel 的项目真的挺麻烦，所以想做这样一个东西。
 
 **虽然我之前的那个 [vbuild](https://github.com/egoist/vbuild) 几乎能胜任这项任务，不过我之后联想到了 jsbin，就有是不是能继续往这方面发展的想法。** 所以又一个轮子诞生了。
 
