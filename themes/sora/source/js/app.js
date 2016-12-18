@@ -3,10 +3,6 @@ var $$ = document.querySelectorAll.bind(document)
 
 document.addEventListener('DOMContentLoaded', ready)
 
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1)
-}
-
 function ready() {
   // disqus
   if (window.isPost) {
@@ -25,7 +21,7 @@ function ready() {
       var div = document.createElement('div')
       div.className = 'highlight'
       div.innerHTML = pre.outerHTML
-      div.setAttribute('data-lang', capitalizeFirstLetter(lang))
+      div.setAttribute('data-lang', lang)
       pre.parentNode.insertBefore(div, pre)
       pre.parentNode.removeChild(pre)
     })

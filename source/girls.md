@@ -8,7 +8,7 @@ layout: page
 
 正宫经常更换，请随时关注。
 
-![wife](https://ooo.0o0.ooo/2016/12/01/5840229c4cba1.jpg)
+![wife](https://oidzj4vwh.qnssl.com/anime/wallhaven-466506.jpg)
 
 ## <span>后宫</span>
 
