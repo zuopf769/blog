@@ -34,8 +34,15 @@ block append scripts
   script(src="/js/app.js?v=#{config.version}")
 
 block meta
+  meta(name="twitter:card" content="summary")
+  meta(name="twitter:site" content="@rem_rin_rin")
+  - var title = page.title.replace(/<(?:.|\n)*?>/gm, '')
+  meta(name="twitter:title" content=title)
+
   if page.subtitle
     meta(name="description" content=page.subtitle)
+    meta(name="twitter:description" content=page.subtitle)
   else
     - var summary = page.excerpt || page.content.replace(/<(?:.|\n)*?>/gm, '').substring(0, 100)
     meta(name="description" content=summary)
+    meta(name="twitter:description" content=summary)
