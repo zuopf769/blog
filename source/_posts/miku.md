@@ -40,4 +40,4 @@ miku 默认添加了很多常用的 loader 配置:
 
 **虽然我之前的那个 [vbuild](https://github.com/egoist/vbuild) 几乎能胜任这项任务，不过我之后联想到了 jsbin，就有是不是能继续往这方面发展的想法。** 所以又一个轮子诞生了。
 
-> Just build things. It doesn’t matter if someone else thinks its a bad idea as long as you think it isn’t. Really.
+> Just build things. It doesn’t matter if someone else thinks it's a bad idea as long as you think it isn’t. Really.
