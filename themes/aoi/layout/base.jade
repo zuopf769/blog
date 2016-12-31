@@ -13,11 +13,12 @@ html
     if theme.rss
       link(rel='alternate', type='application/rss+xml', title=config.title href=theme.rss)
     block styles
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Droid+Sans")
       link(href="/css/style.css?v=#{config.version}" rel="stylesheet")
     block meta
       block meta.description
         meta(name="description" content=config.description)
-  body.font-hei
+  body
     block header
     block page
     footer.footer
