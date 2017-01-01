@@ -16,15 +16,6 @@ function ready() {
     (d.head || d.body).appendChild(s);
   }
   function highlight() {
-    [].forEach.call($$('pre'), function (pre) {
-      var lang = pre.querySelector('code').className.match(/-(\w+)/)[1]
-      var div = document.createElement('div')
-      div.className = 'highlight'
-      div.innerHTML = pre.outerHTML
-      div.setAttribute('data-lang', lang)
-      pre.parentNode.insertBefore(div, pre)
-      pre.parentNode.removeChild(pre)
-    })
     hljs.initHighlightingOnLoad()
   }
 }
