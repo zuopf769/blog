@@ -8,7 +8,7 @@ layout: page
 
 正宫经常更换，请随时关注。
 
-![wife](https://oidzj4vwh.qnssl.com/anime/wallhaven-466506.jpg)
+![wife](https://oidzj4vwh.qnssl.com/blog/C1HtNswWQAAR2Kh.jpg)
 
 ## <span>后宫</span>
 
@@ -46,3 +46,4 @@ layout: page
 - 椎名真白
 - 乌丸千岁
 - 宫水三叶
+- 玛修·基列莱特
