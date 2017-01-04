@@ -8,7 +8,7 @@ layout: page
 
 正宫经常更换，请随时关注。
 
-![wife](https://oidzj4vwh.qnssl.com/blog/C1HtNswWQAAR2Kh.jpg)
+![wife](https://oidzj4vwh.qnssl.com/blog/mashu.jpg)
 
 ## <span>后宫</span>
 
