@@ -1,5 +1,5 @@
-var $ = document.querySelector.bind(document)
-var $$ = document.querySelectorAll.bind(document)
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 
 document.addEventListener('DOMContentLoaded', ready)
 
@@ -8,6 +8,10 @@ function ready() {
   if (window.isPost) {
     highlight()
     disqus()
+    makeZoom()
+  }
+  if (window.hexoLayout === 'page') {
+    makeZoom()
   }
   function disqus() {
     var d = document, s = d.createElement('script');
@@ -17,5 +21,12 @@ function ready() {
   }
   function highlight() {
     hljs.initHighlightingOnLoad()
+  }
+  function makeZoom() {
+    Array.prototype.forEach.call($$('.post-content img'), el => {
+      console.log(el)
+      el.setAttribute('data-action', 'zoom')
+    })
+    zoom.setup()
   }
 }

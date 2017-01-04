@@ -6,6 +6,7 @@ block title
 
 block append styles
   link(rel="stylesheet" href="/css/solarized.css")
+  link(rel="stylesheet", href="/css/zoom.css")
 
 block page
   section.centered.post-page
@@ -31,6 +32,9 @@ block page
 
 block append scripts
   script(src="/js/highlight.min.js")
+  script(src="/js/zoom.js")
+  script.
+    window.hexoLayout = "#{page.layout}"
   script(src="/js/app.js?v=#{config.version}")
 
 block meta
