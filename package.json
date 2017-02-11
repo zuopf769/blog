@@ -10,7 +10,7 @@
     "deploy": "hexo g && hexo d",
     "dev": "hexo s --watch",
     "start": "hexo clean && hexo s --watch",
-    "postpush": "npm run deploy"
+    "postreceive": "npm run deploy"
   },
   "dependencies": {
     "fonts.css": "^1.4.0",
