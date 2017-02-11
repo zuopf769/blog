@@ -1,6 +1,6 @@
 # EGOIST's blog
 
-Here is the source repo: https://github.com/egoist/egoist.github.io.source
+Here is the source repo: https://github.com/egoist/blog
 
 ## License
 
