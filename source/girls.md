@@ -8,7 +8,7 @@ layout: page
 
 正宫经常更换，请随时关注。
 
-![fuuka](https://oidzj4vwh.qnssl.com/blog/WechatIMG8.png)
+![fuuka](https://ooo.0o0.ooo/2017/02/11/589ecad7083f4.png)
 
 ## <span>后宫</span>
 
