@@ -7,9 +7,10 @@
   },
   "scripts": {
     "test": "echo lol",
-    "deploy": "./deploy.sh",
+    "deploy": "hexo g && hexo d",
     "dev": "hexo s --watch",
-    "start": "hexo clean && hexo s --watch"
+    "start": "hexo clean && hexo s --watch",
+    "postpush": "npm run deploy"
   },
   "dependencies": {
     "fonts.css": "^1.4.0",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "hexo-cli": "^1.0.2",
-    "hexo-deployer-git": "0.2.0"
+    "hexo-deployer-git": "0.2.0",
+    "husky": "^0.13.1"
   }
 }
