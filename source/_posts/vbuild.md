@@ -19,7 +19,7 @@ new Vue({
 })
 ```
 
-Without `vbuild`, you need to create a `webpack.config.js` with a lot of boilerplate code, and installed many dev dependencies in `package.json`, which is very verbose to perform.
+Without `vbuild`, you need to create a `webpack.config.js` with a lot of boilerplate code, and installe many dev dependencies in `package.json`, which is very verbose to perform.
 
 Now we can run a single command `vbuild --dev` to replace the process above.
 

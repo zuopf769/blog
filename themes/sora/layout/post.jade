@@ -5,7 +5,7 @@ block title
   title=title
 
 block append styles
-  link(rel="stylesheet" href="/css/highlight.css")
+  link(rel="stylesheet" href="/css/highlight.css?v=#{config.version}")
   link(rel="stylesheet", href="/css/zoom.css")
 
 block page
@@ -31,7 +31,7 @@ block page
           | 文章勘误可以直接到 <a target="_blank" href="https://github.com/egoist/blog/blob/master/source/_posts/#{page.slug}.md">源代码地址</a> 修改或者 <a target="_blank" href="https://github.com/egoist/blog/issues/new">提交 ISSUE</a>，感谢阅读！
 
 block append scripts
-  script(src="/js/highlight.min.js")
+  script(src="/js/highlight.min.js?v=#{config.version}")
   script(src="/js/zoom.js")
   script.
     window.hexoLayout = "#{page.layout}"
