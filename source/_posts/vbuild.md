@@ -33,7 +33,7 @@ In the past few years, bundlers like Webpack and browserify have taken over the 
 
 The main reason that Gulp is replacing Grunt is the **simplicity** in my opinion. Who knows that I had been using PHP for years before meeting Node.js, developing and deploying PHP apps is that stupidly fast and easy.
 
-Since then, I've made my mind that I want to develop JavaScript apps in a simple way. At the same way, I did fall in love with [XO](https://github.com/sindresorhus/xo), which is an ESLint wrapper that reduces the overhead of managing config files. vbuild is to Webpack as XO is to ESLint.
+Since then, I've made my mind that I want to develop JavaScript apps in a simple way. At the same time, I did fall in love with [XO](https://github.com/sindresorhus/xo), which is an ESLint wrapper that reduces the overhead of managing config files. vbuild is to Webpack as XO is to ESLint.
 
 ## Why Vue.js
 
