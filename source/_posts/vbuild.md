@@ -39,7 +39,7 @@ Since then, I've made my mind that I want to develop JavaScript apps in a simple
 
 There're similar tools like [nwb](https://github.com/insin/nwb) or [create-react-app](https://github.com/facebookincubator/create-react-app), but vbuild is mainly for Vue.js.
 
-Despiting that vbuild have extra support for Vue's single-file component, it actually works for all kinds of JavaScript frameworks! The **no-config** feature works better in Vue.js apps though.
+Despiting that vbuild has extra support for Vue's single-file component, it actually works for all kinds of JavaScript frameworks! The **no-config** feature works better in Vue.js apps though.
 
 Have to note that, Vue.js itself is getting well with the idea **no-config**, you can use it directly in a `index.html` file, or work with any bundler, out-of-box nice development experience, hot-code reloading support, officially maintained router and state-managament library.
 
