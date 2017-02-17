@@ -8,6 +8,8 @@ tags:
 ---
 I’m very proud to announce [vbuild 6](https://github.com/egoist/vbuild), an opinionated but configurable Webpack wrapper for bundling front-end Vue.js apps, allowing you to use Webpack like a pro! No decision-making while reducing boilerplate code, solving problems like when to split vendor code, how to manage static files, CSS extracting et al.
 
+<img class="border-image" src="https://ooo.0o0.ooo/2017/02/17/58a6cc0680006.png" alt="preview">
+
 To start using, all you need is to write your app directly, let's say `index.js`:
 
 ```jsx
