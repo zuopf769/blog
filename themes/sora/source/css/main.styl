@@ -26,6 +26,7 @@ a
   height 30px
   line-height @height
   background-color #93a1a1
+  display flex
   h1.site-name
     font-weight 400
     a
@@ -33,11 +34,37 @@ a
       width 70px
       padding-left 10px
       background-color #586e75
-      float left
       display block
       color #eee8d5
       &:hover
         font-weight bold
+
+.dropdown-menu
+  margin-left 10px
+  height 30px
+  position relative
+  float right !important
+  &:hover
+    .nav-more-trigger
+      cursor crosshair
+      color #eee8d5
+    .dropdown-list
+      display block
+  .dropdown-list
+    display none
+    position absolute
+    right 0
+    padding-left 0
+    top 30px
+    white-space nowrap
+    a
+      background-color #93a1a1
+      &:hover
+        background-color #586e75
+        color #eee8d5
+  .nav-more-trigger
+    height 30px
+    color #586e75
 
 .centered
   max-width 52em
@@ -89,7 +116,7 @@ a
 
 .nav
   padding-left 0
-  overflow hidden
+  width 100%
   li
     list-style-type none
     float left
