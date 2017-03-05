@@ -40,7 +40,7 @@ a
         font-weight bold
 
 .dropdown-menu
-  margin-left 10px
+  padding 0 5px
   height 30px
   position relative
   float right !important
@@ -48,15 +48,15 @@ a
     .nav-more-trigger
       cursor crosshair
       color #eee8d5
-    .dropdown-list
-      display block
   .dropdown-list
-    display none
     position absolute
     right 0
     padding-left 0
     top 30px
     white-space nowrap
+    display none
+    &.visible
+      display block
     a
       background-color #93a1a1
       &:hover
