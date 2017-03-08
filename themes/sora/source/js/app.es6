@@ -21,9 +21,8 @@ function ready() {
   }
   function makeZoom() {
     Array.prototype.forEach.call($$('.post-content img'), el => {
-      el.setAttribute('data-action', 'zoom')
+      zoom(el)
     })
-    zoom.setup()
   }
   function dropdown() {
     const el = $('.nav-more-trigger')

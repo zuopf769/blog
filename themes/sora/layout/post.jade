@@ -6,7 +6,7 @@ block title
 
 block append styles
   link(rel="stylesheet" href="/css/highlight.css?v=#{config.version}")
-  link(rel="stylesheet", href="/css/zoom.css")
+  link(rel="stylesheet", href="/css/zoom.css?v=#{config.version}")
 
 block page
   section.centered.post-page
@@ -32,7 +32,7 @@ block page
 
 block append scripts
   script(src="/js/highlight.min.js?v=#{config.version}")
-  script(src="/js/zoom.js")
+  script(src="/js/zoom.js?v=#{config.version}")
   script.
     window.hexoLayout = "#{page.layout}"
   script(src="/js/app.js?v=#{config.version}")
