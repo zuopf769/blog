@@ -4,7 +4,6 @@ const $$ = document.querySelectorAll.bind(document)
 document.addEventListener('DOMContentLoaded', ready)
 
 function ready() {
-  dropdown()
   // disqus
   if (window.isPost) {
     disqus()
@@ -22,23 +21,6 @@ function ready() {
   function makeZoom() {
     Array.prototype.forEach.call($$('.post-content img'), el => {
       zoom(el)
-    })
-  }
-  function dropdown() {
-    const el = $('.nav-more-trigger')
-    const list = $('.dropdown-list')
-    const menu = $('.dropdown-menu')
-    el.addEventListener('click', e => {
-      if (list.classList.contains('visible')) {
-        list.classList.remove('visible')
-      } else {
-        list.classList.add('visible')
-      }
-    })
-    document.addEventListener('click', e => {
-      if (!menu.contains(e.target)) {
-        list.classList.remove('visible')
-      }
     })
   }
 }
