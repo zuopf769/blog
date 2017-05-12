@@ -80,6 +80,8 @@ feed:
 deploy:
 - type: git
   repo: git@github.com:egoist/egoist.github.io.git
+- type: git
+  repo: git@git.coding.net:egoist/egoist.coding.me.git
 
 # markdown
 markdown:
