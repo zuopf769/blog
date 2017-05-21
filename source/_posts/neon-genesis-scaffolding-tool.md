@@ -120,4 +120,4 @@ test('ignore pwa entry', async t => {
 - [template-vue](https://github.com/egoist/template-vue): 生成一个*几乎*无需配置的 Vue 项目，基于 [Poi](https://poi.js.org)。
 - [awesome-sao](https://github.com/egoist/awesome-sao): 相关 SAO 资源。
 
-关于更多 SAO 的使用方法和配置文件参数，可以访问 https://sao.js.org :P 虽然本文标题是新世纪福音战士，但 SAO 显然是来源于 [Sword Art Online](https://zh.moegirl.org/zh-hans/%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F) 的。
+关于更多 SAO 的使用方法和配置文件参数，可以访问 https://sao.js.org :P 虽然本文标题是来源于新世纪福音战士，但 SAO 显然是来源于 [Sword Art Online](https://zh.moegirl.org/zh-hans/%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F) 的。
