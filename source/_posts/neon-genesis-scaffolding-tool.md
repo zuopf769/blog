@@ -89,7 +89,7 @@ test('ignore pwa entry', async t => {
 })
 ```
 
-这里的 `res.fileList` 生成的文件列表，形如:
+这里的 `res.fileList` 是生成的文件列表，形如:
 
 ```js
 [
