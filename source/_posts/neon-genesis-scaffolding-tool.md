@@ -16,7 +16,7 @@ tags:
 
 经常造轮子就会发现脚手架的重要性，这也是为什么 Yeoman 的发明者之一是 [@sindresorhus](https://github.com/sindresorhus) 的原因。后者已经在 npm 上发布了[超过 1000 个模块](https://www.npmjs.com/~sindresorhus)，很难后有来者了。
 
-Yeoman 十分健壮，生态繁荣，然而要写[一个 generator 的复杂度](https://github.com/sindresorhus/generator-nm/blob/master/app/index.js)可写普通的代码几乎是差不多的，而我在尽可能减少思考的时候就想减少思考，vue-cli 的思路很好地解决了我向减少思考的诉求，一个 generator 中间生成文件的过程有很多步骤是可以自动解决的。
+Yeoman 十分健壮，生态繁荣，然而要写[一个 generator 的复杂度](https://github.com/sindresorhus/generator-nm/blob/master/app/index.js)可写普通的代码几乎是差不多的，而我在能尽可能减少思考的时候就想减少思考，vue-cli 的思路很好地解决了我向减少思考的诉求，一个 generator 中间生成文件的过程有很多步骤是可以自动解决的。
 
 vue-cli 虽然名字里有 vue 属性，但是作为任意类型项目的脚手架工具都是可以的，尽管运行 `vue init react` 这样的命令会显得有些奇怪。这也是为什么我做了 [SAO](https://github.com/egoist/sao) 的原因，一个类似 vue-cli 的脚手架工具。在拥有 vue-cli 的功能的同时，它也能像 Yeoman 一样用 npm package 作为模板并支持测试。
 
