@@ -86,9 +86,10 @@ a
 @media screen and (min-width: 768px)
   .egoist-name
     .avatar
-      height 7rem
-      width 7rem
-      vertical-align -10px
+      height 6.7rem
+      width @height
+      vertical-align -12px
+      margin 0 3px
       border 1px solid #000
       border-radius 50%
       background-image url(/images/earth-outline-filled.png)
@@ -96,11 +97,11 @@ a
       background-position center
       display inline-block
       text-indent -99999px
-      opacity .7
+      opacity .8
       transition opacity .3s ease
       animation spin 7s 1s infinite linear
       &:hover
-        opacity .9
+        opacity 1
         animation none
         background-image url(https://github.com/egoist.png)
 
