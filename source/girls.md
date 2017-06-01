@@ -8,7 +8,7 @@ layout: page
 
 正宫经常更换，请随时关注。
 
-![fuuka](https://ooo.0o0.ooo/2017/02/11/589ecad7083f4.png)
+![eromanga](https://ooo.0o0.ooo/2017/06/01/592f9417b4562.jpg)
 
 ## <span>后宫</span>
 
@@ -63,3 +63,6 @@ layout: page
 - 西宫结弦
 - 霞之丘诗羽
 - 阿米拉
+- 山田妖精
+- 和泉纱雾
+- 千寿村正
