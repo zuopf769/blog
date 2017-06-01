@@ -1,9 +1,12 @@
 extends base
 
+block append meta
+  link(rel="preload" href="https://github.com/egoist.png" as="image" media="(min-width: 768px)")
+
 block page
   section.centered
     h2.egoist-name
-      | egoist<span>ian</span>
+      | eg<div class="avatar">o</div>ist<span>ian</span>
       br
       | zen<span>g</span>
     ul.post-list

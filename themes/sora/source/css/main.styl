@@ -83,6 +83,40 @@ a
   span
     color #b58900
 
+@media screen and (min-width: 768px)
+  .egoist-name
+    .avatar
+      height 7rem
+      width 7rem
+      vertical-align -10px
+      border 1px solid #000
+      border-radius 50%
+      background-image url(/images/earth-outline-filled.png)
+      background-size cover
+      background-position center
+      display inline-block
+      text-indent -99999px
+      opacity .7
+      transition opacity .3s ease
+      animation spin 7s 1s infinite linear
+      &:hover
+        opacity .9
+        animation none
+        background-image url(https://github.com/egoist.png)
+
+@media screen and (max-width: 768px)
+  .egoist-name
+    .avatar
+      text-indent 0
+      display inline-block
+
+@keyframes spin
+  from
+    transform rotate(0deg)
+  to
+    transform rotate(360deg)
+
+
 .home-writings
   margin-top 30px
 
