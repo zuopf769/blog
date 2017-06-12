@@ -144,6 +144,8 @@ a
   font-size 14px
   .centered
     margin-bottom 0
+    &>span
+      margin-right 5px
   a
     color #93a1a1
     &:hover
@@ -206,6 +208,11 @@ a
       color #eee8d5
       &:before
         transform translateX(0)
+
+.coding-support
+  display none
+  &.visible
+    display inline-block
 
 @import 'markdown';
 @import 'post';
