@@ -100,3 +100,41 @@
       color #657b83
       &:hover
         background-color rgba(101, 123, 131, 0.11)
+
+.footnote-ref
+  margin 0 5px
+  a
+    text-decoration none
+    &:focus
+      outline none
+      color #DD4A68
+      font-weight bold
+    &:hover
+      text-decoration none
+
+.footnotes
+  .footnote-item
+    p
+      margin 0
+      margin-top 0 !important
+
+  .footnote-backref
+    text-decoration none
+    &:hover
+      text-decoration none
+
+hr.footnotes-sep
+  margin 40px 0
+  height 1px
+  position relative
+  overflow: visible
+  &:after
+    content: 'footnotes'
+    position absolute
+    left 50%
+    top 50%
+    transform translateX(-50%) translateY(-50%)
+    background #fdf6e3
+    padding: 0 10px
+    font-size 1rem
+    color rgba(0, 0, 0, 0.26)

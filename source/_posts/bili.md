@@ -17,7 +17,7 @@ tags:
 
 ## 授业
 
-> 学生 A：道理我都懂，可是 EGOIST sensei! 为什么给 Rollup 套个皮就拿出来卖了？这根本不是编程！
+> 学生 A：道理我都懂，可是 EGOIST sensei[^sensei]! 为什么给 Rollup 套个皮就拿出来卖了？这根本不是编程！
 
 的确这不是什么有难度、有深度的东西，只是用来解决一个简单的问题：简化打包流程，提高人类自身价值感和归属感。
 
@@ -117,4 +117,6 @@ Promise.all(['umd', 'cjs', 'es', 'umdCompress'].map(build))
 放学后同学们都会到家跃跃欲试，打开电脑，发明了 [Bili](https://github.com/egoist/bili) [v0.17](https://github.com/egoist/bili/releases/tag/v0.17.0) 的数个 breaking changes，当然都是花一分钟就能搞定的变更。
 
 从此，大家过让了幸福的打包生活。
+
+[^sensei]: 日语中老师(センセイ)的意思，由女高中生说出来时才可充分表现语言的张力。
 
