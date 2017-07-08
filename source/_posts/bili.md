@@ -116,7 +116,7 @@ Promise.all(['umd', 'cjs', 'es', 'umdCompress'].map(build))
 
 放学后同学们都会到家跃跃欲试，打开电脑，发现了 [Bili](https://github.com/egoist/bili) [v0.17](https://github.com/egoist/bili/releases/tag/v0.17.0) 的数个 breaking changes，当然都是花一分钟就能搞定的变更。
 
-从此，大家过让了幸福的打包生活。
+从此，大家过上了幸福的打包生活。
 
 [^sensei]: 日语中老师(センセイ)的意思，由女高中生说出来时才可充分表现语言的张力。
 
