@@ -10,7 +10,7 @@ subtitle: 先定一个小目标，写出能用的代码就行了。
 ## <span>抓得到我吗</span>
 
 - [GitHub](https://github.com/egoist)
-- [Twitter](https://twitter.com/rem_rin_rin)
+- [Twitter](https://twitter.com/_egoistlily)
 - [Telegram](https://telegram.me/egoistian)
 - [Instagram](https://instagram.com/egoistian)
 - [微博](http://weibo.com/zengxinyu)
