@@ -11,7 +11,7 @@ subtitle: 先定一个小目标，写出能用的代码就行了。
 
 - [GitHub](https://github.com/egoist)
 - [Twitter](https://twitter.com/_egoistlily)
-- [Telegram](https://telegram.me/egoistian)
+- [Telegram](https://t.me/egoistlily)
 - [Instagram](https://instagram.com/egoistian)
 - [微博](http://weibo.com/zengxinyu)
 - [微信](http://ww4.sinaimg.cn/large/a15b4afegw1f0nf2nlbzuj20n00ydtck)
